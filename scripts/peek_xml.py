@@ -1,7 +1,5 @@
 """
-scripts/peek_xml.py
---------------------
-Run checks, test downloads, verify data.
+scripts/peek_xml.py: Run checks, test downloads, verify data.
 """
 
 import sys
@@ -10,7 +8,6 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.dataset.xml_parser import RKDDataset
 from src.dataset.downloader import RKDDownloader
-
 
 # ================================== EXPLORE XML FILE ==================================
 
@@ -29,16 +26,21 @@ Relevant fields:
 """
 
 # Explore what values specific fields contain (scans full file by default)
-dataset.print_unique_values("zekerheid_identificatie_portret")
-dataset.print_unique_values("objectcategorie")
-dataset.print_unique_values("soort_afbeelding")
-dataset.print_unique_values("afbeelding_tonen_leveren")
+# dataset.print_unique_values("zekerheid_identificatie_portret")          # is counted per sitter, not per artwork
+# dataset.print_unique_values("objectcategorie")
+# dataset.print_unique_values("soort_afbeelding")
+# dataset.print_unique_values("afbeelding_tonen_leveren")
 
-# For later:
-# - are they all portraits from RKDimages already? or also landscapes?
-# - how do we know that there are portraits with unknown sitter?
-# - if in group portrait only 1 person known, is it still marked as a group portrait?
-
+# Print the full XML of the first record, nicely formatted
+# with open(r"D:\thesis\data\RKDimages.xml", "r", encoding="utf-8") as f:
+#     inside = False
+#     for line in f:
+#         if '<record ' in line or '<record>' in line:
+#             inside = True
+#         if inside:
+#             print(line, end="")
+#         if '</record>' in line and inside:
+#             break
 
 # ================================== PARSE ==================================
 
@@ -50,9 +52,13 @@ dataset.overview()
 # dataset.multi_portrait_sitters(min_portraits=2)
 # dataset.get_lrefs(best_only=True)
 
+# dataset.print_record("5")                              # Print first record 
+#                                                        # Or other, based on priref
+# dataset.print_record("19") 
+# dataset.print_record("73")     
 
 # ================================== DOWNLOAD ==================================
 
-downloader = RKDDownloader(dataset)
+# downloader = RKDDownloader(dataset)
 # downloader.download(max_downloads=200)    # test first
 # downloader.download()                     # full download — run overnight

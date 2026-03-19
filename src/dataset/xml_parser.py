@@ -86,8 +86,24 @@ class RKDDataset:
         current_date_zoekmarge = None
         current_lref           = None
         current_soort          = None
+        current_title_dutch    = None
+        current_title_english  = None
+        current_artist_name    = None
+        current_artist_id      = None
+        current_genre          = None
+        current_materiaal      = []
+        current_drager         = None
+        current_trefwoorden_en = []
+        current_trefwoorden_nl = []
+        current_trefwoord_en   = None
+        current_trefwoord_nl   = None
         inside_objectcat       = False
         inside_soort           = False
+        inside_toeschrijving   = False
+        inside_trefwoord       = False
+        inside_genre           = False 
+        inside_materiaal       = False   
+        inside_drager          = False   
         last_persoon           = None
 
         with open(self.xml_file, "r", encoding="utf-8") as f:
@@ -96,25 +112,57 @@ class RKDDataset:
                     pbar.update(len(line.encode("utf-8")))
                     s = line.strip()
 
-                    # --- New record ---
+                    # New record detected?
                     if '<priref tag="%0"' in s and "/>" not in s:
+                        # First save the old variables (if there where any):
                         if current_priref:
-                            self._save_record(
-                                current_priref, current_personen, current_media,
-                                current_objectcat, current_date_datering,
-                                current_date_zoekmarge
+                            self._save_record(current_priref,
+                                                current_personen,
+                                                current_media,
+                                                current_objectcat,
+                                                current_date_datering,
+                                                current_date_zoekmarge,
+                                                current_title_dutch,
+                                                current_title_english,
+                                                current_artist_name,
+                                                current_artist_id,
+                                                current_genre,
+                                                current_materiaal,
+                                                current_drager,
+                                                current_trefwoorden_en,
+                                                current_trefwoorden_nl,
                             )
+                        
+                        # Then reset the variables for a new record:
                         current_priref         = self._extract(s)
                         current_personen       = []
                         current_media          = []
                         current_objectcat      = None
                         current_date_datering  = None
                         current_date_zoekmarge = None
+                        current_title_dutch    = None
+                        current_title_english  = None
+                        current_artist_name    = None
+                        current_artist_id      = None
+                        current_genre          = None
+                        current_materiaal      = []
+                        current_drager         = None
+                        current_trefwoorden_en = []
+                        current_trefwoorden_nl = []
+                        current_trefwoord_en   = None
+                        current_trefwoord_nl   = None
+                        inside_objectcat       = False
+                        inside_soort           = False
+                        inside_toeschrijving   = False
+                        inside_trefwoord       = False
+                        inside_genre           = False  
+                        inside_materiaal       = False  
+                        inside_drager          = False  
                         last_persoon           = None
 
-                    # --- Persoonsnummer ---
-                    # Unique ID of a depicted person.
-                    # Self-closing (/>) = unknown sitter.
+                    # === PERSOONSNUMMER: Unique ID of a depicted person. ===
+                    # If tag is empty (self closing) then sitter = unknown.
+                    # ? set last_persoon as a pointer so the next zekerheid line can be attached to the right person.
                     elif '<persoonsnummer tag="z3"' in s and "linkref" not in s:
                         if "/>" not in s:
                             val = self._extract(s)
@@ -125,19 +173,20 @@ class RKDDataset:
                             last_persoon = {"nummer": None, "zekerheid": None}
                             current_personen.append(last_persoon)
 
-                    # --- Zekerheid (certainty of identification) ---
-                    # Empty = certain, otherwise: waarschijnlijk / mogelijk / genaamd
+                    # === ZEKERHEID: Certainty of identification) ===
+                    # ? Empty = certain, otherwise: waarschijnlijk / mogelijk / genaamd
+                    # ? Lijkt me niet correct? Even checken wat alle waardes zijn en vragen wat logisch is.
                     elif '<zekerheid_identificatie_portret' in s:
                         if "/>" not in s and last_persoon is not None:
                             val = self._extract(s)
                             if val:
                                 last_persoon["zekerheid"] = val
 
-                    # --- Media lref ---
+                    # === MEDIA LREF: current image ID ===
                     elif '<media.original_file_name_lref' in s and "/>" not in s:
                         current_lref = self._extract(s)
 
-                    # --- Soort afbeelding (image type, multi-line) ---
+                    # === SOORT AFBEELDING: image type (multi-line) ===
                     elif '<soort_afbeelding' in s:
                         inside_soort  = True
                         current_soort = None
@@ -149,7 +198,8 @@ class RKDDataset:
                     elif '</soort_afbeelding>' in s:
                         inside_soort = False
 
-                    # --- End of media block ---
+                    # === END OF MEDIA BLOCK ===
+                    # Save current_lref + current_soort together bc we organize images per priref
                     elif '</media>' in s:
                         if current_lref:
                             soort = current_soort or "unknown"
@@ -158,11 +208,12 @@ class RKDDataset:
                                     "lref":  current_lref,
                                     "soort": soort
                                 })
+                        # Refresh for next image
                         current_lref  = None
                         current_soort = None
                         inside_soort  = False
 
-                    # --- Object category (multi-line) ---
+                    # === OBJECT CATEGORY (multi-line) ===
                     elif '<objectcategorie' in s and "linkref" not in s:
                         inside_objectcat = True
 
@@ -173,42 +224,155 @@ class RKDDataset:
                     elif '</objectcategorie>' in s:
                         inside_objectcat = False
 
-                    # --- Datering (art historian assigned date) ---
-                    # Preferred date field — only take first occurrence.
+                    # === DATERING ===
+                    # ? only take first occurrence: why are there sometimes more then 1?
+                    # as well with other variables, check. (see below)
                     elif '<datering tag=' in s and "/>" not in s:
                         val = self._extract(s)
                         if val and not current_date_datering:
                             current_date_datering = val
 
-                    # --- Zoekmarge begindatum (technical search range) ---
-                    # Less precise than datering but more consistently filled.
+                    # === ZOEKMARGE BEGINDATUM ===
+                    # ? check with Sabine. Less precise than datering but more consistently filled.
                     elif '<zoekmarge_begindatum' in s and "/>" not in s:
                         val = self._extract(s)
                         if val:
                             current_date_zoekmarge = val
 
+                    # === TITLE DUTCH ===
+                    elif '<benaming_kunstwerk' in s and "/>" not in s:
+                        val = self._extract(s)
+                        if val and not current_title_dutch:
+                            current_title_dutch = val
+
+                    # === TITLE ENGLISH ===
+                    elif '<titel_engels' in s and "/>" not in s:
+                        val = self._extract(s)
+                        if val and not current_title_english:
+                            current_title_english = val
+
+                    # === ARTIST (inside toeschrijving, status=huidig only) ===
+                    # HERE I LEFT IT !
+                    elif '<toeschrijving>' in s:
+                        inside_toeschrijving = True
+
+                    elif inside_toeschrijving and '<naam tag="na"' in s and "/>" not in s:
+                        val = self._extract(s)
+                        if val and not current_artist_name:
+                            current_artist_name = val
+
+                    elif inside_toeschrijving and '<naam_linkref' in s and "/>" not in s:
+                        val = self._extract(s)
+                        if val and not current_artist_id:
+                            current_artist_id = val
+
+                    elif inside_toeschrijving and '</toeschrijving>' in s:
+                        inside_toeschrijving = False
+
+                    # === GENRE ===
+                    elif '<genre tag=' in s:
+                        inside_genre = True
+
+                    elif inside_genre and '<value lang="en-US"' in s:
+                        val = self._extract(s)
+                        if val and not current_genre:
+                            current_genre = val
+                        inside_genre = False
+
+                    elif '</genre>' in s:
+                        inside_genre = False
+
+                    # --- Materiaal ---
+                    elif '<materiaal tag=' in s:
+                        inside_materiaal = True
+
+                    elif inside_materiaal and '<value lang="en-US"' in s:
+                        val = self._extract(s)
+                        if val:
+                            current_materiaal.append(val)
+                        inside_materiaal = False
+
+                    elif '</materiaal>' in s:
+                        inside_materiaal = False
+
+                    # --- Drager ---
+                    elif '<drager tag=' in s:
+                        inside_drager = True
+
+                    elif inside_drager and '<value lang="en-US"' in s:
+                        val = self._extract(s)
+                        if val and not current_drager:
+                            current_drager = val
+                        inside_drager = False
+
+                    elif '</drager>' in s:
+                        inside_drager = False
+
+                    # --- RKD_algemene_trefwoorden (keywords, multi-value) ---
+                    elif '<RKD_algemene_trefwoorden ' in s:
+                        inside_trefwoord    = True
+                        current_trefwoord_en = None
+                        current_trefwoord_nl = None
+
+                    elif inside_trefwoord and '<value lang="en-US"' in s:
+                        current_trefwoord_en = self._extract(s)
+
+                    elif inside_trefwoord and '<value lang="nl-NL"' in s:
+                        current_trefwoord_nl = self._extract(s)
+
+                    elif inside_trefwoord and '</RKD_algemene_trefwoorden>' in s:
+                        if current_trefwoord_en:
+                            current_trefwoorden_en.append(current_trefwoord_en)
+                        if current_trefwoord_nl:
+                            current_trefwoorden_nl.append(current_trefwoord_nl)
+                        inside_trefwoord = False
+
         # Save last record
         if current_priref:
-            self._save_record(
-                current_priref, current_personen, current_media,
-                current_objectcat, current_date_datering,
-                current_date_zoekmarge
-            )
+            self._save_record(current_priref,
+                              current_personen,
+                              current_media,
+                              current_objectcat,
+                              current_date_datering,
+                              current_date_zoekmarge,
+                              current_title_dutch,
+                              current_title_english,
+                              current_artist_name,
+                              current_artist_id,
+                              current_genre,
+                              current_materiaal,
+                              current_drager,
+                              current_trefwoorden_en,
+                              current_trefwoorden_nl,)
 
         self._parsed = True
         print(f"Parsed {len(self.records)} records.")
 
     def _save_record(self, priref, personen, media, objectcat,
-                     date_datering, date_zoekmarge):
-        self.records[priref] = {
-            "priref":          priref,
-            "personen":        personen.copy(),
-            "media":           media.copy(),
-            "objectcat":       objectcat,
-            "date_datering":   date_datering,
-            "date_zoekmarge":  date_zoekmarge,
-        }
+                    date_datering, date_zoekmarge,
+                    title_dutch, title_english,
+                    artist_name, artist_id,
+                    genre, materiaal, drager,
+                    trefwoorden_en, trefwoorden_nl                    
+                    ):
 
+        self.records[priref] = {
+            "priref":           priref,
+            "personen":         personen.copy(),
+            "media":            media.copy(),
+            "objectcat":        objectcat,
+            "date_datering":    date_datering,
+            "date_zoekmarge":   date_zoekmarge,
+            "title_dutch":      title_dutch,
+            "title_english":    title_english,
+            "artist_name":      artist_name,
+            "artist_id":        artist_id,
+            "genre":            genre,
+            "materiaal":        materiaal.copy(),
+            "drager":           drager,
+            "trefwoorden_en":   trefwoorden_en.copy(),
+            "trefwoorden_nl":   trefwoorden_nl.copy(),
+        }
     # ------------------------------------------------------------------
     # Quality helpers
     # ------------------------------------------------------------------
@@ -366,8 +530,6 @@ class RKDDataset:
     def print_unique_values(self, tag_name: str, n_lines: int = None) -> None:
         """
         Scan the XML and print all unique values found for a given tag.
-        Useful for exploring what values a field contains.
-
         Does not require .parse() first.
 
         Args:
@@ -377,14 +539,14 @@ class RKDDataset:
         Example:
             dataset.print_unique_values("zekerheid_identificatie_portret")
             dataset.print_unique_values("objectcategorie")
-            dataset.print_unique_values("soort_afbeelding")
         """
         from collections import Counter
 
-        file_size   = os.path.getsize(self.xml_file)
+        file_size    = os.path.getsize(self.xml_file)
         value_counts = Counter()
-        open_tag    = f"<{tag_name}"
-        close_tag   = f"</{tag_name}>"
+        open_tag     = f"<{tag_name}"
+        close_tag    = f"</{tag_name}>"
+        inside       = False  # flag: are we inside the right tag?
 
         with open(self.xml_file, "r", encoding="utf-8") as f:
             with tqdm(total=file_size, unit="B", unit_scale=True,
@@ -395,21 +557,24 @@ class RKDDataset:
 
                     if open_tag in s:
                         if "/>" in s:
-                            # Self-closing tag = empty value
+                            # Self-closing = empty value
                             value_counts["(empty)"] += 1
                         else:
+                            # Try to get inline value first e.g. <zekerheid...>waarschijnlijk</zekerheid>
                             val = self._extract(s)
                             if val:
                                 value_counts[val] += 1
                             else:
-                                # Value might be on the next line inside <value lang="en-US">
-                                pass
+                                # Value is on next lines — set flag
+                                inside = True
 
-                    elif "<value" in s and 'lang="en-US"' in s:
-                        # Handles multi-line fields like objectcategorie and soort_afbeelding
+                    elif inside and "<value" in s and 'lang="en-US"' in s:
                         val = self._extract(s)
                         if val:
                             value_counts[val] += 1
+
+                    elif inside and close_tag in s:
+                        inside = False  # stop collecting once tag closes
 
                     if n_lines and i >= n_lines:
                         break
@@ -420,6 +585,59 @@ class RKDDataset:
         for val, count in value_counts.most_common():
             print(f"  {val:<50} {count:>8}")
         print(f"\n  Total unique values: {len(value_counts)}")
+
+    def print_record(self, priref: str = None) -> None:
+        """
+        Print all parsed fields for a single record.
+        If no priref given, prints the first record in the dataset.
+
+        Args:
+            priref: the priref ID to print. None = first record.
+
+        Example:
+            dataset.print_record()
+            dataset.print_record("107491")
+        """
+        self._check_parsed()
+
+        if priref:
+            rec = self.records.get(str(priref))
+            if not rec:
+                print(f"priref '{priref}' not found.")
+                return
+        else:
+            rec = next(iter(self.records.values()))
+
+        # Best media
+        m = self.best_media(rec["media"])
+
+        print(f"\n{'='*60}")
+        print(f"  RECORD: priref {rec['priref']}")
+        print(f"{'='*60}")
+        print(f"  Title (Dutch):    {rec['title_dutch']  or '—'}")
+        print(f"  Title (English):  {rec['title_english'] or '—'}")
+        print(f"  Artist:           {rec['artist_name']  or '—'} (ID: {rec['artist_id'] or '—'})")
+        print(f"  Genre:            {rec['genre']        or '—'}")
+        print(f"  Object category:  {rec['objectcat']    or '—'}")
+        print(f"  Material:         {', '.join(rec['materiaal']) or '—'}")
+        print(f"  Support (drager): {rec['drager']       or '—'}")
+        print(f"  Date (Dutch):     {rec['date_datering'] or '—'}")
+        print(f"  Date range:       {rec['date_zoekmarge'] or '—'}")
+        print(f"\n  Keywords (EN):    {', '.join(rec['trefwoorden_en']) or '—'}")
+        print(f"  Keywords (NL):    {', '.join(rec['trefwoorden_nl']) or '—'}")
+        print(f"\n  Sitters:")
+        for p in rec["personen"]:
+            certainty = p["zekerheid"] or "certain"
+            nummer    = p["nummer"]    or "unknown"
+            print(f"    persoonsnummer={nummer:<10} certainty={certainty}")
+        print(f"\n  Media ({len(rec['media'])} scans):")
+        for med in rec["media"]:
+            score = self.quality_score(med["soort"])
+            print(f"    [{score:>3}] {med['soort']:<40} lref={med['lref']}")
+        if m:
+            print(f"\n  Best image URL:")
+            print(f"    {self.build_url(m['lref'])}")
+        print(f"{'='*60}\n")
 
     def overview(self) -> None:
         """Print a summary of the full dataset."""
