@@ -1,5 +1,8 @@
 """
+src/dataset/xml_parser.py
+--------------------------
 RKDDataset: single XML parser for the entire project.
+Parses all fields needed by both downloader and analysis.
 
 Usage:
     from src.dataset.xml_parser import RKDDataset
@@ -13,7 +16,6 @@ import random
 from collections import Counter
 from tqdm import tqdm
 from config import XML_FILE
-import xml.etree.ElementTree as ET
 
 
 QUALITY_RANK = [
@@ -54,12 +56,22 @@ class RKDDataset:
     Parses and analyses the RKDimages XML dataset in a single pass.
 
     Each record (keyed by priref) contains:
-        priref        — unique artwork ID
-        personen      — list of {nummer, zekerheid} dicts
-        media         — list of {lref, soort} dicts
-        objectcat     — type of artwork (painting, print, etc.)
-        date_datering — date assigned by art historian
-        date_zoekmarge— earliest possible date (technical field)
+        priref               — unique artwork ID
+        personen             — list of {nummer, zekerheid, beschrijving} dicts
+        media                — list of {lref, soort} dicts
+        objectcat            — type of artwork (painting, print, etc.)
+        date_datering        — date assigned by art historian
+        date_zoekmarge       — earliest possible date (technical field)
+        title_dutch          — Dutch title
+        title_english        — English title
+        artist_name          — name of the artist
+        artist_id            — unique ID of the artist
+        genre                — genre (e.g. portrait, history)
+        materiaal            — list of materials (e.g. oil paint)
+        drager               — support/carrier (e.g. canvas, panel)
+        trefwoorden_en       — list of English keywords
+        trefwoorden_nl       — list of Dutch keywords
+        identificatie_grond  — list of bases for identification (e.g. herkomst, opschrift)
     """
 
     def __init__(self, xml_file: str = XML_FILE):
@@ -78,115 +90,147 @@ class RKDDataset:
         """
         file_size = os.path.getsize(self.xml_file)
 
-        current_priref         = None
-        current_personen       = []
-        current_media          = []
-        current_objectcat      = None
-        current_date_datering  = None
-        current_date_zoekmarge = None
-        current_lref           = None
-        current_soort          = None
-        current_title_dutch    = None
-        current_title_english  = None
-        current_artist_name    = None
-        current_artist_id      = None
-        current_genre          = None
-        current_materiaal      = []
-        current_drager         = None
-        current_trefwoorden_en = []
-        current_trefwoorden_nl = []
-        current_trefwoord_en   = None
-        current_trefwoord_nl   = None
-        inside_objectcat       = False
-        inside_soort           = False
-        inside_toeschrijving   = False
-        inside_trefwoord       = False
-        inside_genre           = False 
-        inside_materiaal       = False   
-        inside_drager          = False   
-        last_persoon           = None
+        # --- Per-record variables, reset for every new priref ---
+        current_priref              = None
+        current_personen            = []
+        current_media               = []
+        current_objectcat           = None
+        current_date_datering       = None
+        current_date_zoekmarge      = None
+        current_lref                = None
+        current_soort               = None
+        current_title_dutch         = None
+        current_title_english       = None
+        current_artist_name         = None
+        current_artist_id           = None
+        current_genre               = None
+        current_materiaal           = []
+        current_drager              = None
+        current_trefwoorden_en      = []
+        current_trefwoorden_nl      = []
+        current_trefwoord_en        = None
+        current_trefwoord_nl        = None
+        current_identificatie_grond = []
+
+        # --- Flags: track whether we are inside a multi-line block ---
+        inside_objectcat     = False
+        inside_soort         = False
+        inside_toeschrijving = False
+        inside_trefwoord     = False
+        inside_genre         = False
+        inside_materiaal     = False
+        inside_drager        = False
+
+        # --- Pointer to last parsed sitter, for attaching zekerheid/beschrijving ---
+        last_persoon = None
 
         with open(self.xml_file, "r", encoding="utf-8") as f:
-            with tqdm(total=file_size, unit="B", unit_scale=True, desc="Parsing XML") as pbar:
+            with tqdm(total=file_size, unit="B", unit_scale=True,
+                      desc="Parsing XML") as pbar:
                 for line in f:
                     pbar.update(len(line.encode("utf-8")))
                     s = line.strip()
 
-                    # New record detected?
+                    # --- New record ---
+                    # Each <priref> marks the start of a new artwork.
+                    # Save the previous record first, then reset everything.
                     if '<priref tag="%0"' in s and "/>" not in s:
-                        # First save the old variables (if there where any):
                         if current_priref:
-                            self._save_record(current_priref,
-                                                current_personen,
-                                                current_media,
-                                                current_objectcat,
-                                                current_date_datering,
-                                                current_date_zoekmarge,
-                                                current_title_dutch,
-                                                current_title_english,
-                                                current_artist_name,
-                                                current_artist_id,
-                                                current_genre,
-                                                current_materiaal,
-                                                current_drager,
-                                                current_trefwoorden_en,
-                                                current_trefwoorden_nl,
+                            self._save_record(
+                                current_priref, current_personen, current_media,
+                                current_objectcat, current_date_datering,
+                                current_date_zoekmarge, current_title_dutch,
+                                current_title_english, current_artist_name,
+                                current_artist_id, current_genre, current_materiaal,
+                                current_drager, current_trefwoorden_en,
+                                current_trefwoorden_nl, current_identificatie_grond,
                             )
-                        
-                        # Then reset the variables for a new record:
-                        current_priref         = self._extract(s)
-                        current_personen       = []
-                        current_media          = []
-                        current_objectcat      = None
-                        current_date_datering  = None
-                        current_date_zoekmarge = None
-                        current_title_dutch    = None
-                        current_title_english  = None
-                        current_artist_name    = None
-                        current_artist_id      = None
-                        current_genre          = None
-                        current_materiaal      = []
-                        current_drager         = None
-                        current_trefwoorden_en = []
-                        current_trefwoorden_nl = []
-                        current_trefwoord_en   = None
-                        current_trefwoord_nl   = None
-                        inside_objectcat       = False
-                        inside_soort           = False
-                        inside_toeschrijving   = False
-                        inside_trefwoord       = False
-                        inside_genre           = False  
-                        inside_materiaal       = False  
-                        inside_drager          = False  
-                        last_persoon           = None
+                        current_priref              = self._extract(s)
+                        current_personen            = []
+                        current_media               = []
+                        current_objectcat           = None
+                        current_date_datering       = None
+                        current_date_zoekmarge      = None
+                        current_lref                = None
+                        current_soort               = None
+                        current_title_dutch         = None
+                        current_title_english       = None
+                        current_artist_name         = None
+                        current_artist_id           = None
+                        current_genre               = None
+                        current_materiaal           = []
+                        current_drager              = None
+                        current_trefwoorden_en      = []
+                        current_trefwoorden_nl      = []
+                        current_trefwoord_en        = None
+                        current_trefwoord_nl        = None
+                        current_identificatie_grond = []
+                        inside_objectcat            = False
+                        inside_soort                = False
+                        inside_toeschrijving        = False
+                        inside_trefwoord            = False
+                        inside_genre                = False
+                        inside_materiaal            = False
+                        inside_drager               = False
+                        last_persoon                = None
 
-                    # === PERSOONSNUMMER: Unique ID of a depicted person. ===
-                    # If tag is empty (self closing) then sitter = unknown.
-                    # ? set last_persoon as a pointer so the next zekerheid line can be attached to the right person.
+                    # --- Persoonsnummer ---
+                    # Unique ID of a depicted person.
+                    # Self-closing (/>) = unidentified sitter (person present
+                    # but unknown). We still add them to track group portraits.
                     elif '<persoonsnummer tag="z3"' in s and "linkref" not in s:
                         if "/>" not in s:
                             val = self._extract(s)
                             if val:
-                                last_persoon = {"nummer": val, "zekerheid": None}
+                                last_persoon = {
+                                    "nummer":      val,
+                                    "zekerheid":   None,
+                                    "beschrijving": None,
+                                }
                                 current_personen.append(last_persoon)
                         else:
-                            last_persoon = {"nummer": None, "zekerheid": None}
+                            # Unidentified sitter — no number
+                            last_persoon = {
+                                "nummer":      None,
+                                "zekerheid":   None,
+                                "beschrijving": None,
+                            }
                             current_personen.append(last_persoon)
 
-                    # === ZEKERHEID: Certainty of identification) ===
-                    # ? Empty = certain, otherwise: waarschijnlijk / mogelijk / genaamd
-                    # ? Lijkt me niet correct? Even checken wat alle waardes zijn en vragen wat logisch is.
+                    # --- Zekerheid (certainty of identification) ---
+                    # Empty/self-closing = no qualifier given, stored as None.
+                    # Possible values: waarschijnlijk, mogelijk, genaamd.
                     elif '<zekerheid_identificatie_portret' in s:
                         if "/>" not in s and last_persoon is not None:
                             val = self._extract(s)
                             if val:
                                 last_persoon["zekerheid"] = val
 
-                    # === MEDIA LREF: current image ID ===
+                    # --- Persoonsbeschrijving ---
+                    # Where the person is located in the painting.
+                    # e.g. "tweede van links", "geheel rechts"
+                    elif '<persoonsbeschrijving' in s and "linkref" not in s:
+                        if "/>" not in s and last_persoon is not None:
+                            val = self._extract(s)
+                            if val:
+                                last_persoon["beschrijving"] = val
+
+                    # --- Identificatie grond ---
+                    # Basis for the identification, per artwork (not per sitter).
+                    # e.g. herkomst (provenance), opschrift (inscription),
+                    #      wapen (coat of arms)
+                    elif '<identificatie_grond' in s and "/>" not in s:
+                        val = self._extract(s)
+                        if val:
+                            current_identificatie_grond.append(val)
+
+                    # --- Media lref ---
+                    # The image ID — one per scan/media block.
                     elif '<media.original_file_name_lref' in s and "/>" not in s:
                         current_lref = self._extract(s)
 
-                    # === SOORT AFBEELDING: image type (multi-line) ===
+                    # --- Soort afbeelding (image type, multi-line) ---
+                    # e.g. digital image, photograph, black-and-white reproduction
                     elif '<soort_afbeelding' in s:
                         inside_soort  = True
                         current_soort = None
@@ -198,22 +242,22 @@ class RKDDataset:
                     elif '</soort_afbeelding>' in s:
                         inside_soort = False
 
-                    # === END OF MEDIA BLOCK ===
-                    # Save current_lref + current_soort together bc we organize images per priref
+                    # --- End of media block ---
+                    # Save lref + soort together as one media item.
                     elif '</media>' in s:
                         if current_lref:
                             soort = current_soort or "unknown"
                             if soort not in EXCLUDE_TYPES:
                                 current_media.append({
                                     "lref":  current_lref,
-                                    "soort": soort
+                                    "soort": soort,
                                 })
-                        # Refresh for next image
                         current_lref  = None
                         current_soort = None
                         inside_soort  = False
 
-                    # === OBJECT CATEGORY (multi-line) ===
+                    # --- Object category (multi-line) ---
+                    # e.g. painting, drawing, print, photograph
                     elif '<objectcategorie' in s and "linkref" not in s:
                         inside_objectcat = True
 
@@ -224,52 +268,8 @@ class RKDDataset:
                     elif '</objectcategorie>' in s:
                         inside_objectcat = False
 
-                    # === DATERING ===
-                    # ? only take first occurrence: why are there sometimes more then 1?
-                    # as well with other variables, check. (see below)
-                    elif '<datering tag=' in s and "/>" not in s:
-                        val = self._extract(s)
-                        if val and not current_date_datering:
-                            current_date_datering = val
-
-                    # === ZOEKMARGE BEGINDATUM ===
-                    # ? check with Sabine. Less precise than datering but more consistently filled.
-                    elif '<zoekmarge_begindatum' in s and "/>" not in s:
-                        val = self._extract(s)
-                        if val:
-                            current_date_zoekmarge = val
-
-                    # === TITLE DUTCH ===
-                    elif '<benaming_kunstwerk' in s and "/>" not in s:
-                        val = self._extract(s)
-                        if val and not current_title_dutch:
-                            current_title_dutch = val
-
-                    # === TITLE ENGLISH ===
-                    elif '<titel_engels' in s and "/>" not in s:
-                        val = self._extract(s)
-                        if val and not current_title_english:
-                            current_title_english = val
-
-                    # === ARTIST (inside toeschrijving, status=huidig only) ===
-                    # HERE I LEFT IT !
-                    elif '<toeschrijving>' in s:
-                        inside_toeschrijving = True
-
-                    elif inside_toeschrijving and '<naam tag="na"' in s and "/>" not in s:
-                        val = self._extract(s)
-                        if val and not current_artist_name:
-                            current_artist_name = val
-
-                    elif inside_toeschrijving and '<naam_linkref' in s and "/>" not in s:
-                        val = self._extract(s)
-                        if val and not current_artist_id:
-                            current_artist_id = val
-
-                    elif inside_toeschrijving and '</toeschrijving>' in s:
-                        inside_toeschrijving = False
-
-                    # === GENRE ===
+                    # --- Genre (multi-line) ---
+                    # e.g. portrait, history (visual work)
                     elif '<genre tag=' in s:
                         inside_genre = True
 
@@ -282,7 +282,8 @@ class RKDDataset:
                     elif '</genre>' in s:
                         inside_genre = False
 
-                    # --- Materiaal ---
+                    # --- Materiaal (multi-line, multiple values per record) ---
+                    # e.g. oil paint, watercolor, grisaille
                     elif '<materiaal tag=' in s:
                         inside_materiaal = True
 
@@ -295,7 +296,8 @@ class RKDDataset:
                     elif '</materiaal>' in s:
                         inside_materiaal = False
 
-                    # --- Drager ---
+                    # --- Drager (multi-line) ---
+                    # The physical support: canvas, panel, paper, etc.
                     elif '<drager tag=' in s:
                         inside_drager = True
 
@@ -308,9 +310,57 @@ class RKDDataset:
                     elif '</drager>' in s:
                         inside_drager = False
 
-                    # --- RKD_algemene_trefwoorden (keywords, multi-value) ---
+                    # --- Title Dutch ---
+                    elif '<benaming_kunstwerk' in s and "/>" not in s:
+                        val = self._extract(s)
+                        if val and not current_title_dutch:
+                            current_title_dutch = val
+
+                    # --- Title English ---
+                    elif '<titel_engels' in s and "/>" not in s:
+                        val = self._extract(s)
+                        if val and not current_title_english:
+                            current_title_english = val
+
+                    # --- Artist name + ID (inside toeschrijving block) ---
+                    # toeschrijving = attribution. We only want the current
+                    # attribution (status = huidig).
+                    elif '<toeschrijving>' in s:
+                        inside_toeschrijving = True
+
+                    elif inside_toeschrijving and '<naam tag="na"' in s \
+                            and "/>" not in s:
+                        val = self._extract(s)
+                        if val and not current_artist_name:
+                            current_artist_name = val
+
+                    elif inside_toeschrijving and '<naam_linkref' in s \
+                            and "/>" not in s:
+                        val = self._extract(s)
+                        if val and not current_artist_id:
+                            current_artist_id = val
+
+                    elif '</toeschrijving>' in s:
+                        inside_toeschrijving = False
+
+                    # --- Datering (art historian assigned date) ---
+                    # Preferred date — only take first occurrence per record.
+                    elif '<datering tag=' in s and "/>" not in s:
+                        val = self._extract(s)
+                        if val and not current_date_datering:
+                            current_date_datering = val
+
+                    # --- Zoekmarge begindatum (technical search range start) ---
+                    # Less precise than datering but more consistently filled.
+                    elif '<zoekmarge_begindatum' in s and "/>" not in s:
+                        val = self._extract(s)
+                        if val:
+                            current_date_zoekmarge = val
+
+                    # --- RKD algemene trefwoorden (keywords, multi-line) ---
+                    # Each keyword is a separate block with Dutch + English value.
                     elif '<RKD_algemene_trefwoorden ' in s:
-                        inside_trefwoord    = True
+                        inside_trefwoord     = True
                         current_trefwoord_en = None
                         current_trefwoord_nl = None
 
@@ -327,52 +377,46 @@ class RKDDataset:
                             current_trefwoorden_nl.append(current_trefwoord_nl)
                         inside_trefwoord = False
 
-        # Save last record
+        # Save the last record (no new <priref> triggers the save)
         if current_priref:
-            self._save_record(current_priref,
-                              current_personen,
-                              current_media,
-                              current_objectcat,
-                              current_date_datering,
-                              current_date_zoekmarge,
-                              current_title_dutch,
-                              current_title_english,
-                              current_artist_name,
-                              current_artist_id,
-                              current_genre,
-                              current_materiaal,
-                              current_drager,
-                              current_trefwoorden_en,
-                              current_trefwoorden_nl,)
+            self._save_record(
+                current_priref, current_personen, current_media,
+                current_objectcat, current_date_datering,
+                current_date_zoekmarge, current_title_dutch,
+                current_title_english, current_artist_name,
+                current_artist_id, current_genre, current_materiaal,
+                current_drager, current_trefwoorden_en,
+                current_trefwoorden_nl, current_identificatie_grond,
+            )
 
         self._parsed = True
         print(f"Parsed {len(self.records)} records.")
 
     def _save_record(self, priref, personen, media, objectcat,
-                    date_datering, date_zoekmarge,
-                    title_dutch, title_english,
-                    artist_name, artist_id,
-                    genre, materiaal, drager,
-                    trefwoorden_en, trefwoorden_nl                    
-                    ):
-
+                     date_datering, date_zoekmarge, title_dutch,
+                     title_english, artist_name, artist_id, genre,
+                     materiaal, drager, trefwoorden_en, trefwoorden_nl,
+                     identificatie_grond):
+        """Package all collected fields into a dict and store in self.records."""
         self.records[priref] = {
-            "priref":           priref,
-            "personen":         personen.copy(),
-            "media":            media.copy(),
-            "objectcat":        objectcat,
-            "date_datering":    date_datering,
-            "date_zoekmarge":   date_zoekmarge,
-            "title_dutch":      title_dutch,
-            "title_english":    title_english,
-            "artist_name":      artist_name,
-            "artist_id":        artist_id,
-            "genre":            genre,
-            "materiaal":        materiaal.copy(),
-            "drager":           drager,
-            "trefwoorden_en":   trefwoorden_en.copy(),
-            "trefwoorden_nl":   trefwoorden_nl.copy(),
+            "priref":               priref,
+            "personen":             personen.copy(),
+            "media":                media.copy(),
+            "objectcat":            objectcat,
+            "date_datering":        date_datering,
+            "date_zoekmarge":       date_zoekmarge,
+            "title_dutch":          title_dutch,
+            "title_english":        title_english,
+            "artist_name":          artist_name,
+            "artist_id":            artist_id,
+            "genre":                genre,
+            "materiaal":            materiaal.copy(),
+            "drager":               drager,
+            "trefwoorden_en":       trefwoorden_en.copy(),
+            "trefwoorden_nl":       trefwoorden_nl.copy(),
+            "identificatie_grond":  identificatie_grond.copy(),
         }
+
     # ------------------------------------------------------------------
     # Quality helpers
     # ------------------------------------------------------------------
@@ -403,7 +447,7 @@ class RKDDataset:
 
     def get_lrefs(self, best_only: bool = True) -> list[dict]:
         """
-        Get a flat list of all lrefs.
+        Get a flat list of all lrefs to download.
 
         Args:
             best_only: if True (default), one lref per priref (best quality scan)
@@ -459,14 +503,19 @@ class RKDDataset:
                     })
         return result
 
-    def filter_records(self, filter_identified=True,
-                       filter_multi_portrait=False) -> dict:
+    def filter_records(self, filter_identified: bool = True,
+                       filter_multi_portrait: bool = False) -> dict:
         """
         Return a filtered subset of records.
 
-        filter_identified:    keep only artworks with at least one persoonsnummer
-        filter_multi_portrait: keep only artworks where at least one sitter
-                               appears in 2+ artworks
+        filter_identified:
+            Keep only artworks with at least one persoonsnummer.
+            Goes from ~103k → ~66k artworks.
+
+        filter_multi_portrait:
+            Keep only artworks where at least one sitter appears in 2+ artworks.
+            Goes from ~66k → ~47k artworks.
+            This is the training-ready subset.
         """
         self._check_parsed()
         records = self.records
@@ -496,148 +545,8 @@ class RKDDataset:
         return records
 
     # ------------------------------------------------------------------
-    # Analysis / printing
+    # Printing / exploration
     # ------------------------------------------------------------------
-    
-    def print_all_tags(self, n_lines: int = 1000) -> None:
-        """
-        Print all unique XML tag names found in the first n_lines of the file.
-        Lightweight exploration tool — does not require .parse() first.
-        """
-        import xml.etree.ElementTree as ET
-
-        content = ""
-        with open(self.xml_file, "r", encoding="utf-8") as f:
-            for i, line in enumerate(f):
-                content += line
-                if i >= n_lines:
-                    break
-
-        content += "</record></recordList></adlibXML>"
-
-        tags = set()
-        try:
-            root = ET.fromstring(content)
-            for elem in root.iter():
-                tags.add(elem.tag)
-        except ET.ParseError:
-            pass
-
-        print(f"\nAll unique tags in first {n_lines} lines:\n")
-        for tag in sorted(tags):
-            print(f"  {tag}")
-
-    def print_unique_values(self, tag_name: str, n_lines: int = None) -> None:
-        """
-        Scan the XML and print all unique values found for a given tag.
-        Does not require .parse() first.
-
-        Args:
-            tag_name: the XML tag to search for (e.g. "zekerheid_identificatie_portret")
-            n_lines:  number of lines to scan. None = full file.
-
-        Example:
-            dataset.print_unique_values("zekerheid_identificatie_portret")
-            dataset.print_unique_values("objectcategorie")
-        """
-        from collections import Counter
-
-        file_size    = os.path.getsize(self.xml_file)
-        value_counts = Counter()
-        open_tag     = f"<{tag_name}"
-        close_tag    = f"</{tag_name}>"
-        inside       = False  # flag: are we inside the right tag?
-
-        with open(self.xml_file, "r", encoding="utf-8") as f:
-            with tqdm(total=file_size, unit="B", unit_scale=True,
-                    desc=f"Scanning '{tag_name}'") as pbar:
-                for i, line in enumerate(f):
-                    pbar.update(len(line.encode("utf-8")))
-                    s = line.strip()
-
-                    if open_tag in s:
-                        if "/>" in s:
-                            # Self-closing = empty value
-                            value_counts["(empty)"] += 1
-                        else:
-                            # Try to get inline value first e.g. <zekerheid...>waarschijnlijk</zekerheid>
-                            val = self._extract(s)
-                            if val:
-                                value_counts[val] += 1
-                            else:
-                                # Value is on next lines — set flag
-                                inside = True
-
-                    elif inside and "<value" in s and 'lang="en-US"' in s:
-                        val = self._extract(s)
-                        if val:
-                            value_counts[val] += 1
-
-                    elif inside and close_tag in s:
-                        inside = False  # stop collecting once tag closes
-
-                    if n_lines and i >= n_lines:
-                        break
-
-        print(f"\n  Unique values for '{tag_name}':\n")
-        print(f"  {'Value':<50} {'Count':>8}")
-        print(f"  {'-'*60}")
-        for val, count in value_counts.most_common():
-            print(f"  {val:<50} {count:>8}")
-        print(f"\n  Total unique values: {len(value_counts)}")
-
-    def print_record(self, priref: str = None) -> None:
-        """
-        Print all parsed fields for a single record.
-        If no priref given, prints the first record in the dataset.
-
-        Args:
-            priref: the priref ID to print. None = first record.
-
-        Example:
-            dataset.print_record()
-            dataset.print_record("107491")
-        """
-        self._check_parsed()
-
-        if priref:
-            rec = self.records.get(str(priref))
-            if not rec:
-                print(f"priref '{priref}' not found.")
-                return
-        else:
-            rec = next(iter(self.records.values()))
-
-        # Best media
-        m = self.best_media(rec["media"])
-
-        print(f"\n{'='*60}")
-        print(f"  RECORD: priref {rec['priref']}")
-        print(f"{'='*60}")
-        print(f"  Title (Dutch):    {rec['title_dutch']  or '—'}")
-        print(f"  Title (English):  {rec['title_english'] or '—'}")
-        print(f"  Artist:           {rec['artist_name']  or '—'} (ID: {rec['artist_id'] or '—'})")
-        print(f"  Genre:            {rec['genre']        or '—'}")
-        print(f"  Object category:  {rec['objectcat']    or '—'}")
-        print(f"  Material:         {', '.join(rec['materiaal']) or '—'}")
-        print(f"  Support (drager): {rec['drager']       or '—'}")
-        print(f"  Date (Dutch):     {rec['date_datering'] or '—'}")
-        print(f"  Date range:       {rec['date_zoekmarge'] or '—'}")
-        print(f"\n  Keywords (EN):    {', '.join(rec['trefwoorden_en']) or '—'}")
-        print(f"  Keywords (NL):    {', '.join(rec['trefwoorden_nl']) or '—'}")
-        print(f"\n  Sitters:")
-        for p in rec["personen"]:
-            certainty = p["zekerheid"] or "certain"
-            nummer    = p["nummer"]    or "unknown"
-            print(f"    persoonsnummer={nummer:<10} certainty={certainty}")
-        print(f"\n  Media ({len(rec['media'])} scans):")
-        for med in rec["media"]:
-            score = self.quality_score(med["soort"])
-            print(f"    [{score:>3}] {med['soort']:<40} lref={med['lref']}")
-        if m:
-            print(f"\n  Best image URL:")
-            print(f"    {self.build_url(m['lref'])}")
-        print(f"{'='*60}\n")
 
     def overview(self) -> None:
         """Print a summary of the full dataset."""
@@ -664,6 +573,67 @@ class RKDDataset:
         print(f"  Portraits usable for training:  {sum(multi_sitters.values()):>8}")
         print(f"{'='*50}\n")
 
+    def print_record(self, priref: str = None) -> None:
+        """
+        Print all parsed fields for a single record.
+        If no priref given, prints the first record.
+
+        Args:
+            priref: the priref ID to print. None = first record.
+        """
+        self._check_parsed()
+
+        if priref:
+            rec = self.records.get(str(priref))
+            if not rec:
+                print(f"priref '{priref}' not found.")
+                return
+        else:
+            rec = next(iter(self.records.values()))
+
+        m = self.best_media(rec["media"])
+
+        print(f"\n{'='*60}")
+        print(f"  RECORD: priref {rec['priref']}")
+        print(f"{'='*60}")
+        print(f"  Title (Dutch):        {rec['title_dutch']   or '—'}")
+        print(f"  Title (English):      {rec['title_english'] or '—'}")
+        print(f"  Artist:               {rec['artist_name']   or '—'} "
+              f"(ID: {rec['artist_id'] or '—'})")
+        print(f"  Genre:                {rec['genre']         or '—'}")
+        print(f"  Object category:      {rec['objectcat']     or '—'}")
+        print(f"  Material:             "
+              f"{', '.join(rec['materiaal']) if rec['materiaal'] else '—'}")
+        print(f"  Support (drager):     {rec['drager']        or '—'}")
+        print(f"  Date (Dutch):         {rec['date_datering'] or '—'}")
+        print(f"  Date range:           {rec['date_zoekmarge'] or '—'}")
+        print(f"  Identification basis: "
+              f"{', '.join(rec['identificatie_grond']) if rec['identificatie_grond'] else '—'}")
+        print(f"\n  Keywords (EN): "
+              f"{', '.join(rec['trefwoorden_en']) if rec['trefwoorden_en'] else '—'}")
+        print(f"  Keywords (NL): "
+              f"{', '.join(rec['trefwoorden_nl']) if rec['trefwoorden_nl'] else '—'}")
+
+        print(f"\n  Sitters ({len(rec['personen'])}):")
+        for p in rec["personen"]:
+            nummer      = p["nummer"]       or "— (unidentified)"
+            zekerheid   = p["zekerheid"]    or "—"
+            beschrijving = p["beschrijving"] or "—"
+            print(f"    ID:           {nummer}")
+            print(f"    Certainty:    {zekerheid}")
+            print(f"    Position:     {beschrijving}")
+            print()
+
+        print(f"  Media ({len(rec['media'])} scans):")
+        for med in rec["media"]:
+            score = self.quality_score(med["soort"])
+            print(f"    [{score:>3}] {med['soort']:<40} lref={med['lref']}")
+
+        if m:
+            print(f"\n  Best image URL:")
+            print(f"    {self.build_url(m['lref'])}")
+        print(f"{'='*60}\n")
+
     def sample_multi_scan(self, n: int = 20) -> None:
         """Print n random artworks with 2+ scans and the best pick for each."""
         self._check_parsed()
@@ -682,16 +652,99 @@ class RKDDataset:
             print(f"  >>> PICKED [{self.quality_score(pick['soort'])}]"
                   f" {pick['soort']}: {self.build_url(pick['lref'])}\n")
 
+    def print_all_tags(self, n_lines: int = 1000) -> None:
+        """
+        Print all unique XML tag names found in the first n_lines of the file.
+        Lightweight exploration — does not require .parse() first.
+        """
+        import xml.etree.ElementTree as ET
+
+        content = ""
+        with open(self.xml_file, "r", encoding="utf-8") as f:
+            for i, line in enumerate(f):
+                content += line
+                if i >= n_lines:
+                    break
+
+        content += "</record></recordList></adlibXML>"
+
+        tags = set()
+        try:
+            root = ET.fromstring(content)
+            for elem in root.iter():
+                tags.add(elem.tag)
+        except ET.ParseError:
+            pass
+
+        print(f"\nAll unique tags in first {n_lines} lines:\n")
+        for tag in sorted(tags):
+            print(f"  {tag}")
+
+    def print_unique_values(self, tag_name: str,
+                            n_lines: int = None) -> None:
+        """
+        Scan the XML and print all unique values for a given tag.
+        Does not require .parse() first.
+
+        Args:
+            tag_name: the XML tag to search (e.g. "zekerheid_identificatie_portret")
+            n_lines:  lines to scan. None = full file.
+        """
+        from collections import Counter
+
+        file_size    = os.path.getsize(self.xml_file)
+        value_counts = Counter()
+        open_tag     = f"<{tag_name}"
+        close_tag    = f"</{tag_name}>"
+        inside       = False
+
+        with open(self.xml_file, "r", encoding="utf-8") as f:
+            with tqdm(total=file_size, unit="B", unit_scale=True,
+                      desc=f"Scanning '{tag_name}'") as pbar:
+                for i, line in enumerate(f):
+                    pbar.update(len(line.encode("utf-8")))
+                    s = line.strip()
+
+                    if open_tag in s:
+                        if "/>" in s:
+                            value_counts["(empty)"] += 1
+                        else:
+                            val = self._extract(s)
+                            if val:
+                                value_counts[val] += 1
+                            else:
+                                inside = True
+
+                    elif inside and "<value" in s and 'lang="en-US"' in s:
+                        val = self._extract(s)
+                        if val:
+                            value_counts[val] += 1
+
+                    elif inside and close_tag in s:
+                        inside = False
+
+                    if n_lines and i >= n_lines:
+                        break
+
+        print(f"\n  Unique values for '{tag_name}':\n")
+        print(f"  {'Value':<50} {'Count':>8}")
+        print(f"  {'-'*60}")
+        for val, count in value_counts.most_common():
+            print(f"  {val:<50} {count:>8}")
+        print(f"\n  Total unique values: {len(value_counts)}")
+
     # ------------------------------------------------------------------
     # Internal helpers
     # ------------------------------------------------------------------
 
     def _check_parsed(self):
+        """Raise an error if .parse() has not been called yet."""
         if not self._parsed:
             raise RuntimeError("Call .parse() before using this method.")
 
     @staticmethod
     def _extract(line: str) -> str:
+        """Extract text content between > and < on a single XML line."""
         try:
             return line.split(">")[1].split("<")[0].strip()
         except IndexError:
