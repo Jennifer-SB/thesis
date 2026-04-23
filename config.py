@@ -23,3 +23,7 @@ PLOTS_DIR.mkdir(parents=True, exist_ok=True)
 
 # --- Output: download logs ---
 FAILED_CSV  = Path("failed_downloads.csv")
+
+# --- Output: select images ---
+MANIFEST_CSV  = Path("dataset_manifest.csv")
+MIN_RESOLUTION = (224, 224)   # minimum width x height to include

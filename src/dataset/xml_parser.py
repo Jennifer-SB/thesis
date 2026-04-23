@@ -57,7 +57,8 @@ class RKDDataset:
 
     Each record (keyed by priref) contains:
         priref               — unique artwork ID
-        personen             — list of {nummer, zekerheid, beschrijving} dicts
+        personen             — list of {nummer, zekerheid, beschrijving, status} dicts
+                               note: verworpen (rejected) identifications are excluded
         media                — list of {lref, soort} dicts
         objectcat            — type of artwork (painting, print, etc.)
         date_datering        — date assigned by art historian
@@ -121,7 +122,11 @@ class RKDDataset:
         inside_materiaal     = False
         inside_drager        = False
 
-        # --- Pointer to last parsed sitter, for attaching zekerheid/beschrijving ---
+        # --- Pointer to last parsed sitter ---
+        # Used to attach zekerheid, beschrijving and status to the right person.
+        # Each time a new persoonsnummer is found, last_persoon is updated to
+        # point to that person's dict. The next zekerheid/beschrijving/status
+        # lines then update last_persoon directly.
         last_persoon = None
 
         with open(self.xml_file, "r", encoding="utf-8") as f:
@@ -178,37 +183,54 @@ class RKDDataset:
                     # Unique ID of a depicted person.
                     # Self-closing (/>) = unidentified sitter (person present
                     # but unknown). We still add them to track group portraits.
+                    # Status starts as None — updated when status tag is found.
                     elif '<persoonsnummer tag="z3"' in s and "linkref" not in s:
                         if "/>" not in s:
                             val = self._extract(s)
                             if val:
                                 last_persoon = {
-                                    "nummer":      val,
-                                    "zekerheid":   None,
+                                    "nummer":       val,
+                                    "zekerheid":    None,
                                     "beschrijving": None,
+                                    "status":       None,  # huidig / verworpen / None
                                 }
                                 current_personen.append(last_persoon)
                         else:
-                            # Unidentified sitter — no number
+                            # Unidentified sitter — no number, but we track them
+                            # so group portrait structure is preserved
                             last_persoon = {
-                                "nummer":      None,
-                                "zekerheid":   None,
+                                "nummer":       None,
+                                "zekerheid":    None,
                                 "beschrijving": None,
+                                "status":       None,
                             }
                             current_personen.append(last_persoon)
 
                     # --- Zekerheid (certainty of identification) ---
                     # Empty/self-closing = no qualifier given, stored as None.
-                    # Possible values: waarschijnlijk, mogelijk, genaamd.
+                    # Possible values: waarschijnlijk (probably),
+                    #                  mogelijk (possibly), genaamd (so-called)
                     elif '<zekerheid_identificatie_portret' in s:
                         if "/>" not in s and last_persoon is not None:
                             val = self._extract(s)
                             if val:
                                 last_persoon["zekerheid"] = val
 
+                    # --- Status identificatie portret ---
+                    # Whether the identification is accepted or rejected.
+                    # huidig   = current/accepted identification
+                    # verworpen = rejected — was proposed but not accepted by RKD
+                    # None     = no status given (treated as unidentified)
+                    # IMPORTANT: verworpen sitters are filtered out in _save_record()
+                    elif '<status_identificatie_portret' in s:
+                        if "/>" not in s and last_persoon is not None:
+                            val = self._extract(s)
+                            if val:
+                                last_persoon["status"] = val
+
                     # --- Persoonsbeschrijving ---
                     # Where the person is located in the painting.
-                    # e.g. "tweede van links", "geheel rechts"
+                    # e.g. "tweede van links", "geheel rechts", "voorgrond"
                     elif '<persoonsbeschrijving' in s and "linkref" not in s:
                         if "/>" not in s and last_persoon is not None:
                             val = self._extract(s)
@@ -216,21 +238,23 @@ class RKDDataset:
                                 last_persoon["beschrijving"] = val
 
                     # --- Identificatie grond ---
-                    # Basis for the identification, per artwork (not per sitter).
+                    # Basis for the identification — per artwork, not per sitter.
                     # e.g. herkomst (provenance), opschrift (inscription),
-                    #      wapen (coat of arms)
+                    #      wapen (coat of arms), vererving (inheritance/descent)
                     elif '<identificatie_grond' in s and "/>" not in s:
                         val = self._extract(s)
                         if val:
                             current_identificatie_grond.append(val)
 
                     # --- Media lref ---
-                    # The image ID — one per scan/media block.
+                    # The image scan ID — one per media block.
+                    # A single artwork can have multiple lrefs (multiple scans).
                     elif '<media.original_file_name_lref' in s and "/>" not in s:
                         current_lref = self._extract(s)
 
                     # --- Soort afbeelding (image type, multi-line) ---
                     # e.g. digital image, photograph, black-and-white reproduction
+                    # Used for quality ranking — see QUALITY_RANK above.
                     elif '<soort_afbeelding' in s:
                         inside_soort  = True
                         current_soort = None
@@ -243,7 +267,8 @@ class RKDDataset:
                         inside_soort = False
 
                     # --- End of media block ---
-                    # Save lref + soort together as one media item.
+                    # When </media> is found, save lref + soort as one media item.
+                    # Reset lref and soort for the next media block.
                     elif '</media>' in s:
                         if current_lref:
                             soort = current_soort or "unknown"
@@ -257,7 +282,10 @@ class RKDDataset:
                         inside_soort  = False
 
                     # --- Object category (multi-line) ---
-                    # e.g. painting, drawing, print, photograph
+                    # e.g. painting, drawing, print, photograph, sculpture
+                    # ! stores only first object category, since it seems to be the most important one
+                    # print_unique_values('object_category') scans raw XML file so that will find more counts then records
+                    # since sometimes there are stored more then one categorie per record
                     elif '<objectcategorie' in s and "linkref" not in s:
                         inside_objectcat = True
 
@@ -270,6 +298,7 @@ class RKDDataset:
 
                     # --- Genre (multi-line) ---
                     # e.g. portrait, history (visual work)
+                    # Only the first occurrence per record is kept.
                     elif '<genre tag=' in s:
                         inside_genre = True
 
@@ -284,6 +313,7 @@ class RKDDataset:
 
                     # --- Materiaal (multi-line, multiple values per record) ---
                     # e.g. oil paint, watercolor, grisaille
+                    # Multiple materials are stored as a list.
                     elif '<materiaal tag=' in s:
                         inside_materiaal = True
 
@@ -297,7 +327,9 @@ class RKDDataset:
                         inside_materiaal = False
 
                     # --- Drager (multi-line) ---
-                    # The physical support: canvas, panel, paper, etc.
+                    # The physical support the artwork is made on.
+                    # e.g. canvas, panel (wood), paper, copper
+                    # Only the first occurrence per record is kept.
                     elif '<drager tag=' in s:
                         inside_drager = True
 
@@ -311,6 +343,8 @@ class RKDDataset:
                         inside_drager = False
 
                     # --- Title Dutch ---
+                    # benaming_kunstwerk = Dutch title of the artwork.
+                    # Only first occurrence kept.
                     elif '<benaming_kunstwerk' in s and "/>" not in s:
                         val = self._extract(s)
                         if val and not current_title_dutch:
@@ -323,8 +357,9 @@ class RKDDataset:
                             current_title_english = val
 
                     # --- Artist name + ID (inside toeschrijving block) ---
-                    # toeschrijving = attribution. We only want the current
-                    # attribution (status = huidig).
+                    # toeschrijving = attribution (who made the artwork).
+                    # The block can contain multiple attributions (e.g. "circle of",
+                    # "attributed to"). We take the first name + ID found.
                     elif '<toeschrijving>' in s:
                         inside_toeschrijving = True
 
@@ -344,21 +379,26 @@ class RKDDataset:
                         inside_toeschrijving = False
 
                     # --- Datering (art historian assigned date) ---
-                    # Preferred date — only take first occurrence per record.
+                    # The date as assigned by the cataloguer.
+                    # This is the preferred date field. Only first occurrence kept.
                     elif '<datering tag=' in s and "/>" not in s:
                         val = self._extract(s)
                         if val and not current_date_datering:
                             current_date_datering = val
 
                     # --- Zoekmarge begindatum (technical search range start) ---
+                    # Database field for filtering by date range.
                     # Less precise than datering but more consistently filled.
+                    # Used as fallback when datering is absent.
                     elif '<zoekmarge_begindatum' in s and "/>" not in s:
                         val = self._extract(s)
                         if val:
                             current_date_zoekmarge = val
 
                     # --- RKD algemene trefwoorden (keywords, multi-line) ---
-                    # Each keyword is a separate block with Dutch + English value.
+                    # Subject keywords assigned by RKD cataloguers.
+                    # Each keyword is a separate block with both Dutch + English.
+                    # e.g. "woman's portrait", "half-length", "pearl necklace"
                     elif '<RKD_algemene_trefwoorden ' in s:
                         inside_trefwoord     = True
                         current_trefwoord_en = None
@@ -377,7 +417,7 @@ class RKDDataset:
                             current_trefwoorden_nl.append(current_trefwoord_nl)
                         inside_trefwoord = False
 
-        # Save the last record (no new <priref> triggers the save)
+        # Save the last record — no new <priref> triggers the save at end of file
         if current_priref:
             self._save_record(
                 current_priref, current_personen, current_media,
@@ -397,10 +437,32 @@ class RKDDataset:
                      title_english, artist_name, artist_id, genre,
                      materiaal, drager, trefwoorden_en, trefwoorden_nl,
                      identificatie_grond):
-        """Package all collected fields into a dict and store in self.records."""
+        """
+        Package all collected fields into a dict and store in self.records.
+
+        Verworpen (rejected) identifications are filtered out here —
+        they were proposed in the past but not accepted by the RKD.
+        Blank proposal slots are also filtered out — these are <voorgestelde> entries
+        where both status and persoonsbeschrijving are empty. They represent unused
+        identification proposal fields, not real people in the painting (1379 cases).
+        Empty-status entries WITH a persoonsbeschrijving are kept — these are real
+        unidentified sitters whose position in the painting is known (312 cases).
+        """
+        # Filter out rejected identifications before saving.
+        # verworpen = the RKD proposed this identification but later rejected it.
+        # We use .lower() to handle capitalisation variants (e.g. "Verworpen").
+        filtered_personen = [
+            p for p in personen
+            if not (p.get("status") or "").lower() == "verworpen"         # drop rejected
+            and not (
+                not (p.get("status") or "")                               # drop blank slots:
+                and not (p.get("beschrijving") or "")                     # empty status + no position
+            )
+        ]
+
         self.records[priref] = {
             "priref":               priref,
-            "personen":             personen.copy(),
+            "personen":             filtered_personen,   # verworpen already removed
             "media":                media.copy(),
             "objectcat":            objectcat,
             "date_datering":        date_datering,
@@ -471,7 +533,11 @@ class RKDDataset:
         return result
 
     def sitter_portrait_counts(self) -> Counter:
-        """Count how many artworks each persoonsnummer appears in."""
+        """
+        Count how many artworks each persoonsnummer appears in.
+        Only counts huidig (accepted) identifications — verworpen already
+        filtered out during parsing.
+        """
         self._check_parsed()
         counts = Counter()
         for rec in self.records.values():
@@ -509,13 +575,14 @@ class RKDDataset:
         Return a filtered subset of records.
 
         filter_identified:
-            Keep only artworks with at least one persoonsnummer.
+            Keep only artworks with at least one accepted persoonsnummer.
             Goes from ~103k → ~66k artworks.
 
         filter_multi_portrait:
             Keep only artworks where at least one sitter appears in 2+ artworks.
             Goes from ~66k → ~47k artworks.
-            This is the training-ready subset.
+            This is the training-ready subset — a model needs multiple examples
+            per person to learn what they look like.
         """
         self._check_parsed()
         records = self.records
@@ -596,16 +663,16 @@ class RKDDataset:
         print(f"\n{'='*60}")
         print(f"  RECORD: priref {rec['priref']}")
         print(f"{'='*60}")
-        print(f"  Title (Dutch):        {rec['title_dutch']   or '—'}")
-        print(f"  Title (English):      {rec['title_english'] or '—'}")
-        print(f"  Artist:               {rec['artist_name']   or '—'} "
+        print(f"  Title (Dutch):        {rec['title_dutch']    or '—'}")
+        print(f"  Title (English):      {rec['title_english']  or '—'}")
+        print(f"  Artist:               {rec['artist_name']    or '—'} "
               f"(ID: {rec['artist_id'] or '—'})")
-        print(f"  Genre:                {rec['genre']         or '—'}")
-        print(f"  Object category:      {rec['objectcat']     or '—'}")
+        print(f"  Genre:                {rec['genre']          or '—'}")
+        print(f"  Object category:      {rec['objectcat']      or '—'}")
         print(f"  Material:             "
               f"{', '.join(rec['materiaal']) if rec['materiaal'] else '—'}")
-        print(f"  Support (drager):     {rec['drager']        or '—'}")
-        print(f"  Date (Dutch):         {rec['date_datering'] or '—'}")
+        print(f"  Support (drager):     {rec['drager']         or '—'}")
+        print(f"  Date (Dutch):         {rec['date_datering']  or '—'}")
         print(f"  Date range:           {rec['date_zoekmarge'] or '—'}")
         print(f"  Identification basis: "
               f"{', '.join(rec['identificatie_grond']) if rec['identificatie_grond'] else '—'}")
@@ -614,12 +681,17 @@ class RKDDataset:
         print(f"  Keywords (NL): "
               f"{', '.join(rec['trefwoorden_nl']) if rec['trefwoorden_nl'] else '—'}")
 
+        # Print each sitter with all their fields.
+        # Note: verworpen sitters are already excluded — these are only
+        # huidig (accepted) or unknown (None status) sitters.
         print(f"\n  Sitters ({len(rec['personen'])}):")
         for p in rec["personen"]:
-            nummer      = p["nummer"]       or "— (unidentified)"
-            zekerheid   = p["zekerheid"]    or "—"
-            beschrijving = p["beschrijving"] or "—"
+            nummer       = p["nummer"]       or "— (unidentified)"
+            status       = p["status"]       or "—"   # huidig / None
+            zekerheid    = p["zekerheid"]    or "—"   # waarschijnlijk / mogelijk / genaamd / None
+            beschrijving = p["beschrijving"] or "—"   # position in painting
             print(f"    ID:           {nummer}")
+            print(f"    Status:       {status}")
             print(f"    Certainty:    {zekerheid}")
             print(f"    Position:     {beschrijving}")
             print()
@@ -689,12 +761,16 @@ class RKDDataset:
         Args:
             tag_name: the XML tag to search (e.g. "zekerheid_identificatie_portret")
             n_lines:  lines to scan. None = full file.
+
+        Example:
+            dataset.print_unique_values("status_identificatie_portret")
+            dataset.print_unique_values("objectcategorie")
         """
         from collections import Counter
 
         file_size    = os.path.getsize(self.xml_file)
         value_counts = Counter()
-        open_tag     = f"<{tag_name}"
+        open_tag     = f"<{tag_name} "
         close_tag    = f"</{tag_name}>"
         inside       = False
 
@@ -707,12 +783,15 @@ class RKDDataset:
 
                     if open_tag in s:
                         if "/>" in s:
+                            # Self-closing = empty value
                             value_counts["(empty)"] += 1
                         else:
                             val = self._extract(s)
                             if val:
+                                # Inline value on same line as tag
                                 value_counts[val] += 1
                             else:
+                                # Value is on next lines (multi-line field)
                                 inside = True
 
                     elif inside and "<value" in s and 'lang="en-US"' in s:
