@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(@\\('10727295','11','10771051','10771048','10816594','10816595','9295256','9295255','9295253','9295254'\\) | ForEach-Object { $p = \"D:\\\\thesis\\\\images\\\\$_.jpg\"; if \\(Test-Path $p\\) { \"$_ -> $\\(\\(Get-Item $p\\).Length\\) bytes\" } else { \"$_ -> NOT ON DISK\" } })"
+    ]
+  }
+}
