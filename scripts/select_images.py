@@ -167,6 +167,12 @@ def pick_best_per_priref(dataset: RKDDataset,
     """
     min_w, min_h = min_resolution
 
+    # Lrefs that are known bad images (placeholders, not real artwork scans).
+    # These are excluded from candidate selection so that lower-quality but real
+    # images for the same priref can be picked instead.
+    # Prirefs where ALL candidates are excluded end up in prirefs_no_image.csv.
+    EXCLUDE_LREFS = {"10783267"}
+
     selected       = []
     no_image_rows  = []
     too_small_rows = []
@@ -182,13 +188,33 @@ def pick_best_per_priref(dataset: RKDDataset,
 
         if not candidates:
             no_image_rows.append({
-                "priref":      priref,
-                "artist_name": rec["artist_name"] or "",
-                "date":        rec["date_zoekmarge"] or rec["date_datering"] or "",
-                "objectcat":   rec["objectcat"] or "",
+                "priref":       priref,
+                "artist_name":  rec["artist_name"] or "",
+                "date":         rec["date_zoekmarge"] or rec["date_datering"] or "",
+                "objectcat":    rec["objectcat"] or "",
                 "lrefs_in_xml": "|".join(m["lref"] for m in rec["media"]),
+                "reason":       "no image downloaded",
             })
             continue
+
+        # Remove known placeholder lrefs before picking.
+        # If valid alternatives exist, one of those will be selected instead.
+        valid_candidates = [m for m in candidates if m["lref"] not in EXCLUDE_LREFS]
+
+        if not valid_candidates:
+            # Every downloaded option for this priref is a placeholder — no real image.
+            excluded = "|".join(m["lref"] for m in candidates if m["lref"] in EXCLUDE_LREFS)
+            no_image_rows.append({
+                "priref":       priref,
+                "artist_name":  rec["artist_name"] or "",
+                "date":         rec["date_zoekmarge"] or rec["date_datering"] or "",
+                "objectcat":    rec["objectcat"] or "",
+                "lrefs_in_xml": "|".join(m["lref"] for m in rec["media"]),
+                "reason":       f"only excluded placeholder lrefs available: {excluded}",
+            })
+            continue
+
+        candidates = valid_candidates
 
         # Pick best using priority key
         best = min(candidates, key=lambda m: selection_key(m, lref_info))
@@ -228,7 +254,7 @@ def pick_best_per_priref(dataset: RKDDataset,
         })
 
     print(f"\n  Prirefs with no downloaded image:  {len(no_image_rows):>8}")
-    print(f"  Rejected (below {min_w}x{min_h}):      {len(too_small_rows):>8}")
+    print(f"  Below {min_w}x{min_h} (tracked, included): {len(too_small_rows):>8}")
     print(f"  Selected:                          {len(selected):>8}")
 
     return selected, no_image_rows, too_small_rows
@@ -328,7 +354,7 @@ if __name__ == "__main__":
 
     no_image_csv = Path("prirefs_no_image.csv")
     with open(no_image_csv, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["priref", "artist_name", "date", "objectcat", "lrefs_in_xml"])
+        writer = csv.DictWriter(f, fieldnames=["priref", "artist_name", "date", "objectcat", "lrefs_in_xml", "reason"])
         writer.writeheader()
         writer.writerows(no_image_rows)
     print(f"  ✅ {no_image_csv}  ({len(no_image_rows):,} rows)")
@@ -340,19 +366,6 @@ if __name__ == "__main__":
         writer.writerows(too_small_rows)
     print(f"  ✅ {too_small_csv}  ({len(too_small_rows):,} rows)")
 
-    # Remove rows where lref == 10783267.
-    # This scan returns an "image not available" placeholder (not a real artwork image).
-    # The RKD assigned this lref to hundreds of different priref records, so it would
-    # appear in hundreds of training samples under different sitter labels — corrupting
-    # any model trained on this data. We drop all rows that reference it.
-    EXCLUDE_LREFS = {"10783267"}
-    before = len(selected)
-    selected = [r for r in selected if r["lref"] not in EXCLUDE_LREFS]
-    removed = before - len(selected)
-    if removed:
-        print(f"\n  Removed {removed} row(s) with excluded lref(s): {EXCLUDE_LREFS}")
-        write_manifest(selected, MANIFEST_CSV)
-
     # Keep only rows with exactly one sitter who has a known ID.
     # sitter_count == 1: single-portrait artworks only — group portraits are excluded
     # because multiple faces in one image make it impossible to reliably assign a
@@ -362,7 +375,7 @@ if __name__ == "__main__":
     before = len(selected)
     selected = [
         r for r in selected
-        if r["sitter_count"] == "1" and r["sitter_ids"] != ""
+        if r["sitter_count"] == 1 and r["sitter_ids"] != ""
     ]
     print(f"\n  Kept single known-sitter rows: {len(selected)}  (removed {before - len(selected)})")
     write_manifest(selected, MANIFEST_CSV)

@@ -993,7 +993,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 14745,9303938,D:\thesis\images\9303938.jpg,1014,1285,1.303,digital image,True,1,133134,1647,painting,"Borch, Gerard ter (II)"
 14779,9282868,D:\thesis\images\9282868.jpg,500,438,0.219,color reproduction,True,1,117668,1645,painting,"Borch, Gerard ter (II)"
 14783,9335740,D:\thesis\images\9335740.jpg,1800,2256,4.061,black and white photograph,False,1,111964,1680,painting,"Borch, Gerard ter (II)"
-14784,9282876,D:\thesis\images\9282876.jpg,500,438,0.219,black and white photograph,False,1,204854,1680,painting,"Borch, Gerard ter (II)"
+14784,9335739,D:\thesis\images\9335739.jpg,821,1001,0.822,black and white photograph,False,1,204854,1680,painting,"Borch, Gerard ter (II)"
 14790,9282877,D:\thesis\images\9282877.jpg,500,438,0.219,black and white photograph,False,1,106644,1646,painting,"Borch, Gerard ter (II)"
 14795,9282881,D:\thesis\images\9282881.jpg,500,438,0.219,black and white photograph,False,1,205213,1644,painting,"Borch, Gerard ter (II)"
 14797,9282882,D:\thesis\images\9282882.jpg,500,438,0.219,black and white photograph,False,1,205214,1644,painting,"Borch, Gerard ter (II)"
@@ -1258,7 +1258,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 16326,9304381,D:\thesis\images\9304381.jpg,500,438,0.219,black and white photograph,False,1,205344,1710,painting,"Musscher, Michiel van"
 16327,9304380,D:\thesis\images\9304380.jpg,500,438,0.219,black and white photograph,False,1,203895,1710,painting,"Musscher, Michiel van"
 16348,9304366,D:\thesis\images\9304366.jpg,500,438,0.219,black and white photograph,False,1,205351,1677,painting,"Slingelandt, Pieter van"
-16358,9304372,D:\thesis\images\9304372.jpg,500,438,0.219,black and white photograph,False,1,8196,1655,painting,"Vois, Ary de"
+16358,10703629,D:\thesis\images\10703629.jpg,758,1000,0.758,digital image,True,1,8196,1655,painting,"Vois, Ary de"
 16361,9304371,D:\thesis\images\9304371.jpg,500,438,0.219,black and white photograph,False,1,201830,1676,painting,"Vois, Ary de"
 16396,9326747,D:\thesis\images\9326747.jpg,500,438,0.219,black and white photograph,False,1,205355,1620,painting,Anoniem
 16397,9326746,D:\thesis\images\9326746.jpg,500,438,0.219,black and white photograph,False,1,205357,1620,painting,Anoniem
@@ -1984,14 +1984,14 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 29665,9570338,D:\thesis\images\9570338.jpg,500,438,0.219,color reproduction,True,1,113516,1632,painting,Rembrandt
 29674,9570319,D:\thesis\images\9570319.jpg,500,438,0.219,color reproduction,True,1,113516,1630,painting,Rembrandt
 29679,10680210,D:\thesis\images\10680210.jpg,608,768,0.467,digital image,True,1,113516,1630,painting,Rembrandt
-29690,9570318,D:\thesis\images\9570318.jpg,500,438,0.219,color reproduction,True,1,113516,1634,painting,Rembrandt
+29690,10405881,D:\thesis\images\10405881.jpg,816,1001,0.817,digital file,True,1,113516,1634,painting,Rembrandt
 29692,10418098,D:\thesis\images\10418098.jpg,3265,4114,13.432,digital file,True,1,113516,1633,painting,Rembrandt
 29720,10401835,D:\thesis\images\10401835.jpg,2145,3265,7.003,digital file,True,1,113516,1633,painting,Rembrandt
 29723,10401851,D:\thesis\images\10401851.jpg,2240,2848,6.38,digital file,True,1,113516,1658,unfinished painting,Rembrandt
 29731,9570306,D:\thesis\images\9570306.jpg,500,438,0.219,color reproduction,True,1,113516,1640,painting,Rembrandt
 29820,10409769,D:\thesis\images\10409769.jpg,4995,5720,28.571,digital file,True,1,113516,1643,painting,Rembrandt
 29821,9570322,D:\thesis\images\9570322.jpg,500,438,0.219,color reproduction,True,1,113516,1655,painting,Rembrandt
-29822,9570352,D:\thesis\images\9570352.jpg,500,438,0.219,color reproduction,True,1,113516,1659,painting,Rembrandt
+29822,10405798,D:\thesis\images\10405798.jpg,773,1001,0.774,digital color photograph,True,1,113516,1659,painting,Rembrandt
 29835,9570343,D:\thesis\images\9570343.jpg,1870,2613,4.886,color reproduction,True,1,113516,1652,painting,Rembrandt
 29837,9525324,D:\thesis\images\9525324.jpg,500,438,0.219,black and white photograph,False,1,205561,1601,painting,"Wtewael, Joachim"
 29840,10653033,D:\thesis\images\10653033.jpg,490,500,0.245,color reproduction,True,1,120317,1628,painting,"Wtewael, Joachim"
@@ -2169,7 +2169,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 34488,9636236,D:\thesis\images\9636236.jpg,500,438,0.219,black and white photograph,False,1,143144,1610,painting,"Willemsz. van Culemborg, Roeloff"
 34494,9636239,D:\thesis\images\9636239.jpg,500,438,0.219,black and white photograph,False,1,119779,1550,painting,Anoniem
 34497,9636240,D:\thesis\images\9636240.jpg,500,438,0.219,black and white photograph,False,1,142379,1600,painting,"Ravesteyn, Jan van"
-34502,9222090,D:\thesis\images\9222090.jpg,417,500,0.208,color photograph,True,1,134480,1832,painting,"Kruseman, Cornelis"
+34502,9635909,D:\thesis\images\9635909.jpg,499,437,0.218,black and white photograph,False,1,134480,1832,painting,"Kruseman, Cornelis"
 34514,9635912,D:\thesis\images\9635912.jpg,2517,3033,7.634,black and white photograph,False,1,52,1821,painting,"Kruseman, Cornelis"
 34517,9657450,D:\thesis\images\9657450.jpg,500,438,0.219,black and white photograph,False,1,117913,1475,painting,Master of the Magdalen Legend
 34523,9636242,D:\thesis\images\9636242.jpg,500,438,0.219,black and white photograph,False,1,134447,1599,painting,Anoniem
@@ -2191,7 +2191,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 34718,10736555,D:\thesis\images\10736555.jpg,1500,1990,2.985,BD/RKD/1814 - IB/XVID,False,1,101234,1596,painting,Anoniem
 34720,9657305,D:\thesis\images\9657305.jpg,500,438,0.219,black and white photograph,False,1,107459,1816,painting,"Pieneman, Jan Willem"
 34828,9657316,D:\thesis\images\9657316.jpg,500,438,0.219,black and white photograph,False,1,203132,1836,painting,"Pieneman, Jan Willem"
-34844,9221393,D:\thesis\images\9221393.jpg,427,500,0.213,digital image,True,1,113516,1632,painting,Rembrandt
+34844,10405310,D:\thesis\images\10405310.jpg,846,1000,0.846,digital file,True,1,113516,1632,painting,Rembrandt
 34848,9570304,D:\thesis\images\9570304.jpg,500,438,0.219,color reproduction,True,1,113516,1635,painting,Rembrandt
 34894,9657318,D:\thesis\images\9657318.jpg,500,438,0.219,black and white photograph,False,1,122029,1822,painting,"Pieneman, Jan Willem"
 34895,9657319,D:\thesis\images\9657319.jpg,500,438,0.219,black and white photograph,False,1,122028,1821,painting,"Pieneman, Jan Willem"
@@ -2775,7 +2775,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 43137,10730690,D:\thesis\images\10730690.jpg,930,1160,1.079,black and white photograph,False,1,135163,1550,painting,Anoniem
 43156,9791866,D:\thesis\images\9791866.jpg,500,438,0.219,black and white photograph,False,1,121744,1640,painting,"Coster, Hendrick"
 43157,9791864,D:\thesis\images\9791864.jpg,500,438,0.219,black and white photograph,False,1,121744,1644,painting,"Coster, Hendrick"
-43160,9791814,D:\thesis\images\9791814.jpg,500,438,0.219,black and white photograph,False,1,116988,1775,painting,Anoniem
+43160,10205234,D:\thesis\images\10205234.jpg,804,1001,0.805,black and white photograph,False,1,116988,1775,painting,Anoniem
 43163,9791818,D:\thesis\images\9791818.jpg,500,438,0.219,black and white photograph,False,1,118308,1700,painting,"Collenius, Hermannus"
 43171,9791855,D:\thesis\images\9791855.jpg,500,438,0.219,black and white photograph,False,1,107406,1607,painting,"Mierevelt, Michiel van"
 43172,9791823,D:\thesis\images\9791823.jpg,500,438,0.219,black and white photograph,False,1,115486,1600,painting,"Mierevelt, Michiel van"
@@ -3162,7 +3162,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 54085,9173336,D:\thesis\images\9173336.jpg,431,500,0.215,black and white photograph,False,1,104769,1841,painting,"Cels, Cornelis"
 54193,10013191,D:\thesis\images\10013191.jpg,389,500,0.195,black and white photograph,False,1,102183,1664,painting,"Leveck, Jacobus"
 54195,10013185,D:\thesis\images\10013185.jpg,390,500,0.195,black and white photograph,False,1,111040,1664,painting,"Leveck, Jacobus"
-54301,10013470,D:\thesis\images\10013470.jpg,500,359,0.179,black and white photograph,False,1,113131,1686,painting,Anoniem
+54301,10389389,D:\thesis\images\10389389.jpg,499,363,0.181,unknown,False,1,113131,1686,painting,Anoniem
 54328,10013200,D:\thesis\images\10013200.jpg,373,500,0.186,color reproduction,True,1,115249,1669,painting,"Maes, Nicolaes"
 54330,10721328,D:\thesis\images\10721328.jpg,391,500,0.196,photograph,False,1,106724,1651,painting,"Cuyp, Jacob Gerritsz."
 54331,10731274,D:\thesis\images\10731274.jpg,395,501,0.198,photograph,False,1,138039,1647,painting,"Cuyp, Jacob Gerritsz."
@@ -3218,6 +3218,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 55498,10649765,D:\thesis\images\10649765.jpg,394,500,0.197,color reproduction,True,1,118107,1615,painting,"Isaacsz, Pieter"
 55509,10723089,D:\thesis\images\10723089.jpg,421,501,0.211,photograph,False,1,134237,1681,painting,Anoniem
 55574,10292091,D:\thesis\images\10292091.jpg,2135,2795,5.967,black-and-white reproduction,False,1,107852,1658,drawing (visual work),"Vaillant, Wallerant"
+55595,10013655,D:\thesis\images\10013655.jpg,215,500,0.107,digital color photograph,True,1,134554,1850,painting,Anoniem
 55601,10013653,D:\thesis\images\10013653.jpg,389,500,0.195,black and white photograph,False,1,134558,1800,photograph,Anoniem
 55602,10013652,D:\thesis\images\10013652.jpg,393,500,0.197,black and white photograph,False,1,134554,1800,photograph,Anoniem
 55608,10035651,D:\thesis\images\10035651.jpg,338,501,0.169,black and white photograph,False,1,116902,1879,painting,"Bonnat, Léon"
@@ -3899,6 +3900,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 108052,9133099,D:\thesis\images\9133099.jpg,2794,3704,10.349,black-and-white reproduction,False,1,9142,1895,drawing (visual work),"Haverman, Hendrik Johannes"
 108064,9137270,D:\thesis\images\9137270.jpg,1877,2270,4.261,black and white photograph,False,1,204887,1928,painting,"Sluijters, Jan"
 108065,9234619,D:\thesis\images\9234619.jpg,2913,3560,10.37,color photograph,True,1,204920,1926,painting,"Sluijters, Jan"
+108066,9137315,D:\thesis\images\9137315.jpg,500,199,0.1,black and white photograph,False,1,108176,1934,painting,"Sluijters, Jan"
 108068,9137255,D:\thesis\images\9137255.jpg,1866,2254,4.206,black and white photograph,False,1,203099,1926,painting,"Sluijters, Jan"
 108072,9137268,D:\thesis\images\9137268.jpg,1796,2221,3.989,black and white photograph,False,1,109504,1929,painting,"Sluijters, Jan"
 108092,9137647,D:\thesis\images\9137647.jpg,373,501,0.187,brown photograph,False,1,135589,1634,painting,"Hals, Frans (I)"
@@ -4096,6 +4098,8 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 119409,9145252,D:\thesis\images\9145252.jpg,405,500,0.203,color photograph,True,1,108881,1796,drawing (visual work),"Recco, Pieter"
 119529,9168921,D:\thesis\images\9168921.jpg,3187,3912,12.468,black and white photograph,False,1,200001,1818,painting,"Hodges, Charles Howard"
 119535,9168922,D:\thesis\images\9168922.jpg,2280,2785,6.35,black and white photograph,False,1,200010,1818,drawing (visual work),"Hodges, Charles Howard"
+119543,9168929,D:\thesis\images\9168929.jpg,215,500,0.107,BD/Digital Collection,False,1,200012,1496,painting,"Bosch, Jheronimus"
+119546,9168930,D:\thesis\images\9168930.jpg,213,500,0.106,BD/Digital Collection,False,1,200009,1496,painting,"Bosch, Jheronimus"
 119555,10663344,D:\thesis\images\10663344.jpg,401,500,0.201,digital image,True,1,135597,1814,painting,"Taunay, Nicolas Antoine"
 119561,9168909,D:\thesis\images\9168909.jpg,2912,4196,12.219,black-and-white reproduction,False,1,140119,1615,print,"Delff, Willem Jacobsz."
 119576,10746882,D:\thesis\images\10746882.jpg,264,352,0.093,digital image,True,1,200020,1805,portrait miniature,Anoniem
@@ -4208,6 +4212,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 123169,9240325,D:\thesis\images\9240325.jpg,342,500,0.171,BD/RKD/1804 - IB/XIXB,False,1,118848,1842,drawing (visual work),"Slothouwer, Hermanus Jacobus"
 123170,10389757,D:\thesis\images\10389757.jpg,1381,2064,2.85,unknown,False,1,108893,1775,painting,"Anspach, Johannes"
 123171,9881123,D:\thesis\images\9881123.jpg,500,438,0.219,black and white photograph,False,1,110504,1740,painting,"Verheyden, Mattheus"
+123172,10389372,D:\thesis\images\10389372.jpg,405,499,0.202,unknown,False,1,103127,1675,painting,"Maes, Nicolaes"
 123174,10743764,D:\thesis\images\10743764.jpg,363,501,0.182,photograph,False,1,116746,1725,painting,Anoniem
 123175,10719923,D:\thesis\images\10719923.jpg,1272,1573,2.001,black and white photograph,False,1,102180,1686,painting,Anoniem
 123176,10719925,D:\thesis\images\10719925.jpg,1309,1578,2.066,photograph,False,1,102211,1786,painting,"Hauck, Friedrich Ludwig"
@@ -4244,6 +4249,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 123230,10305370,D:\thesis\images\10305370.jpg,450,500,0.225,digital image,True,1,117878,1733,painting,"Mieris, Frans van (II)"
 123232,9335799,D:\thesis\images\9335799.jpg,1354,1681,2.276,color photograph,True,1,105054,1625,painting,Anoniem
 123233,10719988,D:\thesis\images\10719988.jpg,2046,2416,4.943,BD/RKD/1818 - IB/XVIIB,False,1,112268,1625,painting,Anoniem
+123238,10389371,D:\thesis\images\10389371.jpg,405,499,0.202,unknown,False,1,103130,1675,painting,"Maes, Nicolaes"
 123240,10719994,D:\thesis\images\10719994.jpg,353,501,0.177,photograph,False,1,114989,1957,painting,"Schrofer, Willem"
 123242,10719998,D:\thesis\images\10719998.jpg,359,500,0.179,photograph,False,1,116790,1650,painting,Anoniem
 123243,10720000,D:\thesis\images\10720000.jpg,387,501,0.194,BD/RKD/1828 - IB/XVIIIC,False,1,105542,1759,painting,"Elst, Frans J. van der"
@@ -4431,6 +4437,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 123807,10720524,D:\thesis\images\10720524.jpg,1384,1704,2.358,photograph,False,1,113372,1907,painting,"Alphen, Tony van"
 123809,10720530,D:\thesis\images\10720530.jpg,1323,1571,2.078,BD/RKD/1804 - IB/XIXB,False,1,106759,1825,drawing (visual work),Anoniem
 123810,10720531,D:\thesis\images\10720531.jpg,658,789,0.519,photograph,False,1,109692,1827,portrait miniature,"Bakker, Cornelis (1771-1849)"
+123811,10389590,D:\thesis\images\10389590.jpg,383,499,0.191,unknown,False,1,101989,1794,drawing (visual work),"Anspach, Johannes"
 123812,10720541,D:\thesis\images\10720541.jpg,318,500,0.159,BD/RKD/1830 - IB/XVIIID,False,1,106431,1787,drawing (visual work),"Langendijk, Dirk"
 123815,10720553,D:\thesis\images\10720553.jpg,392,500,0.196,reproduction (derivative object),False,1,106223,1813,painting,"Hendriks, Wybrand"
 123818,10720560,D:\thesis\images\10720560.jpg,385,501,0.193,photograph,False,1,108685,1663,painting,Anoniem
@@ -4835,6 +4842,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 124536,10721627,D:\thesis\images\10721627.jpg,394,500,0.197,black and white photograph,False,1,104593,1839,drawing (visual work),"Kunst, Berend"
 124537,10721628,D:\thesis\images\10721628.jpg,429,501,0.215,reproduction (derivative object),False,1,106629,1900,sculpture,"Dupuis, Toon"
 124540,9220878,D:\thesis\images\9220878.jpg,268,500,0.134,digital image,True,1,121407,1924,sculpture,"Hoppen, Gerard"
+124541,10390140,D:\thesis\images\10390140.jpg,219,500,0.11,unknown,False,1,102168,1925,drawing (visual work),"Spier, Jo"
 124542,10721632,D:\thesis\images\10721632.jpg,419,501,0.21,photograph,False,1,107977,1925,drawing (visual work),Anoniem
 124543,9318576,D:\thesis\images\9318576.jpg,1032,1488,1.536,black and white photograph,False,1,109195,1750,portrait miniature,"Marinkel, Joseph"
 124544,10388806,D:\thesis\images\10388806.jpg,402,500,0.201,unknown,False,1,112593,1898,drawing (visual work),"Krabbé, Heinrich Martin"
@@ -6078,7 +6086,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 126654,10725060,D:\thesis\images\10725060.jpg,419,501,0.21,photograph,False,1,117009,1687,painting,"Haensbergen, Jan van"
 126655,9332441,D:\thesis\images\9332441.jpg,750,955,0.716,BD/RKD/1802 - IB/XIXA,False,1,103041,1800,painting,Anoniem
 126656,9332442,D:\thesis\images\9332442.jpg,751,962,0.722,BD/RKD/1802 - IB/XIXA,False,1,104454,1800,painting,Anoniem
-126657,10725069,D:\thesis\images\10725069.jpg,364,500,0.182,black and white photograph,False,1,113490,1725,painting,"Arenius, Olof"
+126657,10901949,D:\thesis\images\10901949.jpg,778,1000,0.778,digital image,True,1,113490,1725,painting,"Arenius, Olof"
 126660,10725087,D:\thesis\images\10725087.jpg,374,500,0.187,reproduction (derivative object),False,1,108287,1625,painting,"Santvoort, Dirck Dircksz."
 126661,10725088,D:\thesis\images\10725088.jpg,5065,6602,33.439,photograph,False,1,109823,1663,painting,"Bijlert, Jan van"
 126662,10725089,D:\thesis\images\10725089.jpg,5119,6670,34.144,photograph,False,1,110027,1663,painting,"Bijlert, Jan van"
@@ -6585,6 +6593,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 127389,9221238,D:\thesis\images\9221238.jpg,412,500,0.206,digital image,True,1,116142,1726,painting,"Boonen, Arnold"
 127390,10726920,D:\thesis\images\10726920.jpg,5414,7493,40.567,photograph,False,1,104723,1800,portrait miniature,Anoniem
 127392,10726925,D:\thesis\images\10726925.jpg,5414,7493,40.567,photograph,False,1,108585,1561,painting,Anoniem
+127396,10726933,D:\thesis\images\10726933.jpg,382,499,0.191,reproduction (derivative object),False,1,108319,1910,painting,"Dongen, Kees van"
 127398,10841778,D:\thesis\images\10841778.jpg,1711,3063,5.241,digital image,True,1,103076,1636,painting,"Pickenoy, Nicolaes Eliasz."
 127399,10841776,D:\thesis\images\10841776.jpg,1700,3002,5.103,digital image,True,1,105514,1636,painting,"Pickenoy, Nicolaes Eliasz."
 127400,10726941,D:\thesis\images\10726941.jpg,5414,7479,40.491,photograph,False,1,112922,1800,painting,Anoniem
@@ -6612,6 +6621,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 127435,10727010,D:\thesis\images\10727010.jpg,425,501,0.213,photograph,False,1,111539,1816,painting,"Cels, Cornelis"
 127436,10727011,D:\thesis\images\10727011.jpg,2670,3307,8.83,reproduction (derivative object),False,1,106500,1800,drawing (visual work),"Anspach, Johannes"
 127437,10727012,D:\thesis\images\10727012.jpg,2723,3316,9.029,reproduction (derivative object),False,1,106508,1800,drawing (visual work),"Anspach, Johannes"
+127438,10727013,D:\thesis\images\10727013.jpg,194,500,0.097,photograph,False,1,102646,1518,painting,Anoniem
 127442,10727022,D:\thesis\images\10727022.jpg,5533,7589,41.99,photograph,False,1,111759,1800,painting,"Jacquin, François Xavier Joseph"
 127443,10727023,D:\thesis\images\10727023.jpg,5486,7542,41.375,photograph,False,1,102599,1800,painting,"Jacquin, François Xavier Joseph"
 127446,10204745,D:\thesis\images\10204745.jpg,397,501,0.199,black-and-white reproduction,False,1,116867,1625,painting,"Moreelse, Paulus"
@@ -6758,7 +6768,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 127726,9292448,D:\thesis\images\9292448.jpg,2688,4008,10.774,digital image,True,1,102306,1900,print,"Kleinmann, Heinrich"
 127728,10304645,D:\thesis\images\10304645.jpg,435,501,0.218,digital image,True,1,106219,1801,drawing (visual work),"Hodges, Charles Howard"
 127729,10304644,D:\thesis\images\10304644.jpg,443,501,0.222,digital image,True,1,103844,1801,drawing (visual work),"Hodges, Charles Howard"
-127730,10304640,D:\thesis\images\10304640.jpg,437,500,0.218,digital image,True,1,106215,1800,drawing (visual work),"Hodges, Charles Howard"
+127730,10727749,D:\thesis\images\10727749.jpg,723,1001,0.724,black and white photograph,False,1,106215,1800,drawing (visual work),"Hodges, Charles Howard"
 127732,10727754,D:\thesis\images\10727754.jpg,573,785,0.45,black and white photograph,False,1,107242,1775,silhouette,Anoniem
 127733,10727755,D:\thesis\images\10727755.jpg,591,791,0.467,black and white photograph,False,1,114457,1775,silhouette,Anoniem
 127734,10727763,D:\thesis\images\10727763.jpg,411,501,0.206,photograph,False,1,116189,1923,painting,"Hem, Piet van der"
@@ -7789,6 +7799,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 129103,10730760,D:\thesis\images\10730760.jpg,5274,7264,38.31,photograph,False,1,116159,1750,painting,Anoniem
 129104,10730761,D:\thesis\images\10730761.jpg,5288,7264,38.412,photograph,False,1,116160,1750,painting,Anoniem
 129105,10730763,D:\thesis\images\10730763.jpg,5274,7276,38.374,photograph,False,1,109587,1850,painting,"Kruseman, Jan Adam"
+129106,10730765,D:\thesis\images\10730765.jpg,189,500,0.095,photograph,False,1,107423,1966,sculpture,"Andriessen, Mari"
 129109,10730783,D:\thesis\images\10730783.jpg,5288,7276,38.475,BD/RKD/1830 - IB/XVIIID,False,1,107260,1788,painting,"Tischbein, Johann Friedrich August"
 129111,10730792,D:\thesis\images\10730792.jpg,340,500,0.17,BD/RKD/1824 - IB/XVIIIA,False,1,114671,1700,painting,Anoniem
 129112,10730793,D:\thesis\images\10730793.jpg,5288,7276,38.475,black and white photograph,False,1,115327,1697,painting,"Haensbergen, Jan van"
@@ -8540,6 +8551,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 130214,10733105,D:\thesis\images\10733105.jpg,347,500,0.173,BD/RKD/1806 - IB/XIXC,False,1,103613,1850,painting,"Mergaert, Désiré"
 130215,10733106,D:\thesis\images\10733106.jpg,348,500,0.174,BD/RKD/1806 - IB/XIXC,False,1,114295,1865,painting,"Mergaert, Désiré"
 130217,10733108,D:\thesis\images\10733108.jpg,500,487,0.243,BD/RKD/1808 - IB/XIXD,False,1,103620,1889,relief,"Jünger, Ludwig"
+130218,10733109,D:\thesis\images\10733109.jpg,207,500,0.103,BD/RKD/1808 - IB/XIXD,False,1,112834,1875,painting,"Schwartze, Thérèse"
 130220,9291153,D:\thesis\images\9291153.jpg,435,500,0.217,black and white photograph,False,1,103931,1690,portrait miniature,Anoniem
 130221,9291271,D:\thesis\images\9291271.jpg,399,500,0.2,black and white photograph,False,1,102022,1808,painting,"Hodges, Charles Howard"
 130222,10733111,D:\thesis\images\10733111.jpg,358,500,0.179,black and white photograph,False,1,110371,1666,drawing (visual work),"Thopas, Johannes"
@@ -8835,7 +8847,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 130718,9186354,D:\thesis\images\9186354.jpg,419,501,0.21,black and white photograph,False,1,102577,1739,painting,"Denner, Balthasar"
 130719,9318700,D:\thesis\images\9318700.jpg,384,500,0.192,black and white photograph,False,1,104272,1821,painting,Monogrammist MJDN
 130720,9318701,D:\thesis\images\9318701.jpg,386,500,0.193,black and white photograph,False,1,102573,1790,painting,Anoniem
-130721,9186353,D:\thesis\images\9186353.jpg,408,501,0.204,black and white photograph,False,1,102578,1725,painting,Anoniem
+130721,10733816,D:\thesis\images\10733816.jpg,414,499,0.207,black and white photograph,False,1,102578,1725,painting,Anoniem
 130722,10733817,D:\thesis\images\10733817.jpg,408,501,0.204,BD/RKD/1826 - IB/XVIIIB,False,1,110360,1725,painting,Anoniem
 130724,9332528,D:\thesis\images\9332528.jpg,415,501,0.208,black and white photograph,False,1,111365,1735,painting,"Dijk, Philip van"
 130725,10733818,D:\thesis\images\10733818.jpg,356,501,0.178,BD/RKD/1820 - IB/XVIIC,False,1,103972,1650,painting,"Plas, David van der"
@@ -9030,6 +9042,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 131042,10734059,D:\thesis\images\10734059.jpg,3286,3991,13.114,BD/RKD/1804 - IB/XIXB,False,1,109359,1825,drawing (visual work),Anoniem
 131043,10734060,D:\thesis\images\10734060.jpg,3029,3550,10.753,BD/RKD/1822 - IB/XVIID,False,1,112876,1675,painting,Anoniem
 131044,9318711,D:\thesis\images\9318711.jpg,1705,1152,1.964,BD/RKD/1830 - IB/XVIIID,False,1,101232,1775,silhouette,"Serné, Adrianus"
+131045,10389671,D:\thesis\images\10389671.jpg,499,329,0.164,unknown,False,1,106247,1775,portrait miniature,Anoniem
 131046,10734061,D:\thesis\images\10734061.jpg,1167,1389,1.621,photograph,False,1,110941,1825,painting,"Neuman, Johan Heinrich"
 131048,10734062,D:\thesis\images\10734062.jpg,539,638,0.344,photograph,False,1,101794,1775,portrait miniature,Anoniem
 131051,10734063,D:\thesis\images\10734063.jpg,3240,3913,12.678,BD/RKD/1830 - IB/XVIIID,False,1,103355,1775,painting,Anoniem
@@ -9259,6 +9272,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 131401,10734527,D:\thesis\images\10734527.jpg,1844,2120,3.909,photograph,False,1,110912,1800,drawing (visual work),"Anspach, Johannes"
 131402,10388643,D:\thesis\images\10388643.jpg,665,845,0.562,unknown,False,1,105341,1850,painting,"Heijligers, Antoon François"
 131404,10734531,D:\thesis\images\10734531.jpg,1299,1465,1.903,brown photograph,False,1,107136,1840,photograph,Anoniem
+131405,10389958,D:\thesis\images\10389958.jpg,340,499,0.17,unknown,False,1,100002,1900,drawing (visual work),"Mulier, Pim"
 131406,10389909,D:\thesis\images\10389909.jpg,500,271,0.136,unknown,False,1,104710,1900,drawing (visual work),"Kerkhoff, Johannes Petrus Bernardus"
 131408,10389957,D:\thesis\images\10389957.jpg,491,500,0.245,unknown,False,1,100002,1900,drawing (visual work),Anoniem
 131409,10388671,D:\thesis\images\10388671.jpg,330,500,0.165,unknown,False,1,101841,1850,drawing (visual work),Anoniem
@@ -9391,6 +9405,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 131575,10734867,D:\thesis\images\10734867.jpg,399,519,0.207,photograph,False,1,108905,1650,painting,Anoniem
 131578,10734869,D:\thesis\images\10734869.jpg,1266,1836,2.324,BD/RKD/1804 - IB/XIXB,False,1,107819,1825,drawing (visual work),Anoniem
 131579,9289443,D:\thesis\images\9289443.jpg,3573,4252,15.192,BD/RKD/1830 - IB/XVIIID,False,1,111690,1778,painting,"Baur, Hendricus Johan Antonius"
+131585,10389504,D:\thesis\images\10389504.jpg,422,500,0.211,unknown,False,1,112907,1700,painting,Anoniem
 131586,10389503,D:\thesis\images\10389503.jpg,1568,1924,3.017,unknown,False,1,112907,1700,painting,Anoniem
 131587,10389502,D:\thesis\images\10389502.jpg,1648,2052,3.382,unknown,False,1,112907,1700,painting,Anoniem
 131589,10734880,D:\thesis\images\10734880.jpg,400,501,0.2,photograph,False,1,112477,1750,portrait miniature,Anoniem
@@ -9531,6 +9546,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 131792,10735095,D:\thesis\images\10735095.jpg,382,500,0.191,BD/RKD/1832 - IB/XXA,False,1,112152,1919,drawing (visual work),"Molkenboer, Antoon"
 131801,10735106,D:\thesis\images\10735106.jpg,387,501,0.194,photograph,False,1,108452,1646,painting,"Jonson van Ceulen, Cornelis (I)"
 131808,10735112,D:\thesis\images\10735112.jpg,426,500,0.213,photograph,False,1,8064,1700,painting,"Moor, Carel de (II)"
+131818,10735115,D:\thesis\images\10735115.jpg,203,500,0.102,photograph,False,1,103598,1550,painting,"Key, Willem"
 131844,10735122,D:\thesis\images\10735122.jpg,402,500,0.201,BD/RKD/1834 - IB/XXB,False,1,103890,1925,drawing (visual work),"Parker, Stanley"
 131851,9333041,D:\thesis\images\9333041.jpg,1546,1735,2.682,color photograph,True,1,109212,1800,painting,Anoniem
 131852,10204838,D:\thesis\images\10204838.jpg,3476,3054,10.616,color photograph,True,1,101591,1813,painting,"Lelie, Adriaan de"
@@ -9606,6 +9622,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 131983,9335363,D:\thesis\images\9335363.jpg,1146,1434,1.643,black-and-white photocopy,False,1,115163,1825,unknown,Anoniem
 131984,10735250,D:\thesis\images\10735250.jpg,486,501,0.243,BD/RKD/1802 - IB/XIXA,False,1,115135,1800,portrait miniature,Anoniem
 131985,10735251,D:\thesis\images\10735251.jpg,487,500,0.243,BD/RKD/1802 - IB/XIXA,False,1,114393,1800,portrait miniature,Anoniem
+131991,10388802,D:\thesis\images\10388802.jpg,500,222,0.111,unknown,False,1,105372,1875,drawing (visual work),"Hingman, Jan"
 131992,10389738,D:\thesis\images\10389738.jpg,378,500,0.189,unknown,False,1,107956,1775,drawing (visual work),Anoniem
 131994,10735261,D:\thesis\images\10735261.jpg,893,1179,1.053,reproduction (derivative object),False,1,116773,1783,painting,"Lapis, Hieronymus"
 131996,10735263,D:\thesis\images\10735263.jpg,2736,3369,9.218,BD/RKD/1830 - IB/XVIIID,False,1,112436,1782,painting,"Cuylenburgh, Cornelis van (II)"
@@ -9905,6 +9922,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 132546,10735723,D:\thesis\images\10735723.jpg,393,500,0.197,photograph,False,1,107524,1849,drawing (visual work),"Bosboom, Johannes"
 132548,10735725,D:\thesis\images\10735725.jpg,2702,3338,9.019,black and white photograph,False,1,106906,1850,photograph,Anoniem
 132549,10389011,D:\thesis\images\10389011.jpg,500,296,0.148,unknown,False,1,108103,1625,painting,Anoniem
+132550,10388925,D:\thesis\images\10388925.jpg,500,164,0.082,unknown,False,1,103291,1625,painting,Anoniem
 132551,10735726,D:\thesis\images\10735726.jpg,2579,3241,8.359,BD/RKD/1826 - IB/XVIIIB,False,1,113630,1725,painting,Anoniem
 132553,10735727,D:\thesis\images\10735727.jpg,2962,3660,10.841,photograph,False,1,112382,1550,painting,Anoniem
 132554,10735728,D:\thesis\images\10735728.jpg,3229,3900,12.593,BD/RKD/1824 - IB/XVIIIA,False,1,110729,1700,painting,Anoniem
@@ -10516,6 +10534,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 133566,9335219,D:\thesis\images\9335219.jpg,370,500,0.185,color photograph,True,1,112410,1940,drawing (visual work),"Brandeler, Agnes van den"
 133567,10736496,D:\thesis\images\10736496.jpg,287,500,0.143,BD/RKD/1836 - IB/XXC,False,1,107940,1950,painting,"Bakels, Reinier Sybrand"
 133570,9335126,D:\thesis\images\9335126.jpg,379,500,0.19,black-and-white photocopy,False,1,102394,1775,drawing (visual work),Anoniem
+133571,10389589,D:\thesis\images\10389589.jpg,332,499,0.166,unknown,False,1,101910,1775,drawing (visual work),Anoniem
 133572,10736497,D:\thesis\images\10736497.jpg,363,500,0.181,BD/RKD/1830 - IB/XVIIID,False,1,111460,1784,painting,"Boon, Adriaan (1763-1802)"
 133573,10389642,D:\thesis\images\10389642.jpg,351,500,0.175,unknown,False,1,111460,1775,painting,Anoniem
 133574,10736498,D:\thesis\images\10736498.jpg,356,500,0.178,BD/RKD/1830 - IB/XVIIID,False,1,108608,1775,drawing (visual work),Anoniem
@@ -10789,6 +10808,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 134175,10736975,D:\thesis\images\10736975.jpg,391,500,0.196,photograph,False,1,117185,1825,painting,Anoniem
 134176,10736976,D:\thesis\images\10736976.jpg,1368,1974,2.7,BD/RKD/1832 - IB/XXA,False,1,105488,1900,drawing (visual work),"Mondriaan, Piet"
 134177,10736977,D:\thesis\images\10736977.jpg,1335,1772,2.366,BD/RKD/1832 - IB/XXA,False,1,109602,1899,drawing (visual work),"Mondriaan, Piet"
+134178,10389309,D:\thesis\images\10389309.jpg,414,499,0.207,unknown,False,1,103586,1650,painting,Anoniem
 134179,10736978,D:\thesis\images\10736978.jpg,433,501,0.217,BD/RKD/1834 - IB/XXB,False,1,104234,1933,drawing (visual work),"Mees, Herman"
 134183,10736982,D:\thesis\images\10736982.jpg,361,500,0.18,BD/RKD/1830 - IB/XVIIID,False,1,112851,1775,portrait miniature,Anoniem
 134184,10736983,D:\thesis\images\10736983.jpg,1030,926,0.954,BD/RKD/1828 - IB/XVIIIC,False,1,112851,1750,portrait miniature,Anoniem
@@ -11060,6 +11080,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 134772,10388657,D:\thesis\images\10388657.jpg,501,453,0.227,unknown,False,1,105723,1850,drawing (visual work),"Mauve, Anton"
 134774,10737464,D:\thesis\images\10737464.jpg,2598,3300,8.573,slide (photo),False,1,104460,1810,painting,Anoniem
 134775,10737465,D:\thesis\images\10737465.jpg,1859,2464,4.581,photograph,False,1,104451,1825,painting,Anoniem
+134777,10737467,D:\thesis\images\10737467.jpg,811,1000,0.811,photograph,False,1,111220,1825,painting,"Jonxis, Jan Lodewijk"
 134779,9334804,D:\thesis\images\9334804.jpg,401,501,0.201,black-and-white photocopy,False,1,101641,1837,drawing (visual work),"Springer, Leendert"
 134780,9334805,D:\thesis\images\9334805.jpg,403,500,0.202,black-and-white photocopy,False,1,112094,1837,drawing (visual work),"Stucki, Marinus Jacobus"
 134781,10737469,D:\thesis\images\10737469.jpg,1455,1793,2.609,photograph,False,1,105496,1775,painting,"Tischbein, Johann Friedrich August"
@@ -11570,7 +11591,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 135829,10388859,D:\thesis\images\10388859.jpg,424,571,0.242,unknown,False,1,108987,1875,painting,"Haanen, Adriana"
 135830,10738365,D:\thesis\images\10738365.jpg,382,500,0.191,photograph,False,1,106873,1875,painting,"Lemire, C."
 135831,10738366,D:\thesis\images\10738366.jpg,467,579,0.27,photograph,False,1,108988,1875,painting,"Sangster, Hendrik Alexander"
-135832,10390334,D:\thesis\images\10390334.jpg,358,500,0.179,unknown,False,1,109176,1926,painting,"Woerkom, Wim van"
+135832,11097921,D:\thesis\images\11097921.jpg,812,1000,0.812,digital image,True,1,109176,1926,painting,"Woerkom, Wim van"
 135834,10738367,D:\thesis\images\10738367.jpg,330,500,0.165,BD/RKD/1834 - IB/XXB,False,1,106466,1928,painting,"Zickwolff, Fred"
 135835,10738368,D:\thesis\images\10738368.jpg,407,501,0.204,BD/RKD/1828 - IB/XVIIIC,False,1,114647,1750,painting,"Valenti, Pietro Yberti"
 135836,10738369,D:\thesis\images\10738369.jpg,404,500,0.202,BD/RKD/1828 - IB/XVIIIC,False,1,108541,1768,painting,"Valenti, Pietro Yberti"
@@ -11827,6 +11848,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 136215,10738680,D:\thesis\images\10738680.jpg,383,500,0.192,reproduction (derivative object),False,1,113627,1800,painting,Anoniem
 136216,10738681,D:\thesis\images\10738681.jpg,2639,3980,10.503,BD/RKD/1834 - IB/XXB,False,1,103600,1925,drawing (visual work),Anoniem
 136217,10738682,D:\thesis\images\10738682.jpg,395,500,0.198,photograph,False,1,105426,1901,drawing (visual work),Monogrammist G.H. (1901)
+136218,10291835,D:\thesis\images\10291835.jpg,788,1000,0.788,black-and-white reproduction,False,1,104667,1975,drawing (visual work),"Keuls, Claudette"
 136219,10288692,D:\thesis\images\10288692.jpg,3135,4285,13.433,brown reproduction,False,1,112655,1915,drawing (visual work),"Melchers, Franz"
 136221,10301751,D:\thesis\images\10301751.jpg,766,1024,0.784,BD/RKD/1806 - IB/XIXC,False,1,105846,1850,photograph,Anoniem
 136222,10738686,D:\thesis\images\10738686.jpg,781,1177,0.919,black and white photograph,False,1,106280,1850,photograph,Anoniem
@@ -12294,6 +12316,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 136909,10739326,D:\thesis\images\10739326.jpg,500,432,0.216,photograph,False,1,104475,1923,painting,"Breusing, Ima"
 136910,10739327,D:\thesis\images\10739327.jpg,390,500,0.195,photograph,False,1,104473,1936,painting,"Cox, Jan"
 136911,10739328,D:\thesis\images\10739328.jpg,393,500,0.197,reproduction (derivative object),False,1,111736,1650,painting,"Covyn, Israel"
+136912,10291836,D:\thesis\images\10291836.jpg,713,1000,0.713,black and white photograph,False,1,100038,1994,drawing (visual work),"Fonteyn, E.A."
 136913,10739329,D:\thesis\images\10739329.jpg,413,500,0.206,BD/RKD/1802 - IB/XIXA,False,1,109203,1800,painting,Monogrammist J.C.G.
 136915,10739331,D:\thesis\images\10739331.jpg,378,500,0.189,BD/RKD/1838 - IB/XXD,False,1,115922,1995,drawing (visual work),"Fonteyn, E.A."
 136916,10739332,D:\thesis\images\10739332.jpg,2200,3348,7.366,photograph,False,1,114130,1890,painting,Anoniem
@@ -12442,6 +12465,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 137342,10739574,D:\thesis\images\10739574.jpg,1344,1630,2.191,photograph,False,1,102947,1700,drawing (visual work),"Mieris, Willem van"
 137343,10739575,D:\thesis\images\10739575.jpg,1144,1476,1.689,reproduction (derivative object),False,1,107535,1751,sculpture,"Verbruggen, Jan (1712)"
 137351,10739576,D:\thesis\images\10739576.jpg,399,500,0.2,reproduction (derivative object),False,1,108917,1952,painting,"Saalborn, Louis"
+137352,10739577,D:\thesis\images\10739577.jpg,211,500,0.105,reproduction (derivative object),False,1,105472,1950,sculpture,"Andriessen, Mari"
 137353,10739578,D:\thesis\images\10739578.jpg,1767,2238,3.955,photograph,False,1,110298,1800,drawing (visual work),"Hodges, Charles Howard"
 137354,10739579,D:\thesis\images\10739579.jpg,1735,2214,3.841,photograph,False,1,106713,1800,drawing (visual work),"Hodges, Charles Howard"
 137358,9166957,D:\thesis\images\9166957.jpg,1854,2164,4.012,black-and-white reproduction,False,1,106990,1936,painting,"Luns, Huib"
@@ -13109,6 +13133,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 138702,10426267,D:\thesis\images\10426267.jpg,3084,3557,10.97,BD/RKD/1832 - IB/XXA,False,1,109273,1915,painting,"Schuhmacher, Wim"
 138703,10740554,D:\thesis\images\10740554.jpg,354,500,0.177,photograph,False,1,113769,1925,painting,"Ket, Dick"
 138704,9154379,D:\thesis\images\9154379.jpg,4342,5468,23.742,ektachrome,True,1,109111,1925,painting,"Ket, Dick"
+138705,10740556,D:\thesis\images\10740556.jpg,329,499,0.164,reproduction (derivative object),False,1,106982,1938,painting,"Dongen, Kees van"
 138708,10740557,D:\thesis\images\10740557.jpg,427,500,0.213,black and white photograph,False,1,110,1938,painting,"Fernhout, Edgar"
 138718,10740559,D:\thesis\images\10740559.jpg,415,500,0.207,photograph,False,1,106451,1925,painting,"Schuhmacher, Wim"
 138722,10740563,D:\thesis\images\10740563.jpg,1944,2524,4.907,photograph,False,1,107104,1706,painting,"Court, Martinus de la"
@@ -13126,6 +13151,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 138766,10740591,D:\thesis\images\10740591.jpg,1464,1893,2.771,photograph,False,1,112029,1625,painting,"Egmondt, Pieter Cornelisz. van"
 138767,10740592,D:\thesis\images\10740592.jpg,387,500,0.194,photograph,False,1,106451,1946,painting,"Schuhmacher, Wim"
 138768,10740593,D:\thesis\images\10740593.jpg,350,500,0.175,photograph,False,1,120,1923,painting,"Bieling, Herman"
+138773,10740596,D:\thesis\images\10740596.jpg,404,500,0.202,photograph,False,1,105263,1950,painting,"Dongen, Kees van"
 138774,10389884,D:\thesis\images\10389884.jpg,353,501,0.177,unknown,False,1,102607,1900,drawing (visual work),"Kort, Arnold Willem"
 138781,10638031,D:\thesis\images\10638031.jpg,1799,2349,4.226,BD/RKD/0926 - BUI/Paintings and Drawings/Germany - Austria 2,False,1,116806,1637,painting,"Wedig, Gotthardt de"
 138791,10740608,D:\thesis\images\10740608.jpg,364,501,0.182,photograph,False,1,104823,1924,drawing (visual work),"Hoogendijk, Maria Ida Adriana"
@@ -13337,6 +13363,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 139440,10740909,D:\thesis\images\10740909.jpg,388,500,0.194,photograph,False,1,109687,1938,painting,"Bakels, Reinier Sybrand"
 139442,10740911,D:\thesis\images\10740911.jpg,458,500,0.229,BD/RKD/1838 - IB/XXD,False,1,101196,1993,painting,"Laimböck, Lia"
 139443,10740912,D:\thesis\images\10740912.jpg,370,501,0.185,reproduction (derivative object),False,1,110212,1959,painting,"Hofker, Willem Gerard"
+139467,10687784,D:\thesis\images\10687784.jpg,676,1001,0.677,digital image,True,1,114382,1929,painting,"Rueter, Georg"
 139476,10740921,D:\thesis\images\10740921.jpg,346,501,0.173,photograph,False,1,103122,1937,painting,"Balbian Verster-Bolderhey, Rie de"
 139477,10740922,D:\thesis\images\10740922.jpg,406,501,0.203,photograph,False,1,113369,1916,drawing (visual work),"Hadkinson, G."
 139479,10740924,D:\thesis\images\10740924.jpg,460,500,0.23,color photograph,True,1,101196,1993,painting,"Laimböck, Lia"
@@ -13587,6 +13614,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 140001,10390096,D:\thesis\images\10390096.jpg,426,500,0.213,unknown,False,1,119685,1900,drawing (visual work),"Tiele, Jan"
 140002,10741643,D:\thesis\images\10741643.jpg,3719,2288,8.509,BD/RKD/1830 - IB/XVIIID,False,1,112996,1775,portrait miniature,Anoniem
 140004,10741645,D:\thesis\images\10741645.jpg,401,501,0.201,black and white photograph,False,1,107973,1994,drawing (visual work),"Fonteyn, E.A."
+140005,10389807,D:\thesis\images\10389807.jpg,499,471,0.235,unknown,False,1,114468,1775,silhouette,Anoniem
 140006,10741646,D:\thesis\images\10741646.jpg,2471,3264,8.065,BD/RKD/1802 - IB/XIXA,False,1,114470,1800,portrait miniature,Anoniem
 140007,10741647,D:\thesis\images\10741647.jpg,667,1264,0.843,photograph,False,1,114476,1775,unknown,Anoniem
 140008,10741648,D:\thesis\images\10741648.jpg,682,853,0.582,photograph,False,1,101778,1775,silhouette,Anoniem
@@ -13823,6 +13851,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 140295,10741885,D:\thesis\images\10741885.jpg,2562,3299,8.452,BD/RKD/1830 - IB/XVIIID,False,1,103357,1775,drawing (visual work),Anoniem
 140296,10389674,D:\thesis\images\10389674.jpg,1329,1724,2.291,unknown,False,1,103349,1775,drawing (visual work),Anoniem
 140297,10741886,D:\thesis\images\10741886.jpg,386,501,0.193,BD/RKD/1838 - IB/XXD,False,1,115950,1994,drawing (visual work),"Laat, Hendrik jr. de"
+140298,10676799,D:\thesis\images\10676799.jpg,358,500,0.179,black and white photograph,False,1,115950,1975,drawing (visual work),"Laat, Hendrik jr. de"
 140299,9332759,D:\thesis\images\9332759.jpg,1758,2388,4.198,color photograph,True,1,103358,1800,portrait miniature,Anoniem
 140300,9335339,D:\thesis\images\9335339.jpg,1630,1271,2.072,color photograph,True,1,106428,1825,portrait miniature,Anoniem
 140301,10741887,D:\thesis\images\10741887.jpg,884,1166,1.031,photograph,False,1,103347,1926,drawing (visual work),"Essen, Jan van (1854-1936)"
@@ -14083,6 +14112,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 140660,10742185,D:\thesis\images\10742185.jpg,428,500,0.214,reproduction (derivative object),False,1,112680,1994,drawing (visual work),"Laimböck, Lia"
 140661,10742186,D:\thesis\images\10742186.jpg,393,500,0.197,reproduction (derivative object),False,1,101196,1994,drawing (visual work),"Laimböck, Lia"
 140662,10662567,D:\thesis\images\10662567.jpg,600,719,0.431,digital image,True,1,102832,1912,drawing (visual work),"Mondriaan, Piet"
+140665,10390116,D:\thesis\images\10390116.jpg,352,499,0.176,unknown,False,1,114250,1921,painting,"Wijngaerdt, Piet van"
 140666,10636644,D:\thesis\images\10636644.jpg,361,501,0.181,printouts,False,1,104717,1903,painting,"Gestel, Leo"
 140668,10390061,D:\thesis\images\10390061.jpg,500,325,0.163,unknown,False,1,93,1907,drawing (visual work),"Gestel, Leo"
 140669,9205945,D:\thesis\images\9205945.jpg,419,500,0.209,BD/Digital Collection,False,1,106297,1933,drawing (visual work),"Kruyder, Herman"
@@ -14183,6 +14213,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 140923,10742333,D:\thesis\images\10742333.jpg,2193,2640,5.79,photograph,False,1,106935,1867,painting,"Neuman, Johan Heinrich"
 140924,10742334,D:\thesis\images\10742334.jpg,2188,2706,5.921,photograph,False,1,13416,1895,painting,"Sterre de Jong, Jacobus Frederik"
 140926,10742335,D:\thesis\images\10742335.jpg,780,898,0.7,reproduction (derivative object),False,1,115299,1816,painting,"Pieneman, Jan Willem"
+140927,10742336,D:\thesis\images\10742336.jpg,500,210,0.105,reproduction (derivative object),False,1,106827,1975,painting,"Markus, Ans"
 140928,10390500,D:\thesis\images\10390500.jpg,500,324,0.162,unknown,False,1,106827,1975,painting,"Markus, Ans"
 140930,10742338,D:\thesis\images\10742338.jpg,388,500,0.194,photograph,False,1,115351,1769,painting,"Warmoes, Andries"
 140932,10742339,D:\thesis\images\10742339.jpg,500,359,0.179,photograph,False,1,47,1965,painting,"Dalsum, Albert van (1889-1971)"
@@ -14276,7 +14307,9 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 141281,10390535,D:\thesis\images\10390535.jpg,500,401,0.201,unknown,False,1,116611,1978,drawing (visual work),"Berserik, Herman"
 141282,10742573,D:\thesis\images\10742573.jpg,350,499,0.175,photograph,False,1,111130,1948,painting,"Bitter, Theo"
 141283,10742574,D:\thesis\images\10742574.jpg,465,500,0.233,reproduction (derivative object),False,1,117099,1986,painting,"Stapel, Dick"
+141284,10790818,D:\thesis\images\10790818.jpg,225,499,0.112,black and white photograph,False,1,117110,1989,painting,"Stapel, Dick"
 141285,10390531,D:\thesis\images\10390531.jpg,381,501,0.191,unknown,False,1,117086,1975,painting,"Stapel, Dick"
+141287,10742575,D:\thesis\images\10742575.jpg,155,275,0.043,photograph,False,1,117108,1993,painting,"Stapel, Dick"
 141294,10742576,D:\thesis\images\10742576.jpg,275,275,0.076,photograph,False,1,117106,1990,painting,"Stapel, Dick"
 141296,10390409,D:\thesis\images\10390409.jpg,423,500,0.211,unknown,False,1,105669,1950,painting,"Nanninga, Jaap"
 141297,10742577,D:\thesis\images\10742577.jpg,378,501,0.189,reproduction (derivative object),False,1,117224,1992,painting,"Stapel, Dick"
@@ -14294,6 +14327,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 141312,10742738,D:\thesis\images\10742738.jpg,390,500,0.195,photograph,False,1,116118,1992,painting,"Hubrecht-van Hoogstraten, Suson"
 141314,10742740,D:\thesis\images\10742740.jpg,412,500,0.206,photograph,False,1,116064,1917,painting,"Boer, P."
 141315,10742741,D:\thesis\images\10742741.jpg,342,501,0.171,photograph,False,1,116063,1875,painting,"Hendriks, Barend Leonardus"
+141317,10388867,D:\thesis\images\10388867.jpg,210,500,0.105,unknown,False,1,116053,1875,drawing (visual work),"Stracké, Louis"
 141318,10388868,D:\thesis\images\10388868.jpg,294,500,0.147,unknown,False,1,116062,1875,drawing (visual work),"Stracké, Louis"
 141319,10742742,D:\thesis\images\10742742.jpg,352,500,0.176,photograph,False,1,116060,1875,painting,"Stracké, Louis"
 141320,10388648,D:\thesis\images\10388648.jpg,320,501,0.16,unknown,False,1,123145,1850,painting,Anoniem
@@ -14417,6 +14451,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 141480,10742873,D:\thesis\images\10742873.jpg,953,1201,1.145,photograph,False,1,116608,1775,silhouette,Anoniem
 141483,10742876,D:\thesis\images\10742876.jpg,431,500,0.215,photograph,False,1,116508,1994,painting,"Kneppelhout, Elly"
 141484,10676794,D:\thesis\images\10676794.jpg,310,500,0.155,black and white photograph,False,1,116623,1925,painting,"Moor, Chris de"
+141485,10676792,D:\thesis\images\10676792.jpg,369,499,0.184,black and white photograph,False,1,116625,1925,painting,"Moor, Chris de"
 141486,10742877,D:\thesis\images\10742877.jpg,341,500,0.171,BD/RKD/1830 - IB/XVIIID,False,1,114008,1775,silhouette,Anoniem
 141487,10742878,D:\thesis\images\10742878.jpg,300,500,0.15,photograph,False,1,116812,1815,silhouette,Anoniem
 141488,10742879,D:\thesis\images\10742879.jpg,402,500,0.201,photograph,False,1,116745,1798,silhouette,Anoniem
@@ -14722,6 +14757,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 142130,10724275,D:\thesis\images\10724275.jpg,400,500,0.2,photograph,False,1,107549,1773,painting,"Hoppner, John"
 142131,10724276,D:\thesis\images\10724276.jpg,397,500,0.199,photograph,False,1,113330,1773,painting,"Hoppner, John"
 142132,10204557,D:\thesis\images\10204557.jpg,1011,1229,1.243,black and white photograph,False,1,117458,1850,portrait miniature,Anoniem
+142136,10742633,D:\thesis\images\10742633.jpg,1000,763,0.763,black-and-white reproduction,False,1,114497,1917,painting,"Le Fauconnier, Henri Victor Gabriel"
 142138,10726366,D:\thesis\images\10726366.jpg,367,500,0.183,photograph,False,1,114497,1925,sculpture,"Wenckebach, Oswald"
 142140,10724522,D:\thesis\images\10724522.jpg,354,500,0.177,photograph,False,1,114497,1923,drawing (visual work),"Verwey, Kees"
 142141,10730069,D:\thesis\images\10730069.jpg,379,500,0.19,reproduction (derivative object),False,1,114497,1913,drawing (visual work),"Koster, Pieter Paul (1893-1987)"
@@ -14765,6 +14801,9 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 142263,10390130,D:\thesis\images\10390130.jpg,319,501,0.16,unknown,False,1,117504,1942,drawing (visual work),"Laurillard, Erik Adolf"
 142264,10390385,D:\thesis\images\10390385.jpg,323,500,0.162,unknown,False,1,117505,1950,painting,"Plas, Wim van de"
 142266,10743095,D:\thesis\images\10743095.jpg,496,500,0.248,photograph,False,1,117506,1950,portrait miniature,"Jong, G. de (20ste eeuw)"
+142269,10390384,D:\thesis\images\10390384.jpg,305,500,0.152,color photograph,True,1,117507,1963,drawing (visual work),"Jong, G. de (20ste eeuw)"
+142272,10743096,D:\thesis\images\10743096.jpg,384,499,0.192,color photograph,True,1,117507,1959,painting,"Jong, G. de (20ste eeuw)"
+142275,10390386,D:\thesis\images\10390386.jpg,330,499,0.165,color photograph,True,1,117507,1972,sculpture,Anoniem
 142278,9204313,D:\thesis\images\9204313.jpg,387,500,0.194,digital color photograph,True,1,117508,1858,drawing (visual work),"Siebert, Heinrich (I)"
 142279,10722764,D:\thesis\images\10722764.jpg,5145,6457,33.221,black and white photograph,False,1,117510,1750,painting,"Hauck, August Christian"
 142280,10722765,D:\thesis\images\10722765.jpg,1815,2255,4.093,black and white photograph,False,1,117509,1768,painting,"Hauck, August Christian"
@@ -14934,6 +14973,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 142616,10731021,D:\thesis\images\10731021.jpg,326,500,0.163,reproduction (derivative object),False,1,102225,1875,painting,"Breitner, George Hendrik"
 142617,10673688,D:\thesis\images\10673688.jpg,700,847,0.593,digital image,True,1,133511,1693,painting,"Bakhuizen, Ludolf"
 142622,10730241,D:\thesis\images\10730241.jpg,408,500,0.204,reproduction (derivative object),False,1,100084,1890,painting,"Robertson, Suze"
+142623,10390526,D:\thesis\images\10390526.jpg,210,500,0.105,unknown,False,1,16990,1996,painting,"Welbergen, Maarten"
 142624,10742673,D:\thesis\images\10742673.jpg,352,500,0.176,reproduction (derivative object),False,1,117674,1975,painting,"Ruiter de Witt, Maria de"
 142625,10742675,D:\thesis\images\10742675.jpg,464,500,0.232,reproduction (derivative object),False,1,16993,1975,painting,"Esterik, Nico van"
 142626,10742674,D:\thesis\images\10742674.jpg,364,500,0.182,reproduction (derivative object),False,1,117675,1975,drawing (visual work),"Fransen, Wine"
@@ -14959,7 +14999,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 142658,9159799,D:\thesis\images\9159799.jpg,296,500,0.148,color reproduction,True,1,19,1915,painting,"Israels, Isaac"
 142660,10388883,D:\thesis\images\10388883.jpg,361,500,0.18,unknown,False,1,117699,1906,painting,"Hove, Gerard van"
 142662,10648429,D:\thesis\images\10648429.jpg,329,500,0.165,digital image,True,1,107152,1931,painting,"Lubbers, Adriaan"
-142663,10716439,D:\thesis\images\10716439.jpg,811,941,0.763,digital image,True,1,117679,1900,painting,"Gouwe, Herman"
+142663,10720888,D:\thesis\images\10720888.jpg,854,1000,0.854,reproduction (derivative object),False,1,117679,1900,painting,"Gouwe, Herman"
 142666,10728991,D:\thesis\images\10728991.jpg,5372,7407,39.79,photograph,False,1,117714,1775,drawing (visual work),"Croix, Pierre Frédéric de la"
 142667,10731330,D:\thesis\images\10731330.jpg,1876,2331,4.373,BD/RKD/1830 - IB/XVIIID,False,1,117718,1775,painting,"Greeve, Stephanus"
 142670,10729775,D:\thesis\images\10729775.jpg,2013,2610,5.254,photograph,False,1,117719,1800,portrait miniature,Anoniem
@@ -14984,6 +15024,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 142706,10742687,D:\thesis\images\10742687.jpg,500,331,0.166,reproduction (derivative object),False,1,117744,1924,unknown,"Lubbers, Adriaan"
 142707,10742688,D:\thesis\images\10742688.jpg,445,500,0.223,reproduction (derivative object),False,1,101716,1913,painting,"Gestel, Leo"
 142708,10674191,D:\thesis\images\10674191.jpg,399,500,0.2,digital image,True,1,117745,1859,drawing (visual work),"Weissenbruch, Jan"
+142709,10743707,D:\thesis\images\10743707.jpg,499,345,0.172,reproduction (derivative object),False,1,117746,1917,painting,"Dongen, Kees van"
 142712,10742689,D:\thesis\images\10742689.jpg,335,500,0.168,reproduction (derivative object),False,1,110323,1897,drawing (visual work),"Toorop, Jan"
 142713,10722701,D:\thesis\images\10722701.jpg,282,500,0.141,reproduction (derivative object),False,1,117748,1921,painting,"Roessingh, Louis Albert"
 142714,10390313,D:\thesis\images\10390313.jpg,379,500,0.19,unknown,False,1,117749,1939,painting,"Pessers, Henriëtte"
@@ -15047,6 +15088,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 142888,9289836,D:\thesis\images\9289836.jpg,989,1333,1.318,black and white photograph,False,1,117807,1775,portrait miniature,Anoniem
 142893,10734795,D:\thesis\images\10734795.jpg,2979,3703,11.031,photograph,False,1,117808,1650,portrait miniature,"Lundens, Gerrit"
 142898,10727401,D:\thesis\images\10727401.jpg,5427,7277,39.492,photograph,False,1,117809,1622,painting,"Lubieniecki, Christoffel"
+142907,10742707,D:\thesis\images\10742707.jpg,180,501,0.09,reproduction (derivative object),False,1,117818,1922,drawing (visual work),"Vlijmen, Bernard van"
 142910,10742708,D:\thesis\images\10742708.jpg,335,501,0.168,reproduction (derivative object),False,1,117819,1875,painting,"Taanman, Jacob"
 142911,9291434,D:\thesis\images\9291434.jpg,408,501,0.204,black and white photograph,False,1,117820,1800,painting,Anoniem
 142912,10726780,D:\thesis\images\10726780.jpg,379,500,0.19,photograph,False,1,117820,1808,painting,Mitoire
@@ -15193,6 +15235,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 143200,10205076,D:\thesis\images\10205076.jpg,314,501,0.157,black-and-white reproduction,False,1,112021,1923,painting,"Meegeren, Han van"
 143201,10743179,D:\thesis\images\10743179.jpg,359,500,0.179,reproduction (derivative object),False,1,117952,1980,painting,"Arranz-Bravo, Eduardo"
 143202,10390060,D:\thesis\images\10390060.jpg,449,500,0.225,unknown,False,1,117953,1915,sculpture,"Werner, Frans"
+143204,10730981,D:\thesis\images\10730981.jpg,199,501,0.1,reproduction (derivative object),False,1,117954,1962,painting,"Vroom, Jean Paul"
 143205,10743180,D:\thesis\images\10743180.jpg,409,501,0.205,reproduction (derivative object),False,1,117956,1938,painting,"Ansingh, Lizzy"
 143206,10743181,D:\thesis\images\10743181.jpg,499,500,0.249,reproduction (derivative object),False,1,117957,1950,painting,"Sjollema, Johan Sybolt"
 143207,10730982,D:\thesis\images\10730982.jpg,351,500,0.175,reproduction (derivative object),False,1,117818,1961,drawing (visual work),"Roland Holst-de Meester, Annie"
@@ -15224,6 +15267,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 143236,10722127,D:\thesis\images\10722127.jpg,374,500,0.187,reproduction (derivative object),False,1,117819,1875,painting,"Sangster, Hendrik Alexander"
 143239,10743196,D:\thesis\images\10743196.jpg,383,501,0.192,reproduction (derivative object),False,1,117983,1925,painting,"Leyden, Ernst"
 143240,10743197,D:\thesis\images\10743197.jpg,384,501,0.192,reproduction (derivative object),False,1,117984,1953,painting,"Swagemakers, Theo"
+143241,10390231,D:\thesis\images\10390231.jpg,223,500,0.112,unknown,False,1,117685,1925,sculpture,"Krop, Hildo"
 143242,9291349,D:\thesis\images\9291349.jpg,1349,1762,2.377,black-and-white reproduction,False,1,117941,1727,portrait miniature,"Wolfgang, Georg Andreas (II)"
 143244,10720087,D:\thesis\images\10720087.jpg,333,500,0.167,photograph,False,1,117941,1750,painting,Anoniem
 143246,9291350,D:\thesis\images\9291350.jpg,419,500,0.209,brown photograph,False,1,117941,1725,painting,Anoniem
@@ -15414,6 +15458,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 143488,10742724,D:\thesis\images\10742724.jpg,373,501,0.187,photograph,False,1,116737,1951,drawing (visual work),"Willink, Carel"
 143489,9291405,D:\thesis\images\9291405.jpg,422,500,0.211,black and white photograph,False,1,118107,1655,portrait miniature,"Cooper, Alexander"
 143490,10684497,D:\thesis\images\10684497.jpg,357,500,0.178,digital color photograph,True,1,116737,1952,painting,"Willink, Carel"
+143491,10737054,D:\thesis\images\10737054.jpg,500,172,0.086,photograph,False,1,107318,1900,painting,"Markus, Ans"
 143493,9291406,D:\thesis\images\9291406.jpg,421,500,0.21,black and white photograph,False,1,118108,1624,portrait miniature,"Cooper, Alexander"
 143494,9291407,D:\thesis\images\9291407.jpg,419,500,0.209,black and white photograph,False,1,118108,1655,portrait miniature,"Cooper, Alexander"
 143495,9291409,D:\thesis\images\9291409.jpg,424,500,0.212,black and white photograph,False,1,118111,1655,portrait miniature,"Cooper, Alexander"
@@ -15548,6 +15593,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 143693,10723918,D:\thesis\images\10723918.jpg,2652,3276,8.688,photograph,False,1,118213,1775,portrait miniature,Anoniem
 143694,10464223,D:\thesis\images\10464223.jpg,3178,3891,12.366,black and white photograph,False,1,112922,1825,painting,Anoniem
 143703,9291211,D:\thesis\images\9291211.jpg,394,500,0.197,black and white photograph,False,1,102884,1632,painting,"Dyck, Anthony van"
+143704,10721602,D:\thesis\images\10721602.jpg,341,499,0.17,reproduction (derivative object),False,1,117746,1904,painting,"Dongen, Kees van"
 143705,9291227,D:\thesis\images\9291227.jpg,405,500,0.203,black and white photograph,False,1,118216,1637,painting,Louise Hollandine van de Palts
 143706,9291192,D:\thesis\images\9291192.jpg,1622,2199,3.567,color photograph,True,1,110398,1800,painting,Anoniem
 143707,9291201,D:\thesis\images\9291201.jpg,1576,2065,3.254,black and white photograph,False,1,109875,1600,painting,Anoniem
@@ -15700,6 +15746,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 144040,10743273,D:\thesis\images\10743273.jpg,2336,3014,7.041,BD/RKD/1832 - IB/XXA,False,1,118378,1921,painting,"Oven, David van"
 144041,10743325,D:\thesis\images\10743325.jpg,350,501,0.175,photograph,False,1,118379,1939,painting,"Backhuys, Johannes Baptiste Marie"
 144042,10743240,D:\thesis\images\10743240.jpg,389,501,0.195,BD/RKD/1838 - IB/XXD,False,1,118380,1996,drawing (visual work),"Popov, Roumen Georgiev"
+144044,10676797,D:\thesis\images\10676797.jpg,383,499,0.191,black and white photograph,False,1,118381,1994,painting,"Koekkoek, Corry"
 144045,10743234,D:\thesis\images\10743234.jpg,391,500,0.196,photograph,False,1,118382,1995,painting,"Kolman, J.B."
 144046,10743235,D:\thesis\images\10743235.jpg,334,500,0.167,photograph,False,1,118383,1997,painting,"Kolman, J.B."
 144048,10390039,D:\thesis\images\10390039.jpg,411,500,0.205,unknown,False,1,118384,1900,painting,"Manceau, Lucien-Louis"
@@ -15924,6 +15971,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 144349,10720196,D:\thesis\images\10720196.jpg,438,500,0.219,BD/RKD/1824 - IB/XVIIIA,False,1,118590,1700,painting,"Netscher, Constantijn"
 144350,10720197,D:\thesis\images\10720197.jpg,438,501,0.219,BD/RKD/1824 - IB/XVIIIA,False,1,118591,1721,painting,"Netscher, Constantijn"
 144351,10722576,D:\thesis\images\10722576.jpg,384,501,0.192,photograph,False,1,101429,1935,sculpture,"Termote, Albert"
+144352,10389832,D:\thesis\images\10389832.jpg,212,501,0.106,unknown,False,1,101429,1900,sculpture,"Odé, Arend Willem Maurits"
 144353,10722475,D:\thesis\images\10722475.jpg,348,500,0.174,photograph,False,1,101429,1900,sculpture,"Odé, Arend Willem Maurits"
 144356,9291440,D:\thesis\images\9291440.jpg,1080,1566,1.691,black and white photograph,False,1,118589,1825,painting,Anoniem
 144357,9291449,D:\thesis\images\9291449.jpg,1083,1388,1.503,black and white photograph,False,1,118592,1821,painting,Anoniem
@@ -16478,6 +16526,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 145214,10743781,D:\thesis\images\10743781.jpg,368,500,0.184,photograph,False,1,109516,1900,drawing (visual work),"Sluijters, Jan"
 145215,10744019,D:\thesis\images\10744019.jpg,387,500,0.194,slide (photo),False,1,121692,1918,painting,"Sluiter, Willy"
 145216,10743782,D:\thesis\images\10743782.jpg,369,500,0.184,photograph,False,1,117746,1925,sculpture,"Haas, Helen"
+145217,10729325,D:\thesis\images\10729325.jpg,162,500,0.081,photograph,False,1,116108,1925,sculpture,"Andriessen, Mari"
 145218,9335033,D:\thesis\images\9335033.jpg,380,500,0.19,black and white photograph,False,1,116108,1944,sculpture,"Rädecker, John"
 145220,10724065,D:\thesis\images\10724065.jpg,1878,2452,4.605,photograph,False,1,15005,1875,painting,"Looy, Jac. van"
 145221,10731967,D:\thesis\images\10731967.jpg,380,500,0.19,BD/RKD/1804 - IB/XIXB,False,1,119215,1847,painting,"Thomas, F."
@@ -16768,6 +16817,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 145606,9273364,D:\thesis\images\9273364.jpg,3191,3719,11.867,digital color photograph,True,1,116497,1730,painting,"Schorer, Leonhard"
 145607,10731097,D:\thesis\images\10731097.jpg,402,500,0.201,BD/RKD/1822 - IB/XVIID,False,1,119532,1675,painting,"Naiveu, Matthijs"
 145609,9291493,D:\thesis\images\9291493.jpg,391,500,0.196,black and white photograph,False,1,118740,1724,painting,"Quiter, Herman Hendrik de (II)"
+145611,10389970,D:\thesis\images\10389970.jpg,500,213,0.106,unknown,False,1,106655,1922,unknown,"Kamerlingh Onnes, Harm"
 145612,10676790,D:\thesis\images\10676790.jpg,420,500,0.21,black and white photograph,False,1,115222,1922,unknown,"Kamerlingh Onnes, Harm"
 145613,10724325,D:\thesis\images\10724325.jpg,383,500,0.192,photograph,False,1,107535,1712,painting,"Accama, Bernardus (I)"
 145614,10731496,D:\thesis\images\10731496.jpg,403,500,0.202,photograph,False,1,107535,1698,painting,"Dijk, Philip van"
@@ -16835,6 +16885,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 145715,10733371,D:\thesis\images\10733371.jpg,266,500,0.133,black and white photograph,False,1,119599,1650,painting,Anoniem
 145719,10731711,D:\thesis\images\10731711.jpg,2010,2586,5.198,photograph,False,1,119600,1635,painting,"Mijtens, Jan"
 145720,10733370,D:\thesis\images\10733370.jpg,415,500,0.207,black and white photograph,False,1,119600,1650,painting,Anoniem
+145721,10733372,D:\thesis\images\10733372.jpg,152,500,0.076,black and white photograph,False,1,119600,1650,painting,Anoniem
 145723,10733674,D:\thesis\images\10733674.jpg,423,500,0.211,black and white photograph,False,1,119600,1655,painting,Anoniem
 145724,10645501,D:\thesis\images\10645501.jpg,411,501,0.206,black-and-white photocopy,False,1,110881,1716,unknown,"Boy, Gottfried"
 145731,10669228,D:\thesis\images\10669228.jpg,375,501,0.188,color reproduction,True,1,109145,1906,painting,"Sikemeier, Johan"
@@ -16985,6 +17036,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 145960,10204533,D:\thesis\images\10204533.jpg,1193,1590,1.897,black-and-white photocopy,False,1,114919,1839,painting,"Buitendijk Kuyk, Gijsbert"
 145961,10743586,D:\thesis\images\10743586.jpg,3115,2632,8.199,BD/RKD/1808 - IB/XIXD,False,1,119721,1877,drawing (visual work),Anoniem
 145962,10747326,D:\thesis\images\10747326.jpg,540,660,0.356,BD/RKD/1802 - IB/XIXA,False,1,119722,1800,portrait miniature,Anoniem
+145965,10390195,D:\thesis\images\10390195.jpg,383,499,0.191,unknown,False,1,119723,1925,painting,"Tiele, Jan"
 145966,10743604,D:\thesis\images\10743604.jpg,377,500,0.189,photograph,False,1,119724,1943,drawing (visual work),"Tiele, Jan"
 145967,10743623,D:\thesis\images\10743623.jpg,413,500,0.206,photograph,False,1,119725,1925,painting,"Tiele, Jan"
 145968,10719992,D:\thesis\images\10719992.jpg,377,500,0.189,photograph,False,1,119726,1925,painting,"Tiele, Jan"
@@ -17067,6 +17119,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 146070,10731702,D:\thesis\images\10731702.jpg,392,500,0.196,photograph,False,1,117359,1650,painting,"Rossum, Jan van (c. 1639)"
 146071,10720410,D:\thesis\images\10720410.jpg,1374,1674,2.3,photograph,False,1,117359,1607,painting,"Honthorst, Gerard van"
 146072,9224665,D:\thesis\images\9224665.jpg,2548,3112,7.929,black and white photograph,False,1,100203,1607,painting,"Honthorst, Gerard van"
+146073,10733361,D:\thesis\images\10733361.jpg,166,500,0.083,black and white photograph,False,1,115415,1625,painting,"Honthorst, Gerard van"
 146074,10731701,D:\thesis\images\10731701.jpg,1023,1464,1.498,photograph,False,1,115415,1625,painting,Anoniem
 146075,10733362,D:\thesis\images\10733362.jpg,389,500,0.195,black and white photograph,False,1,100203,1644,painting,"Nason, Pieter"
 146077,10731708,D:\thesis\images\10731708.jpg,469,500,0.234,photograph,False,1,100203,1650,painting,"Rossum, Jan van (c. 1639)"
@@ -17766,6 +17819,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 147171,10723021,D:\thesis\images\10723021.jpg,363,501,0.182,photograph,False,1,120477,1765,painting,"Spinny, Guillaume de"
 147172,10743894,D:\thesis\images\10743894.jpg,365,500,0.182,reproduction (derivative object),False,1,102148,1900,drawing (visual work),Anoniem
 147174,10389866,D:\thesis\images\10389866.jpg,354,501,0.177,unknown,False,1,102148,1900,drawing (visual work),Anoniem
+147176,10389852,D:\thesis\images\10389852.jpg,190,500,0.095,unknown,False,1,102004,1900,drawing (visual work),"Hahn, Albert (I)"
 147177,10723005,D:\thesis\images\10723005.jpg,363,501,0.182,photograph,False,1,102321,1765,painting,"Spinny, Guillaume de"
 147178,10730511,D:\thesis\images\10730511.jpg,357,500,0.178,reproduction (derivative object),False,1,102004,1900,drawing (visual work),"Haverman, Hendrik Johannes"
 147180,10389851,D:\thesis\images\10389851.jpg,378,500,0.189,unknown,False,1,102004,1900,silhouette,Anoniem
@@ -18191,6 +18245,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 147752,10731829,D:\thesis\images\10731829.jpg,1141,1364,1.556,reproduction (derivative object),False,1,113213,1775,drawing (visual work),"Schmidt, Izaäk"
 147753,10723661,D:\thesis\images\10723661.jpg,2809,3280,9.214,photograph,False,1,120839,1795,portrait miniature,Anoniem
 147754,10723230,D:\thesis\images\10723230.jpg,1081,1606,1.736,reproduction (derivative object),False,1,120840,1800,painting,Anoniem
+147756,10389933,D:\thesis\images\10389933.jpg,499,248,0.124,unknown,False,1,120841,1900,painting,"Houten, Georges van"
 147758,10388805,D:\thesis\images\10388805.jpg,290,500,0.145,unknown,False,1,120842,1875,sculpture,Anoniem
 147759,10747162,D:\thesis\images\10747162.jpg,324,501,0.162,photograph,False,1,120842,1904,painting,"Israëls, Jozef"
 147762,10743916,D:\thesis\images\10743916.jpg,356,500,0.178,reproduction (derivative object),False,1,120842,1890,drawing (visual work),"Kellen, J.C. van der"
@@ -18341,6 +18396,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 148064,10390255,D:\thesis\images\10390255.jpg,367,501,0.184,unknown,False,1,106655,1925,sculpture,"Odé, Arend Willem Maurits"
 148065,9236338,D:\thesis\images\9236338.jpg,2864,3642,10.431,black and white photograph,False,1,121043,1675,painting,"Haringh, Daniël"
 148066,10651106,D:\thesis\images\10651106.jpg,442,500,0.221,digital image,True,1,110726,1700,painting,"Mij, Hieronymus van der"
+148067,10390257,D:\thesis\images\10390257.jpg,206,500,0.103,unknown,False,1,106655,1925,relief,"Franzen-Heslenfeld, Corinne"
 148069,10389561,D:\thesis\images\10389561.jpg,1753,2411,4.226,unknown,False,1,121044,1700,painting,"Bodecker, Johann Friedrich"
 148071,10723033,D:\thesis\images\10723033.jpg,1885,2290,4.317,black and white photograph,False,1,108904,1700,painting,Anoniem
 148073,10723032,D:\thesis\images\10723032.jpg,1885,2304,4.343,black and white photograph,False,1,110725,1650,painting,Anoniem
@@ -18379,6 +18435,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 148131,10390422,D:\thesis\images\10390422.jpg,496,500,0.248,unknown,False,1,106887,1956,medal (coin type),"Esser, Vincent Pieter Semeyn"
 148132,10729049,D:\thesis\images\10729049.jpg,345,501,0.173,photograph,False,1,106887,1950,sculpture,"Esser, Vincent Pieter Semeyn"
 148133,10722760,D:\thesis\images\10722760.jpg,657,835,0.549,black and white photograph,False,1,121061,1819,drawing (visual work),"Anspach, Johannes"
+148134,10389984,D:\thesis\images\10389984.jpg,196,501,0.098,unknown,False,1,106887,1919,drawing (visual work),"Leusink, Annigje"
 148135,10743934,D:\thesis\images\10743934.jpg,399,500,0.2,reproduction (derivative object),False,1,106887,1900,drawing (visual work),"Vlijmen, Bernard van"
 148136,10722759,D:\thesis\images\10722759.jpg,690,870,0.6,black and white photograph,False,1,121063,1819,drawing (visual work),"Anspach, Johannes"
 148137,10389983,D:\thesis\images\10389983.jpg,417,500,0.208,unknown,False,1,106887,1919,drawing (visual work),"Mens, Is. van"
@@ -18569,6 +18626,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 148437,10743953,D:\thesis\images\10743953.jpg,499,501,0.25,BD/RKD/1806 - IB/XIXC,False,1,121239,1865,drawing (visual work),"Siebert, Heinrich (II)"
 148438,10743954,D:\thesis\images\10743954.jpg,498,500,0.249,BD/RKD/1806 - IB/XIXC,False,1,121240,1865,drawing (visual work),"Siebert, Heinrich (II)"
 148440,10743955,D:\thesis\images\10743955.jpg,447,501,0.224,BD/RKD/1804 - IB/XIXB,False,1,112605,1833,painting,"Buys, W."
+148446,10743960,D:\thesis\images\10743960.jpg,214,500,0.107,reproduction (derivative object),False,1,115013,1925,sculpture,"Wezelaar, Han"
 148451,10730294,D:\thesis\images\10730294.jpg,345,500,0.172,photograph,False,1,107635,1900,sculpture,"Polet, Johan"
 148452,10729024,D:\thesis\images\10729024.jpg,342,500,0.171,black and white photograph,False,1,107635,1929,sculpture,"Polet, Johan"
 148453,10730295,D:\thesis\images\10730295.jpg,1076,1773,1.908,photograph,False,1,107635,1900,sculpture,"Polet, Johan"
@@ -18585,6 +18643,8 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 148470,10726980,D:\thesis\images\10726980.jpg,407,500,0.203,photograph,False,1,108834,1800,painting,"Hodges, Charles Howard"
 148471,10725476,D:\thesis\images\10725476.jpg,1838,2097,3.854,photograph,False,1,121257,1669,painting,"Sanders, Alexander"
 148472,9333157,D:\thesis\images\9333157.jpg,417,500,0.208,black-and-white photocopy,False,1,121256,1800,painting,Anoniem
+148473,10743964,D:\thesis\images\10743964.jpg,137,275,0.038,photograph,False,1,114024,1988,painting,"Stapel, Dick"
+148474,10743965,D:\thesis\images\10743965.jpg,139,275,0.038,photograph,False,1,100146,1988,painting,"Stapel, Dick"
 148475,10743966,D:\thesis\images\10743966.jpg,288,275,0.079,photograph,False,1,102335,1975,painting,"Stapel, Dick"
 148484,10725017,D:\thesis\images\10725017.jpg,2011,2599,5.227,photograph,False,1,121259,1864,drawing (visual work),"Kunst, Berend"
 148486,10724393,D:\thesis\images\10724393.jpg,1282,1598,2.049,photograph,False,1,119653,1611,painting,Anoniem
@@ -18765,6 +18825,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 148808,10720332,D:\thesis\images\10720332.jpg,3129,4142,12.96,photograph,False,1,105020,1660,painting,Anoniem
 148811,10725339,D:\thesis\images\10725339.jpg,400,500,0.2,photograph,False,1,107423,1948,drawing (visual work),"Rueter, Georg"
 148812,10726242,D:\thesis\images\10726242.jpg,406,500,0.203,photograph,False,1,121438,1925,painting,"Kelder, Toon"
+148813,10790817,D:\thesis\images\10790817.jpg,387,499,0.193,black and white photograph,False,1,121439,1955,painting,"Hofker, Willem Gerard"
 148815,10728935,D:\thesis\images\10728935.jpg,341,501,0.171,reproduction (derivative object),False,1,121441,1889,unknown,"Dijsselhof, Gerrit Willem"
 148816,10390146,D:\thesis\images\10390146.jpg,342,501,0.171,unknown,False,1,121441,1931,sculpture,"Zijl, Lambertus"
 148817,10389360,D:\thesis\images\10389360.jpg,376,500,0.188,unknown,False,1,121442,1696,painting,"Vollevens, Jan (I)"
@@ -18774,6 +18835,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 148824,10728262,D:\thesis\images\10728262.jpg,1380,1700,2.346,black and white photograph,False,1,121447,1657,painting,"Luttichuys, Isaack"
 148825,10389677,D:\thesis\images\10389677.jpg,340,500,0.17,unknown,False,1,112785,1775,silhouette,Anoniem
 148826,10389679,D:\thesis\images\10389679.jpg,340,500,0.17,unknown,False,1,109451,1775,silhouette,Anoniem
+148827,10389768,D:\thesis\images\10389768.jpg,412,499,0.206,unknown,False,1,109451,1790,silhouette,Monogrammist C.J.V.N.
 148828,10743980,D:\thesis\images\10743980.jpg,302,500,0.151,reproduction (derivative object),False,1,109451,1775,silhouette,Anoniem
 148837,10389041,D:\thesis\images\10389041.jpg,389,500,0.195,unknown,False,1,121451,1625,painting,"Loonen, Theodor van"
 148840,10734252,D:\thesis\images\10734252.jpg,1311,1716,2.25,photograph,False,1,121453,1800,drawing (visual work),Anoniem
@@ -18803,6 +18865,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 148875,10733802,D:\thesis\images\10733802.jpg,5300,7227,38.303,photograph,False,1,121489,1691,painting,"Alberts, Gerrit (1663-1757)"
 148876,10733803,D:\thesis\images\10733803.jpg,5216,7250,37.816,photograph,False,1,121490,1690,painting,"Alberts, Gerrit (1663-1757)"
 148877,10743989,D:\thesis\images\10743989.jpg,357,500,0.178,reproduction (derivative object),False,1,117921,1922,drawing (visual work),"Vlijmen, Bernard van"
+148878,10743991,D:\thesis\images\10743991.jpg,223,501,0.112,reproduction (derivative object),False,1,117921,1900,silhouette,"Jordaan, Leendert Jurriaan"
 148880,10727384,D:\thesis\images\10727384.jpg,5340,7174,38.309,black and white photograph,False,1,121491,1710,painting,"Alberts, Gerrit (1663-1757)"
 148881,10727385,D:\thesis\images\10727385.jpg,5280,7173,37.873,black and white photograph,False,1,121492,1710,painting,"Alberts, Gerrit (1663-1757)"
 148888,10744444,D:\thesis\images\10744444.jpg,1022,1271,1.299,photograph,False,1,121494,1825,painting,"Eernstman, Tjeerd"
@@ -18995,6 +19058,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 149180,10732541,D:\thesis\images\10732541.jpg,1431,2005,2.869,photograph,False,1,121689,1700,painting,"Alberts, Gerrit (1663-1757)"
 149181,10732542,D:\thesis\images\10732542.jpg,1449,1997,2.894,photograph,False,1,121690,1700,painting,"Alberts, Gerrit (1663-1757)"
 149182,10731730,D:\thesis\images\10731730.jpg,2048,2580,5.284,photograph,False,1,121691,1700,painting,"Alberts, Gerrit (1663-1757)"
+149183,10720037,D:\thesis\images\10720037.jpg,223,500,0.112,photograph,False,1,107821,1925,painting,"Schuhmacher, Wim"
 149184,10732063,D:\thesis\images\10732063.jpg,1324,1884,2.494,black and white photograph,False,1,121692,1908,drawing (visual work),"Hogerwaard, Frans"
 149185,10731731,D:\thesis\images\10731731.jpg,2004,2496,5.002,photograph,False,1,121693,1721,painting,"Alberts, Gerrit (1663-1757)"
 149186,9237772,D:\thesis\images\9237772.jpg,3434,4356,14.959,black-and-white negative,False,1,100265,1700,painting,"Alberts, Gerrit (1663-1757)"
@@ -21158,6 +21222,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 152319,10753540,D:\thesis\images\10753540.jpg,1094,1649,1.804,original photograph,False,1,124062,1860,carte-de-visite,"Nadar, Félix"
 152320,10753541,D:\thesis\images\10753541.jpg,1046,1722,1.801,original photograph,False,1,124063,1860,carte-de-visite,"Verveer, Maurits"
 152321,10753542,D:\thesis\images\10753542.jpg,1717,2928,5.027,original photograph,False,1,124063,1860,carte-de-visite,"Koningsveld, Jacobus van"
+152323,10291834,D:\thesis\images\10291834.jpg,723,1000,0.723,black-and-white reproduction,False,1,120387,1925,painting,"Leyden, Ernst"
 152324,10753544,D:\thesis\images\10753544.jpg,1045,1672,1.747,original photograph,False,1,124064,1899,carte-de-visite,"Greiner, Albert"
 152325,10753545,D:\thesis\images\10753545.jpg,1027,1632,1.676,original photograph,False,1,124066,1871,carte-de-visite,"Lavieter &amp; Co, De"
 152326,10753546,D:\thesis\images\10753546.jpg,1045,1752,1.831,original photograph,False,1,124066,1874,carte-de-visite,"Lavieter &amp; Co, De"
@@ -21293,6 +21358,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 152480,10753675,D:\thesis\images\10753675.jpg,1006,1709,1.719,original photograph,False,1,124205,1860,carte-de-visite,"Gorkom, Jacobus van (jr.)"
 152481,10741512,D:\thesis\images\10741512.jpg,1089,1261,1.373,photograph,False,1,124206,1617,painting,Anoniem
 152482,10741513,D:\thesis\images\10741513.jpg,1079,1272,1.372,photograph,False,1,124514,1618,painting,Anoniem
+152483,10291832,D:\thesis\images\10291832.jpg,666,1000,0.666,black and white photograph,False,1,117478,1850,drawing (visual work),"Maris, Matthijs"
 152485,10014681,D:\thesis\images\10014681.jpg,496,501,0.248,color reproduction,True,1,123317,1625,drawing (visual work),"Bailly, David"
 152489,10900001,D:\thesis\images\10900001.jpg,2976,3672,10.928,BD/Digital Collection,False,1,124213,1827,painting,"Kruseman, Cornelis"
 152492,10204974,D:\thesis\images\10204974.jpg,3162,3644,11.522,black-and-white photocopy,False,1,124213,1827,painting,Anoniem
@@ -22650,6 +22716,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 154023,10723172,D:\thesis\images\10723172.jpg,1417,1661,2.354,reproduction (derivative object),False,1,125515,1916,painting,"Veth, Jan"
 154024,10754995,D:\thesis\images\10754995.jpg,1046,1666,1.743,original photograph,False,1,125517,1890,carte-de-visite,"Vermeulen, Cornelis Johannes Lodewicus"
 154025,10389928,D:\thesis\images\10389928.jpg,344,500,0.172,unknown,False,1,125518,1900,painting,"Heijl, Marinus"
+154026,10291833,D:\thesis\images\10291833.jpg,761,1000,0.761,black-and-white reproduction,False,1,102806,1930,painting,"Hartz, Louis"
 154027,10721256,D:\thesis\images\10721256.jpg,310,500,0.155,reproduction (derivative object),False,1,125519,1750,drawing (visual work),"Noorde, Cornelis van"
 154028,10754889,D:\thesis\images\10754889.jpg,1087,1699,1.847,original photograph,False,1,125520,1860,carte-de-visite,"Goedeljee &amp; Zn, Jan"
 154029,10754997,D:\thesis\images\10754997.jpg,1079,1663,1.794,original photograph,False,1,125521,1860,carte-de-visite,"Nadar, Félix"
@@ -29517,7 +29584,8 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 162493,10741693,D:\thesis\images\10741693.jpg,1324,1619,2.144,photograph,False,1,132268,1900,painting,"Haverman, Hendrik Johannes"
 162494,10744178,D:\thesis\images\10744178.jpg,2629,3229,8.489,BD/RKD/1804 - IB/XIXB,False,1,132269,1825,painting,Anoniem
 162496,10389429,D:\thesis\images\10389429.jpg,1467,1737,2.548,unknown,False,1,132270,1675,painting,"Maes, Nicolaes"
-162498,10564889,D:\thesis\images\10564889.jpg,354,501,0.177,unknown,False,1,132273,1613,painting,"Mierevelt, Michiel van"
+162498,9274312,D:\thesis\images\9274312.jpg,359,500,0.179,black-and-white photocopy,False,1,132273,1613,painting,"Mierevelt, Michiel van"
+162499,9274313,D:\thesis\images\9274313.jpg,358,500,0.179,black-and-white photocopy,False,1,132274,1612,painting,"Mierevelt, Michiel van"
 162503,10744170,D:\thesis\images\10744170.jpg,406,501,0.203,photograph,False,1,132276,1825,drawing (visual work),Anoniem
 162504,10744182,D:\thesis\images\10744182.jpg,386,500,0.193,reproduction (derivative object),False,1,103429,1925,drawing (visual work),"Laaf, Nicolaas Wilhelmus Johannes de"
 162505,10741926,D:\thesis\images\10741926.jpg,1201,1728,2.075,black and white photograph,False,1,119267,1790,painting,"Lelie, Adriaan de"
@@ -30156,6 +30224,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 163524,10745677,D:\thesis\images\10745677.jpg,1403,1941,2.723,photograph,False,1,12613,1900,painting,"Roelofs, Albert"
 163525,10745678,D:\thesis\images\10745678.jpg,1383,1785,2.469,photograph,False,1,101176,1914,painting,"Roelofs, Albert"
 163527,10389573,D:\thesis\images\10389573.jpg,1765,2276,4.017,unknown,False,1,132935,1725,print,"Ledeboer, Isaac"
+163528,10765486,D:\thesis\images\10765486.jpg,724,1001,0.725,photograph,False,1,132936,1650,print,"Folkema, Jacob"
 163529,10729111,D:\thesis\images\10729111.jpg,363,501,0.182,photograph,False,1,132937,1951,painting,"Hofker, Willem Gerard"
 163530,10729112,D:\thesis\images\10729112.jpg,363,501,0.182,photograph,False,1,132938,1951,painting,"Hofker, Willem Gerard"
 163531,10758428,D:\thesis\images\10758428.jpg,1001,1648,1.65,original photograph,False,1,132939,1864,carte-de-visite,"Greiner, Albert"
@@ -31852,6 +31921,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 166046,10731774,D:\thesis\images\10731774.jpg,442,500,0.221,photograph,False,1,113091,1607,portrait miniature,"Geest, Wybrand de (I)"
 166047,10745753,D:\thesis\images\10745753.jpg,345,500,0.172,reproduction (derivative object),False,1,9419,1965,painting,"Hofker, Willem Gerard"
 166052,10633571,D:\thesis\images\10633571.jpg,450,501,0.225,digital image,True,1,68,1623,painting,"Moreelse, Paulus"
+166053,9201698,D:\thesis\images\9201698.jpg,223,500,0.112,digital image,True,1,9419,1979,painting,"Hofker, Willem Gerard"
 166054,10766698,D:\thesis\images\10766698.jpg,1828,2659,4.861,digital image,True,1,134867,1785,print,"Charpentier, Pierre Henri"
 166057,10726537,D:\thesis\images\10726537.jpg,500,496,0.248,photograph,False,1,134869,1800,print,Anoniem
 166059,10724363,D:\thesis\images\10724363.jpg,1911,2594,4.957,photograph,False,1,134872,1825,drawing (visual work),"Daiwaille, Jean Augustin"
@@ -32307,7 +32377,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 166838,9335288,D:\thesis\images\9335288.jpg,354,500,0.177,black-and-white reproduction,False,1,134892,1850,drawing (visual work),"Hove, Huib van (Bz)"
 166839,10786111,D:\thesis\images\10786111.jpg,301,500,0.15,BD/Digital Collection,False,1,135360,1860,carte-de-visite,"Deutmann, Franz Wilhelm"
 166840,10761267,D:\thesis\images\10761267.jpg,317,501,0.159,BD/Digital Collection,False,1,135102,1876,carte-de-visite,"Hohmann, Jacob"
-166841,10761268,D:\thesis\images\10761268.jpg,307,500,0.153,digital image,True,1,134872,1860,carte-de-visite,Wegner &amp; Mottu
+166841,10786626,D:\thesis\images\10786626.jpg,617,1000,0.617,digital image,True,1,134872,1860,carte-de-visite,Wegner &amp; Mottu
 166842,10786504,D:\thesis\images\10786504.jpg,306,500,0.153,BD/Digital Collection,False,1,135361,1865,carte-de-visite,"Lavieter &amp; Co, De"
 166843,10786619,D:\thesis\images\10786619.jpg,313,500,0.157,BD/Digital Collection,False,1,135362,1860,carte-de-visite,Wegner &amp; Mottu
 166844,10761271,D:\thesis\images\10761271.jpg,309,500,0.154,BD/Digital Collection,False,1,129236,1875,carte-de-visite,"Koning, Dirk J."
@@ -32370,7 +32440,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 166936,10713888,D:\thesis\images\10713888.jpg,3870,5231,20.244,digital image,True,1,108504,1705,painting,"Werff, Adriaen van der"
 166937,10724536,D:\thesis\images\10724536.jpg,430,500,0.215,photograph,False,1,14602,1705,painting,"Werff, Adriaen van der"
 166938,10390324,D:\thesis\images\10390324.jpg,381,501,0.191,unknown,False,1,108642,1937,painting,"Richters, Marius"
-166939,10682884,D:\thesis\images\10682884.jpg,413,500,0.206,digital image,True,1,135431,1740,painting,"Harvie, R."
+166939,10901950,D:\thesis\images\10901950.jpg,825,1000,0.825,digital image,True,1,135431,1740,painting,"Harvie, R."
 166940,10729374,D:\thesis\images\10729374.jpg,1856,2292,4.254,photograph,False,1,101978,1725,painting,"Troost, Cornelis"
 166941,10803019,D:\thesis\images\10803019.jpg,370,500,0.185,digital image,True,1,101978,1711,painting,"Troost, Cornelis"
 166943,10726482,D:\thesis\images\10726482.jpg,381,500,0.191,reproduction (derivative object),False,1,101978,1725,painting,"Troost, Cornelis"
@@ -33004,6 +33074,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 167998,10767099,D:\thesis\images\10767099.jpg,3277,4249,13.924,photograph,False,1,136118,1800,print,"Portman, Ludwig Gottlieb"
 167999,10727120,D:\thesis\images\10727120.jpg,1852,2560,4.741,photograph,False,1,106646,1800,drawing (visual work),"Caspari, Hendrik Willem"
 168000,10766035,D:\thesis\images\10766035.jpg,1699,2491,4.232,photograph,False,1,106646,1800,print,"Velijn, Philippus"
+168004,10746037,D:\thesis\images\10746037.jpg,184,500,0.092,reproduction (derivative object),False,1,136122,1925,drawing (visual work),"Rädecker, John"
 168006,10746038,D:\thesis\images\10746038.jpg,372,500,0.186,reproduction (derivative object),False,1,136124,1925,sculpture,"Rädecker, John"
 168008,9207270,D:\thesis\images\9207270.jpg,429,500,0.214,printouts,False,1,136126,1840,drawing (visual work),"Kunst, Berend"
 168009,10746039,D:\thesis\images\10746039.jpg,386,500,0.193,reproduction (derivative object),False,1,107376,1925,sculpture,"Veen, Gerrit van der"
@@ -33016,6 +33087,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 168031,10746044,D:\thesis\images\10746044.jpg,356,500,0.178,reproduction (derivative object),False,1,107821,1900,drawing (visual work),"Schuhmacher, Wim"
 168034,10769107,D:\thesis\images\10769107.jpg,1859,2882,5.358,original photograph,False,1,122079,1866,cabinet photograph,"Lavieter &amp; Co, De"
 168035,10769108,D:\thesis\images\10769108.jpg,1894,2903,5.498,original photograph,False,1,104729,1880,cabinet photograph,"Goedeljee, Jan"
+168037,10746045,D:\thesis\images\10746045.jpg,409,499,0.204,reproduction (derivative object),False,1,136145,1935,painting,"Dongen, Kees van"
 168038,10733005,D:\thesis\images\10733005.jpg,1852,2276,4.215,reproduction (derivative object),False,1,136146,1800,painting,"Hodges, Charles Howard"
 168039,10769110,D:\thesis\images\10769110.jpg,1898,2892,5.489,original photograph,False,1,122078,1898,cabinet photograph,"Lavieter &amp; Co, De"
 168040,9331481,D:\thesis\images\9331481.jpg,1938,2958,5.733,digital color photograph,True,1,135463,1881,cabinet photograph,"Lavieter &amp; Co, De"
@@ -33447,6 +33519,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 168844,10766278,D:\thesis\images\10766278.jpg,1865,2487,4.638,photograph,False,1,110371,1675,print,Anoniem
 168846,10766709,D:\thesis\images\10766709.jpg,1890,2687,5.078,photograph,False,1,136617,1792,print,"Roode, Theodorus de"
 168847,10765854,D:\thesis\images\10765854.jpg,1870,2587,4.838,photograph,False,1,136618,1650,print,Anoniem
+168848,10766626,D:\thesis\images\10766626.jpg,685,1000,0.685,photograph,False,1,136619,1650,print,Anoniem
 168849,10767084,D:\thesis\images\10767084.jpg,1452,2474,3.592,photograph,False,1,135740,1800,print,Anoniem
 168850,10767083,D:\thesis\images\10767083.jpg,1490,2316,3.451,photograph,False,1,136620,1813,print,"Barbiers, Pieter (IV)"
 168851,10745027,D:\thesis\images\10745027.jpg,1770,2233,3.952,photograph,False,1,136621,1775,drawing (visual work),Anoniem
@@ -33917,7 +33990,10 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 169801,10761901,D:\thesis\images\10761901.jpg,1859,2705,5.029,original photograph,False,1,137290,1905,photograph,Anoniem
 169802,9332572,D:\thesis\images\9332572.jpg,1696,1239,2.101,color photograph,True,1,137294,1800,relief,Anoniem
 169808,10746159,D:\thesis\images\10746159.jpg,231,275,0.064,photograph,False,1,113941,1987,painting,"Stapel, Dick"
+169809,10746158,D:\thesis\images\10746158.jpg,207,275,0.057,photograph,False,1,113941,1980,painting,"Stapel, Dick"
+169810,10746157,D:\thesis\images\10746157.jpg,154,275,0.042,photograph,False,1,137298,1996,painting,"Stapel, Dick"
 169811,10761903,D:\thesis\images\10761903.jpg,1825,2621,4.783,original photograph,False,1,123720,1860,photograph,Anoniem
+169812,10746156,D:\thesis\images\10746156.jpg,137,275,0.038,photograph,False,1,137299,1986,painting,"Stapel, Dick"
 169813,10761904,D:\thesis\images\10761904.jpg,1716,2485,4.264,original photograph,False,1,137300,1883,photograph,"Kameke, Richard"
 169814,10761905,D:\thesis\images\10761905.jpg,1881,2620,4.928,original photograph,False,1,137301,1860,photograph,Anoniem
 169815,10761906,D:\thesis\images\10761906.jpg,1784,2506,4.471,original photograph,False,1,137302,1912,photograph,"Vermeulen, Cornelis Johannes Lodewicus"
@@ -33938,6 +34014,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 169833,10767121,D:\thesis\images\10767121.jpg,318,500,0.159,original photograph,False,1,137311,1739,print,"Houbraken, Jacob"
 169834,10766696,D:\thesis\images\10766696.jpg,3010,4587,13.807,photograph,False,1,137311,1800,print,"Schenk, Pieter (I)"
 169835,10712450,D:\thesis\images\10712450.jpg,1693,2500,4.232,digital image,True,1,137311,1689,print,"Smith, John"
+169839,10746172,D:\thesis\images\10746172.jpg,124,155,0.019,photograph,False,1,137316,1959,painting,"Schröder, Sierk"
 169840,10766068,D:\thesis\images\10766068.jpg,4318,6269,27.07,photograph,False,1,137317,1575,print,Anoniem
 169842,10766130,D:\thesis\images\10766130.jpg,2334,3169,7.396,print,False,1,137321,1600,print,Anoniem
 169843,10766129,D:\thesis\images\10766129.jpg,1933,2937,5.677,photograph,False,1,137321,1614,print,Anoniem
@@ -34344,6 +34421,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 170394,10746188,D:\thesis\images\10746188.jpg,350,453,0.159,photograph,False,1,137743,1925,painting,"Meys, Louis"
 170395,10734748,D:\thesis\images\10734748.jpg,4023,5010,20.155,BD/RKD/1826 - IB/XVIIIB,False,1,137742,1725,painting,Anoniem
 170396,10746189,D:\thesis\images\10746189.jpg,350,405,0.142,photograph,False,1,137744,1950,painting,"Meys, Louis"
+170397,10746190,D:\thesis\images\10746190.jpg,100,116,0.012,photograph,False,1,137744,1955,painting,"Meys, Louis"
 170399,10734755,D:\thesis\images\10734755.jpg,2675,3130,8.373,BD/RKD/1804 - IB/XIXB,False,1,101276,1831,portrait miniature,Anoniem
 170400,10734756,D:\thesis\images\10734756.jpg,2591,3034,7.861,BD/RKD/1804 - IB/XIXB,False,1,137746,1825,portrait miniature,Anoniem
 170401,10746191,D:\thesis\images\10746191.jpg,350,477,0.167,photograph,False,1,9142,1909,drawing (visual work),"Verwey van Udenhout, Laurent"
@@ -34379,13 +34457,22 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 170433,10746210,D:\thesis\images\10746210.jpg,350,432,0.151,photograph,False,1,117033,1983,painting,"Eeden, Paul van"
 170434,10746209,D:\thesis\images\10746209.jpg,350,414,0.145,photograph,False,1,102797,1980,painting,"Kamerlingh Onnes, Harm"
 170435,10746211,D:\thesis\images\10746211.jpg,350,247,0.086,photograph,False,1,102797,1980,painting,"Jong, Hens de"
+170436,10746154,D:\thesis\images\10746154.jpg,149,275,0.041,photograph,False,1,137759,1998,painting,"Stapel, Dick"
+170437,10746155,D:\thesis\images\10746155.jpg,178,275,0.049,photograph,False,1,137760,1986,painting,"Stapel, Dick"
 170438,10746243,D:\thesis\images\10746243.jpg,288,300,0.086,photograph,False,1,137761,2004,painting,"Stapel, Dick"
+170439,10746242,D:\thesis\images\10746242.jpg,158,300,0.047,photograph,False,1,137762,2004,painting,"Stapel, Dick"
+170440,10746241,D:\thesis\images\10746241.jpg,165,300,0.05,photograph,False,1,137763,2004,painting,"Stapel, Dick"
 170441,10746240,D:\thesis\images\10746240.jpg,288,300,0.086,photograph,False,1,137764,2004,painting,"Stapel, Dick"
 170443,10746239,D:\thesis\images\10746239.jpg,300,300,0.09,photograph,False,1,137766,2004,painting,"Stapel, Dick"
+170444,10746238,D:\thesis\images\10746238.jpg,165,300,0.05,photograph,False,1,137767,2004,painting,"Stapel, Dick"
+170445,10746237,D:\thesis\images\10746237.jpg,180,300,0.054,photograph,False,1,137768,2004,painting,"Stapel, Dick"
+170446,10746236,D:\thesis\images\10746236.jpg,161,300,0.048,photograph,False,1,137769,2004,painting,"Stapel, Dick"
 170447,10746235,D:\thesis\images\10746235.jpg,300,300,0.09,photograph,False,1,137770,2004,painting,"Stapel, Dick"
 170449,10740768,D:\thesis\images\10740768.jpg,500,492,0.246,photograph,False,1,117046,1981,painting,"Stapel, Dick"
 170450,10746234,D:\thesis\images\10746234.jpg,314,300,0.094,photograph,False,1,137772,2004,painting,"Stapel, Dick"
 170451,10746233,D:\thesis\images\10746233.jpg,290,275,0.08,photograph,False,1,137773,1995,painting,"Stapel, Dick"
+170452,10746166,D:\thesis\images\10746166.jpg,150,275,0.041,photograph,False,1,137774,1992,painting,"Stapel, Dick"
+170453,10746167,D:\thesis\images\10746167.jpg,141,275,0.039,photograph,False,1,137775,1986,painting,"Stapel, Dick"
 170454,10389584,D:\thesis\images\10389584.jpg,947,1306,1.237,unknown,False,1,137776,1775,painting,Anoniem
 170455,9206924,D:\thesis\images\9206924.jpg,500,375,0.188,digital image,True,1,137778,1945,painting,"Dalí, Salvador"
 170457,10426246,D:\thesis\images\10426246.jpg,4399,3195,14.055,digital color photograph,True,1,137786,1890,photomechanical print,Anoniem
@@ -35932,6 +36019,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 172587,10745167,D:\thesis\images\10745167.jpg,1605,1937,3.109,photograph,False,1,139114,1800,portrait miniature,Anoniem
 172588,10292103,D:\thesis\images\10292103.jpg,2268,3055,6.929,digital image,True,1,117653,1787,print,"Portman, Ludwig Gottlieb"
 172589,10745168,D:\thesis\images\10745168.jpg,1666,2013,3.354,photograph,False,1,139115,1800,portrait miniature,Anoniem
+172590,10765407,D:\thesis\images\10765407.jpg,803,1000,0.803,original photograph,False,1,137229,1787,print,"Sansom, Franciscus"
 172591,10745164,D:\thesis\images\10745164.jpg,402,500,0.201,photograph,False,1,139117,1775,portrait miniature,"Paser..., Bernardus"
 172592,10765408,D:\thesis\images\10765408.jpg,1495,2354,3.519,original photograph,False,1,137229,1789,print,"Vinkeles, Reinier"
 172593,10766718,D:\thesis\images\10766718.jpg,1488,2346,3.491,original photograph,False,1,137229,1789,print,"Vinkeles, Reinier"
@@ -36317,6 +36405,8 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 173169,9335364,D:\thesis\images\9335364.jpg,402,500,0.201,color photograph,True,1,117734,1842,drawing (visual work),"Grient Dreux, A. de"
 173170,9335365,D:\thesis\images\9335365.jpg,411,500,0.205,color photograph,True,1,139715,1842,drawing (visual work),"Grient Dreux, A. de"
 173171,10762571,D:\thesis\images\10762571.jpg,1890,2899,5.479,original photograph,False,1,139712,1866,cabinet photograph,"Vries, Jacob de (Gzn.)"
+173172,10389760,D:\thesis\images\10389760.jpg,215,256,0.055,unknown,False,1,139717,1775,portrait miniature,Anoniem
+173173,10389761,D:\thesis\images\10389761.jpg,215,256,0.055,unknown,False,1,139718,1775,portrait miniature,Anoniem
 173175,9198843,D:\thesis\images\9198843.jpg,468,500,0.234,color photograph,True,1,113671,1625,portrait miniature,"Schurman, Anna Maria van"
 173176,9198842,D:\thesis\images\9198842.jpg,389,500,0.195,color photograph,True,1,113671,1625,portrait miniature,"Schurman, Anna Maria van"
 173177,9335570,D:\thesis\images\9335570.jpg,409,500,0.204,color photograph,True,1,139720,1624,portrait miniature,"Schurman, Anna Maria van"
@@ -36431,6 +36521,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 173317,10745907,D:\thesis\images\10745907.jpg,500,415,0.207,BD/RKD/1836 - IB/XXC,False,1,114506,1958,painting,"Wingen, Edmond"
 173318,10745906,D:\thesis\images\10745906.jpg,357,500,0.178,BD/RKD/1836 - IB/XXC,False,1,139831,1960,painting,"Wingen, Edmond"
 173319,10390319,D:\thesis\images\10390319.jpg,501,381,0.191,unknown,False,1,139835,1925,relief,"Rueb, Gra"
+173320,10768925,D:\thesis\images\10768925.jpg,215,278,0.06,BD/RKD/1836 - IB/XXC,False,1,139836,1968,print,"Vlag, Sees"
 173321,10745909,D:\thesis\images\10745909.jpg,376,500,0.188,BD/RKD/1836 - IB/XXC,False,1,107806,1965,drawing (visual work),"Citroen, Paul"
 173323,10745910,D:\thesis\images\10745910.jpg,422,500,0.211,BD/RKD/1836 - IB/XXC,False,1,137755,1956,drawing (visual work),"Citroen, Paul"
 173324,10745908,D:\thesis\images\10745908.jpg,369,500,0.184,BD/RKD/1834 - IB/XXB,False,1,139838,1947,drawing (visual work),"Citroen, Paul"
@@ -36551,6 +36642,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 173522,10682893,D:\thesis\images\10682893.jpg,381,501,0.191,black-and-white reproduction,False,1,139959,1599,painting,"Salle, Jan Urbeijns de"
 173525,10727494,D:\thesis\images\10727494.jpg,1870,2351,4.396,BD/RKD/1824 - IB/XVIIIA,False,1,139964,1700,painting,Anoniem
 173529,9318994,D:\thesis\images\9318994.jpg,1991,2328,4.635,BD/RKD/1816 - IB/XVIIA,False,1,111327,1620,painting,Anoniem
+173532,10724596,D:\thesis\images\10724596.jpg,211,501,0.106,BD/RKD/1810 - IB/XVIAB,False,1,139969,1525,painting,Anoniem
 173534,10683703,D:\thesis\images\10683703.jpg,406,500,0.203,digital image,True,1,139970,1650,painting,Anoniem
 173537,9332882,D:\thesis\images\9332882.jpg,1118,1472,1.646,black and white photograph,False,1,139973,1750,painting,"Therbusch, Anna Dorothea"
 173542,10633028,D:\thesis\images\10633028.jpg,382,500,0.191,BD/Digital Collection,False,1,139978,1550,painting,"Cronenburg, Adriaen van"
@@ -36879,6 +36971,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 173964,10762700,D:\thesis\images\10762700.jpg,2922,1901,5.555,original photograph,False,1,139739,1893,cabinet photograph,Wegner &amp; Mottu
 173966,10762704,D:\thesis\images\10762704.jpg,2904,1831,5.317,original photograph,False,1,139739,1888,photograph,"Spakler, Hendrik van der Masch"
 173967,10762701,D:\thesis\images\10762701.jpg,2620,1899,4.975,original photograph,False,1,139739,1890,photograph,Anoniem
+173969,10389921,D:\thesis\images\10389921.jpg,183,500,0.091,unknown,False,1,134696,1900,sculpture,Anoniem
 173970,10767604,D:\thesis\images\10767604.jpg,1366,2111,2.884,original photograph,False,1,140323,1730,print,"Picart, Bernard"
 173971,10390080,D:\thesis\images\10390080.jpg,437,500,0.218,unknown,False,1,110059,1900,drawing (visual work),Anoniem
 173972,10767605,D:\thesis\images\10767605.jpg,4861,3483,16.931,original photograph,False,1,138998,1841,print,"Steelink, Willem (sr.)"
@@ -37373,6 +37466,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 174664,10744126,D:\thesis\images\10744126.jpg,435,500,0.217,BD/RKD/1804 - IB/XIXB,False,1,140827,1851,painting,"Aerts, A."
 174665,10744127,D:\thesis\images\10744127.jpg,465,500,0.233,BD/RKD/1804 - IB/XIXB,False,1,140828,1825,painting,Monogrammist H.J.
 174666,10389386,D:\thesis\images\10389386.jpg,446,500,0.223,unknown,False,1,140829,1690,print,"Ravesteyn, Nicolaes van (II)"
+174667,10765842,D:\thesis\images\10765842.jpg,670,1001,0.671,original photograph,False,1,103088,1713,print,"Houbraken, Jacob"
 174668,10768936,D:\thesis\images\10768936.jpg,4769,7480,35.672,original photograph,False,1,120249,1805,print,"Sluyter, Dirk Jurriaan"
 174669,10768935,D:\thesis\images\10768935.jpg,4782,5727,27.387,original photograph,False,1,110641,1831,print,"Eilbracht, Gerhardus Fredericus"
 174670,10766151,D:\thesis\images\10766151.jpg,432,640,0.276,original photograph,False,1,115712,1713,print,"Houbraken, Jacob"
@@ -37603,6 +37697,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 175049,10762793,D:\thesis\images\10762793.jpg,1790,2937,5.257,original photograph,False,1,140673,1860,carte-de-visite,"Oppers, Johannes Petrus"
 175050,10762775,D:\thesis\images\10762775.jpg,1867,2899,5.412,original photograph,False,1,140683,1880,photograph,Anoniem
 175051,10724598,D:\thesis\images\10724598.jpg,269,400,0.108,BD/RKD/1802 - IB/XIXA,False,1,141020,1800,silhouette,Anoniem
+175052,10724599,D:\thesis\images\10724599.jpg,205,437,0.09,BD/RKD/1802 - IB/XIXA,False,1,110978,1800,silhouette,Anoniem
 175053,10389452,D:\thesis\images\10389452.jpg,400,500,0.2,unknown,False,1,132962,1694,painting,"Werff, Adriaen van der"
 175054,10745188,D:\thesis\images\10745188.jpg,379,500,0.19,BD/RKD/1842 - IB/Nassau,False,1,107491,1633,painting,"Lely, Peter"
 175055,10745189,D:\thesis\images\10745189.jpg,376,500,0.188,BD/RKD/1842 - IB/Nassau,False,1,109889,1677,painting,"Lely, Peter"
@@ -38113,6 +38208,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 175690,10763243,D:\thesis\images\10763243.jpg,2557,4048,10.351,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,109364,1860,carte-de-visite,"Kolkow, Friedrich Julius von"
 175691,9202866,D:\thesis\images\9202866.jpg,2618,4421,11.574,print,False,1,107344,1816,print,"Marcus, Jacob Ernst"
 175692,10763244,D:\thesis\images\10763244.jpg,2572,4034,10.375,digital color photograph,True,1,101590,1860,carte-de-visite,"Kolkow, Friedrich Julius von"
+175693,10205061,D:\thesis\images\10205061.jpg,879,1001,0.88,black-and-white photocopy,False,1,141339,1847,photograph,Anoniem
 175694,10768077,D:\thesis\images\10768077.jpg,1504,2447,3.68,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,107344,1829,print,"Roode, Nicolaas Johannes Wilhelmus de"
 175695,10768078,D:\thesis\images\10768078.jpg,1360,1949,2.651,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,107344,1802,print,"Velijn, Philippus"
 175696,10731551,D:\thesis\images\10731551.jpg,1732,2180,3.776,BD/RKD/1802 - IB/XIXA,False,1,141340,1808,drawing (visual work),"Anspach, Johannes"
@@ -38693,9 +38789,12 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 176500,10729304,D:\thesis\images\10729304.jpg,1806,2248,4.06,BD/RKD/1830 - IB/XVIIID,False,1,141801,1775,drawing (visual work),"Dietzer, August"
 176501,10733465,D:\thesis\images\10733465.jpg,1894,2566,4.86,BD/RKD/1830 - IB/XVIIID,False,1,141802,1775,drawing (visual work),"Dietzer, August"
 176502,10733466,D:\thesis\images\10733466.jpg,1894,2561,4.851,BD/RKD/1830 - IB/XVIIID,False,1,141803,1791,drawing (visual work),"Dietzer, August"
+176503,10684268,D:\thesis\images\10684268.jpg,179,500,0.089,color reproduction,True,1,107346,1625,tile tableau,Anoniem
 176504,10727639,D:\thesis\images\10727639.jpg,367,500,0.183,BD/RKD/1830 - IB/XVIIID,False,1,141804,1775,drawing (visual work),"Schmidt, Izaäk"
+176505,10684259,D:\thesis\images\10684259.jpg,144,500,0.072,black-and-white reproduction,False,1,107346,1600,tile (object genre),"Mierevelt, Michiel van"
 176506,10727640,D:\thesis\images\10727640.jpg,388,500,0.194,BD/RKD/1830 - IB/XVIIID,False,1,141805,1775,drawing (visual work),"Schmidt, Izaäk"
 176507,10723491,D:\thesis\images\10723491.jpg,1920,2716,5.215,BD/RKD/1830 - IB/XVIIID,False,1,141806,1775,drawing (visual work),Anoniem
+176508,10684267,D:\thesis\images\10684267.jpg,146,500,0.073,black-and-white reproduction,False,1,100208,1600,tile (object genre),"Mierevelt, Michiel van"
 176509,10723479,D:\thesis\images\10723479.jpg,1907,2614,4.985,BD/RKD/1830 - IB/XVIIID,False,1,141806,1775,drawing (visual work),Anoniem
 176510,10724579,D:\thesis\images\10724579.jpg,1867,2535,4.733,BD/RKD/1830 - IB/XVIIID,False,1,141807,1775,drawing (visual work),Anoniem
 176513,10731078,D:\thesis\images\10731078.jpg,1882,2243,4.221,BD/RKD/1830 - IB/XVIIID,False,1,141808,1775,drawing (visual work),"Rooyen, Gabriël van"
@@ -38706,6 +38805,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 176518,10684269,D:\thesis\images\10684269.jpg,373,500,0.186,color reproduction,True,1,107326,1766,tile tableau,"Croix, Pierre Frédéric de la"
 176519,10684272,D:\thesis\images\10684272.jpg,231,501,0.116,color reproduction,True,1,113330,1767,tile tableau,Anoniem
 176520,10684273,D:\thesis\images\10684273.jpg,225,500,0.113,color reproduction,True,1,107549,1767,tile tableau,Anoniem
+176521,10684275,D:\thesis\images\10684275.jpg,768,1000,0.768,color reproduction,True,1,113328,1813,tile tableau,Anoniem
 176522,10684276,D:\thesis\images\10684276.jpg,384,500,0.192,color reproduction,True,1,107459,1800,tile tableau,Anoniem
 176523,10766750,D:\thesis\images\10766750.jpg,4388,6060,26.591,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,107326,1766,print,"Tanjé, Pieter"
 176525,10766749,D:\thesis\images\10766749.jpg,4184,6168,25.807,digital image,True,1,107549,1755,print,"Tanjé, Pieter"
@@ -39135,6 +39235,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 177038,10763302,D:\thesis\images\10763302.jpg,1897,2776,5.266,original photograph,False,1,142062,1860,photograph,"Weisbrod, Franz"
 177039,10763304,D:\thesis\images\10763304.jpg,1834,2746,5.036,original photograph,False,1,142063,1860,carte-de-visite,Wegner &amp; Mottu
 177040,10463691,D:\thesis\images\10463691.jpg,3249,3254,10.572,digital color photograph,True,1,111083,1900,photograph,Anoniem
+177041,10769066,D:\thesis\images\10769066.jpg,486,1001,0.486,original photograph,False,1,111083,1885,photograph,"Zimmermans, Adolphe"
 177042,10463692,D:\thesis\images\10463692.jpg,3396,5064,17.197,digital color photograph,True,1,111083,1898-09,cabinet photograph,"Deutmann, Herman"
 177043,10766572,D:\thesis\images\10766572.jpg,1543,1735,2.677,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,115474,1610,print,Anoniem
 177044,10766573,D:\thesis\images\10766573.jpg,1601,2196,3.516,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,115474,1600,print,Anoniem
@@ -39519,6 +39620,9 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 177628,10746413,D:\thesis\images\10746413.jpg,358,501,0.179,photograph,False,1,142436,1675,drawing (visual work),"Sani, Domenico Maria"
 177629,10746414,D:\thesis\images\10746414.jpg,361,500,0.18,photograph,False,1,142439,1700,drawing (visual work),"Sani, Domenico Maria"
 177630,9195330,D:\thesis\images\9195330.jpg,411,501,0.206,color photograph,True,1,142440,1920,painting,"Delft, Theo van"
+177631,9195335,D:\thesis\images\9195335.jpg,350,500,0.175,BD/RKD/1836 - IB/XXC,False,1,142441,1960,painting,"Delft, Theo van"
+177632,9195334,D:\thesis\images\9195334.jpg,404,499,0.202,color photograph,True,1,142442,1932,drawing (visual work),"Lamsweerde, Clemens van"
+177633,9223396,D:\thesis\images\9223396.jpg,460,499,0.23,color photograph,True,1,142443,1964,painting,"Delft, Theo van"
 177634,10746591,D:\thesis\images\10746591.jpg,275,500,0.138,photograph,False,1,142443,1959,painting,"Eyck, Charles"
 177635,9273181,D:\thesis\images\9273181.jpg,3110,3487,10.845,digital color photograph,True,1,142444,1683,painting,"Netscher, Constantijn"
 177636,10390358,D:\thesis\images\10390358.jpg,389,500,0.195,unknown,False,1,142445,1928,painting,"Delft, Theo van"
@@ -39529,6 +39633,8 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 177641,10746594,D:\thesis\images\10746594.jpg,419,500,0.209,BD/RKD/1838 - IB/XXD,False,1,142447,1995,drawing (visual work),"Hoek, Annelies"
 177643,10746590,D:\thesis\images\10746590.jpg,391,500,0.196,photograph,False,1,142451,2003,painting,"Mair, Cornelis le"
 177645,9223400,D:\thesis\images\9223400.jpg,1750,2501,4.377,photograph,False,1,142451,1989,photograph,Anoniem
+177646,9195332,D:\thesis\images\9195332.jpg,448,499,0.224,color photograph,True,1,142452,1995,painting,"Hoek, Annelies"
+177647,9195329,D:\thesis\images\9195329.jpg,419,499,0.209,color photograph,True,1,142452,1995,painting,"Hoek, Annelies"
 177648,10745230,D:\thesis\images\10745230.jpg,396,500,0.198,BD/RKD/1832 - IB/XXA,False,1,142384,1900,photograph,"Elite, Fotografie"
 177649,9185500,D:\thesis\images\9185500.jpg,2585,3607,9.324,black and white photograph,False,1,142454,1665,painting,"Maes, Nicolaes"
 177650,9223397,D:\thesis\images\9223397.jpg,408,500,0.204,color photograph,True,1,114079,1865,painting,"Tetar van Elven, Paul"
@@ -39537,6 +39643,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 177653,10728923,D:\thesis\images\10728923.jpg,1096,1450,1.589,reproduction (derivative object),False,1,142456,1850,painting,Anoniem
 177655,9273330,D:\thesis\images\9273330.jpg,3025,3634,10.993,digital color photograph,True,1,116501,1768,drawing (visual work),Anoniem
 177657,9224815,D:\thesis\images\9224815.jpg,2909,3578,10.408,color photograph,True,1,142458,1830,portrait miniature,"Schmetterling, Elisabeth Barbara"
+177658,9195331,D:\thesis\images\9195331.jpg,422,500,0.211,black-and-white reproduction,False,1,142459,1925,painting,"Ansingh, Lizzy"
 177659,9273310,D:\thesis\images\9273310.jpg,3157,3421,10.8,digital color photograph,True,1,142460,1750,drawing (visual work),Anoniem
 177661,10722278,D:\thesis\images\10722278.jpg,3003,3880,11.652,photograph,False,1,142461,1825,silhouette,Anoniem
 177662,10729817,D:\thesis\images\10729817.jpg,382,500,0.191,photograph,False,1,142484,1775,silhouette,Reigersman
@@ -39900,7 +40007,12 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 178202,10763463,D:\thesis\images\10763463.jpg,1898,2878,5.462,original photograph,False,1,142840,1892,cabinet photograph,"Bruining, Bernardus"
 178203,9201752,D:\thesis\images\9201752.jpg,2556,4037,10.319,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,126242,1914,photograph,Velox
 178204,10763464,D:\thesis\images\10763464.jpg,1845,2861,5.279,original photograph,False,1,142516,1892,cabinet photograph,"Radermacher, E."
+178208,10763472,D:\thesis\images\10763472.jpg,754,1000,0.754,original photograph,False,1,111082,1898-09,photograph,Anoniem
+178211,10763474,D:\thesis\images\10763474.jpg,1001,762,0.763,original photograph,False,1,111083,1901,photograph,Anoniem
+178212,10763475,D:\thesis\images\10763475.jpg,1001,796,0.797,original photograph,False,1,125710,1908,photograph,Anoniem
+178215,10763477,D:\thesis\images\10763477.jpg,695,1001,0.696,original photograph,False,1,125710,1902,photograph,Anoniem
 178216,10765612,D:\thesis\images\10765612.jpg,1513,2467,3.733,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,142848,1577,print,"Stock, Andries Jacobsz."
+178217,10763478,D:\thesis\images\10763478.jpg,693,1000,0.693,original photograph,False,1,142847,1902,photograph,Anoniem
 178220,10746419,D:\thesis\images\10746419.jpg,2183,1904,4.156,photograph,False,1,137311,1675,painting,"Wyck, Jan"
 178224,10765771,D:\thesis\images\10765771.jpg,1566,2508,3.928,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,134076,1588,print,"Hondius, Hendrik (I)"
 178225,10768498,D:\thesis\images\10768498.jpg,1501,2494,3.743,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,138694,1588,print,"Hondius, Hendrik (I)"
@@ -40249,6 +40361,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 178688,10765667,D:\thesis\images\10765667.jpg,1525,2682,4.09,original photograph,False,1,143142,1835,print,"Tuerlinckx, Louis"
 178689,10765680,D:\thesis\images\10765680.jpg,1338,1698,2.272,original photograph,False,1,143143,1585,print,"Boissard, Robert"
 178690,10765674,D:\thesis\images\10765674.jpg,1278,1800,2.3,original photograph,False,1,143143,1552,print,"Galle, Philips"
+178691,10768524,D:\thesis\images\10768524.jpg,214,286,0.061,original photograph,False,1,143143,1600,print,Anoniem
 178692,10765678,D:\thesis\images\10765678.jpg,1035,1326,1.372,original photograph,False,1,143143,1552,print,"Galle, Philips"
 178693,10765670,D:\thesis\images\10765670.jpg,1584,2592,4.106,original photograph,False,1,143143,1740,print,"Houbraken, Jacob"
 178694,10765669,D:\thesis\images\10765669.jpg,1500,2256,3.384,original photograph,False,1,143143,1713,print,"Houbraken, Jacob"
@@ -40388,6 +40501,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 178888,10763721,D:\thesis\images\10763721.jpg,1828,2799,5.117,original photograph,False,1,143267,1866,cabinet photograph,"Cordes, C.F. &amp; L.J."
 178889,10763722,D:\thesis\images\10763722.jpg,1816,2392,4.344,original photograph,False,1,130912,1860,photograph,Anoniem
 178890,10763723,D:\thesis\images\10763723.jpg,1896,2584,4.899,original photograph,False,1,130912,1860,photograph,Binger's
+178891,10765936,D:\thesis\images\10765936.jpg,210,327,0.069,original photograph,False,1,141598,1600,print,Anoniem
 178892,10763724,D:\thesis\images\10763724.jpg,1407,2816,3.962,original photograph,False,1,130912,1860,photograph,Anoniem
 178893,10765946,D:\thesis\images\10765946.jpg,1308,2123,2.777,original photograph,False,1,143268,1777,print,"Houbraken, Jacob"
 178894,10763725,D:\thesis\images\10763725.jpg,1889,2908,5.493,original photograph,False,1,8511,1866,cabinet photograph,"Karsses, Roelof Hinderikus Christiaan"
@@ -40614,6 +40728,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 179177,10763846,D:\thesis\images\10763846.jpg,1886,2584,4.873,original photograph,False,1,121614,1860,photograph,"Reijers, Coenradus Hendrikus Johannes"
 179179,10766695,D:\thesis\images\10766695.jpg,1744,2243,3.912,original photograph,False,1,143394,1650,print,Anoniem
 179182,9289843,D:\thesis\images\9289843.jpg,2644,3582,9.471,black and white photograph,False,1,143397,1800,painting,"Boilly, Louis-Léopold"
+179183,10766489,D:\thesis\images\10766489.jpg,832,1001,0.833,original photograph,False,1,133539,1855,print,"Berghaus, Johann Peter"
 179184,9228083,D:\thesis\images\9228083.jpg,398,500,0.199,black and white photograph,False,1,115732,1825,painting,"Hodges, Charles Howard"
 179185,10732357,D:\thesis\images\10732357.jpg,1819,2305,4.193,photograph,False,1,143398,1625,painting,Anoniem
 179186,10732366,D:\thesis\images\10732366.jpg,2799,1708,4.781,black and white photograph,False,1,101681,1800,painting,Anoniem
@@ -40675,6 +40790,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 179254,9273923,D:\thesis\images\9273923.jpg,2772,3696,10.245,black and white photograph,False,1,143444,1725,painting,"Koets, J. Pieter"
 179255,10648765,D:\thesis\images\10648765.jpg,419,500,0.209,digital image,True,1,119091,1779,painting,"Coclers, Louis Bernard"
 179256,10648767,D:\thesis\images\10648767.jpg,424,500,0.212,digital image,True,1,119092,1779,painting,"Coclers, Louis Bernard"
+179257,10766694,D:\thesis\images\10766694.jpg,795,1001,0.796,original photograph,False,1,9536,1834,print,Anoniem
 179258,10723380,D:\thesis\images\10723380.jpg,1896,2211,4.192,photograph,False,1,143447,1795,drawing (visual work),"Notten, Abraham Pieter van"
 179259,10723381,D:\thesis\images\10723381.jpg,1804,2134,3.85,photograph,False,1,143448,1795,drawing (visual work),"Notten, Abraham Pieter van"
 179260,10722925,D:\thesis\images\10722925.jpg,1890,2309,4.364,photograph,False,1,143447,1770,painting,Anoniem
@@ -40734,6 +40850,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 179347,10728152,D:\thesis\images\10728152.jpg,1844,2580,4.758,photograph,False,1,116552,1624,painting,Anoniem
 179348,10765370,D:\thesis\images\10765370.jpg,1894,3268,6.19,original photograph,False,1,116552,1600,print,"Galle, Philips"
 179349,10765372,D:\thesis\images\10765372.jpg,1548,2278,3.526,original photograph,False,1,143487,1600,print,Anoniem
+179350,10768575,D:\thesis\images\10768575.jpg,646,1001,0.647,original photograph,False,1,143487,1650,print,Anoniem
 179352,10766722,D:\thesis\images\10766722.jpg,1170,2021,2.365,original photograph,False,1,143487,1786,print,"Vinkeles, Reinier"
 179356,9224705,D:\thesis\images\9224705.jpg,1885,2623,4.944,print,False,1,137317,1600,print,Anoniem
 179357,10768579,D:\thesis\images\10768579.jpg,1476,1932,2.852,original photograph,False,1,137317,1600,print,Anoniem
@@ -40975,6 +41092,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 179690,10766334,D:\thesis\images\10766334.jpg,1428,2054,2.933,original photograph,False,1,143688,1837,print,"Chimaer van Oudendorp, Wilhelmus Cornelius"
 179691,10766335,D:\thesis\images\10766335.jpg,2630,778,2.046,original photograph,False,1,143688,1675,print,"Smeltzing, Jan (I)"
 179692,10768608,D:\thesis\images\10768608.jpg,1366,1223,1.671,original photograph,False,1,143688,1800,print,Anoniem
+179693,10768609,D:\thesis\images\10768609.jpg,219,350,0.077,original photograph,False,1,143688,1650,print,Anoniem
 179694,10768610,D:\thesis\images\10768610.jpg,817,685,0.56,original photograph,False,1,143688,1700,print,Anoniem
 179695,10766329,D:\thesis\images\10766329.jpg,1047,1674,1.753,original photograph,False,1,143688,1700,print,Anoniem
 179696,10766333,D:\thesis\images\10766333.jpg,1743,2151,3.749,original photograph,False,1,143688,1874,print,Anoniem
@@ -41147,6 +41265,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 179977,10765562,D:\thesis\images\10765562.jpg,1312,1916,2.514,original photograph,False,1,143861,1608,print,"Velde, Jan van de (II)"
 179979,10765565,D:\thesis\images\10765565.jpg,1656,2216,3.67,original photograph,False,1,143867,1600,print,Anoniem
 179980,10765567,D:\thesis\images\10765567.jpg,1758,2814,4.947,original photograph,False,1,143870,1595,print,"Delff, Willem Jacobsz."
+179981,10766187,D:\thesis\images\10766187.jpg,808,1000,0.808,digital image,True,1,119880,1853,print,"Boland, Johannes Arnoldus"
 179982,10765619,D:\thesis\images\10765619.jpg,1753,3078,5.396,original photograph,False,1,143871,1610,print,"Delff, Willem Jacobsz."
 179983,10766699,D:\thesis\images\10766699.jpg,1490,2299,3.426,original photograph,False,1,143872,1600,print,Anoniem
 179984,10766700,D:\thesis\images\10766700.jpg,1116,1675,1.869,original photograph,False,1,143872,1700,print,Anoniem
@@ -41410,8 +41529,10 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 180379,10764193,D:\thesis\images\10764193.jpg,1854,2799,5.189,original photograph,False,1,131977,1860,photograph,"Reesinck, J.C."
 180380,10764194,D:\thesis\images\10764194.jpg,1864,2799,5.217,original photograph,False,1,131977,1860,photograph,"Reesinck, J.C."
 180382,10764195,D:\thesis\images\10764195.jpg,1899,2870,5.45,original photograph,False,1,112364,1876,cabinet photograph,"Bassano, Alexander"
+180384,10765876,D:\thesis\images\10765876.jpg,694,1000,0.694,original photograph,False,1,117908,1675,print,Anoniem
 180386,10766250,D:\thesis\images\10766250.jpg,5760,7363,42.411,original photograph,False,1,13404,1844,print,"Stam, Willem Hendrik"
 180387,10764196,D:\thesis\images\10764196.jpg,1889,2880,5.44,original photograph,False,1,112364,1885,cabinet photograph,"Schaarwächter, Julius Cornelius"
+180389,10768643,D:\thesis\images\10768643.jpg,661,1001,0.662,original photograph,False,1,108656,1645,print,"Bary, Hendrik"
 180390,10764197,D:\thesis\images\10764197.jpg,1905,2883,5.492,original photograph,False,1,112349,1890,cabinet photograph,"Friedrich, Franz"
 180392,10764198,D:\thesis\images\10764198.jpg,1889,2536,4.791,original photograph,False,1,144146,1890,cabinet photograph,"Vermeulen, Cornelis Johannes Lodewicus"
 180394,9195226,D:\thesis\images\9195226.jpg,5268,6842,36.044,print,False,1,13404,1824,print,"Waanders, Franciscus Bernardus"
@@ -41488,6 +41609,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 180503,10766169,D:\thesis\images\10766169.jpg,1992,2609,5.197,original photograph,False,1,114710,1788,print,"Senus, Willem van"
 180510,10766253,D:\thesis\images\10766253.jpg,2604,3886,10.119,original photograph,False,1,13404,1823,print,"Hoevenaar, Willem Pieter"
 180511,10764230,D:\thesis\images\10764230.jpg,1918,2716,5.209,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,144210,1920,photograph,"Berssenbrugge, Henri"
+180512,10766448,D:\thesis\images\10766448.jpg,701,1001,0.702,original photograph,False,1,108586,1758,print,"Houbraken, Jacob"
 180513,10764231,D:\thesis\images\10764231.jpg,2340,1806,4.226,original photograph,False,1,101823,1895,photograph,Anoniem
 180514,10764232,D:\thesis\images\10764232.jpg,2418,1771,4.282,original photograph,False,1,101823,1860,photograph,Anoniem
 180517,10766154,D:\thesis\images\10766154.jpg,1704,2531,4.313,original photograph,False,1,108586,1746,print,"Houbraken, Jacob"
@@ -41623,6 +41745,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 180705,10746436,D:\thesis\images\10746436.jpg,354,501,0.177,photograph,False,1,144312,2007,painting,"Doorn, Daan van"
 180706,10746435,D:\thesis\images\10746435.jpg,284,500,0.142,photograph,False,1,114024,1990,painting,"Doorn, Daan van"
 180707,10746434,D:\thesis\images\10746434.jpg,424,500,0.212,photograph,False,1,107318,2000,painting,"Doorn, Daan van"
+180708,10746433,D:\thesis\images\10746433.jpg,501,214,0.107,photograph,False,1,144313,2007,painting,"Doorn, Daan van"
 180710,10746432,D:\thesis\images\10746432.jpg,368,501,0.184,photograph,False,1,144314,2005,painting,"Doorn, Daan van"
 180711,10746431,D:\thesis\images\10746431.jpg,403,500,0.202,photograph,False,1,13146,2004,painting,"Doorn, Daan van"
 180713,10746430,D:\thesis\images\10746430.jpg,327,500,0.164,photograph,False,1,144315,2005,painting,"Doorn, Daan van"
@@ -41837,6 +41960,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 180989,9164517,D:\thesis\images\9164517.jpg,416,500,0.208,black and white photograph,False,1,144437,1800,drawing (visual work),"Anspach, Johannes"
 180990,10768688,D:\thesis\images\10768688.jpg,3642,4776,17.394,original photograph,False,1,122851,1850,print,"Mitchell, Edward"
 180992,10768689,D:\thesis\images\10768689.jpg,3606,4734,17.071,original photograph,False,1,144440,1850,print,"Mitchell, Edward"
+180993,10768686,D:\thesis\images\10768686.jpg,217,501,0.109,digital image,True,1,110323,1873,print,"Toorop, Jan"
 180994,10766859,D:\thesis\images\10766859.jpg,500,399,0.2,photograph,False,1,144441,1821,print,"Backer, Hilmar Johannes"
 180995,10390155,D:\thesis\images\10390155.jpg,423,569,0.241,unknown,False,1,7361,1925,drawing (visual work),"Gestel, Leo"
 180996,10768690,D:\thesis\images\10768690.jpg,3612,4745,17.139,original photograph,False,1,11297,1850,print,"Mitchell, Edward"
@@ -41924,6 +42048,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 181095,10765547,D:\thesis\images\10765547.jpg,3472,4320,14.999,original photograph,False,1,136146,1804,print,"Springer, Leendert"
 181096,10765548,D:\thesis\images\10765548.jpg,3029,3852,11.668,original photograph,False,1,136146,1829,print,"Senus, Willem van"
 181097,10765549,D:\thesis\images\10765549.jpg,2369,2925,6.929,original photograph,False,1,136146,1788,print,"Senus, Willem van"
+181098,10765807,D:\thesis\images\10765807.jpg,635,1000,0.635,original photograph,False,1,144482,1719,print,"Haid, Johann Jacob"
 181099,10765556,D:\thesis\images\10765556.jpg,3532,4596,16.233,original photograph,False,1,144483,1819,print,"Backer, Hilmar Johannes"
 181100,10766388,D:\thesis\images\10766388.jpg,3543,4731,16.762,black-and-white reproduction,False,1,144484,1736,print,"Houbraken, Jacob"
 181101,10765563,D:\thesis\images\10765563.jpg,1361,2220,3.021,original photograph,False,1,144484,1700,print,Anoniem
@@ -41956,6 +42081,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 181131,10764359,D:\thesis\images\10764359.jpg,1896,2892,5.483,original photograph,False,1,123561,1890,cabinet photograph,"Vries, Jan Kz de"
 181132,10764360,D:\thesis\images\10764360.jpg,1915,2687,5.146,original photograph,False,1,144503,1900,cabinet photograph,"Potterat, E."
 181133,10764361,D:\thesis\images\10764361.jpg,1889,2462,4.651,original photograph,False,1,123940,1860,photograph,Anoniem
+181134,10765722,D:\thesis\images\10765722.jpg,715,1000,0.715,original photograph,False,1,144504,1747,print,"Houbraken, Jacob"
 181135,10768699,D:\thesis\images\10768699.jpg,1535,2262,3.472,original photograph,False,1,143269,1600,print,"Passe, Crispijn de (I)"
 181136,9164389,D:\thesis\images\9164389.jpg,314,500,0.157,black-and-white reproduction,False,1,143269,1596,print,"Gheyn, Jacques de (II)"
 181138,10764362,D:\thesis\images\10764362.jpg,1809,2867,5.186,original photograph,False,1,123591,1860,carte-de-visite,Anoniem
@@ -42161,8 +42287,9 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 181375,9296663,D:\thesis\images\9296663.jpg,500,395,0.198,digital image,True,1,144646,1890,painting,"Israels, Isaac"
 181376,10766279,D:\thesis\images\10766279.jpg,2989,4360,13.032,original photograph,False,1,144647,1715,print,"Lindenbergh, Jacques"
 181377,10731450,D:\thesis\images\10731450.jpg,440,500,0.22,BD/RKD/1864 - IB/Silhouetportretten,False,1,144649,1800,silhouette,Anoniem
-181378,10746794,D:\thesis\images\10746794.jpg,556,657,0.365,color reproduction,True,1,107406,1607,painting,"Mierevelt, Michiel van"
+181378,9164382,D:\thesis\images\9164382.jpg,846,1000,0.846,BD/RKD/1842 - IB/Nassau,False,1,107406,1607,painting,"Mierevelt, Michiel van"
 181379,9161137,D:\thesis\images\9161137.jpg,1520,1780,2.706,color photograph,True,1,140594,1644,drawing (visual work),"Quast, Pieter Jansz."
+181381,10291994,D:\thesis\images\10291994.jpg,384,500,0.192,color reproduction,True,1,144650,1984,print,"Dumas, Marlene"
 181383,10390435,D:\thesis\images\10390435.jpg,418,501,0.209,unknown,False,1,144652,1967,drawing (visual work),"Citroen, Paul"
 181384,10390413,D:\thesis\images\10390413.jpg,389,500,0.195,unknown,False,1,61,1957,painting,"Koning, Roeland (1898-1985)"
 181385,10389948,D:\thesis\images\10389948.jpg,357,500,0.178,unknown,False,1,144653,1929,painting,"Koning, Roeland (1898-1985)"
@@ -42798,6 +42925,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 182169,10764557,D:\thesis\images\10764557.jpg,2623,1826,4.79,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,122739,1924,photograph,Anoniem
 182170,10764558,D:\thesis\images\10764558.jpg,1788,2863,5.119,original photograph,False,1,122721,1860,carte-de-visite,Anoniem
 182172,10764559,D:\thesis\images\10764559.jpg,1737,2860,4.968,original photograph,False,1,145178,1860,photograph,Anoniem
+182173,10765956,D:\thesis\images\10765956.jpg,697,1000,0.697,original photograph,False,1,145179,1764,print,"Sallieth, Mathias de"
 182174,10768762,D:\thesis\images\10768762.jpg,6170,8287,51.131,original photograph,False,1,145179,1805,print,"Kockers, George"
 182175,10764560,D:\thesis\images\10764560.jpg,1752,2894,5.07,original photograph,False,1,122712,1860,photograph,Anoniem
 182176,10764561,D:\thesis\images\10764561.jpg,1746,2894,5.053,original photograph,False,1,122690,1860,photograph,Anoniem
@@ -42985,6 +43113,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 182430,10204616,D:\thesis\images\10204616.jpg,832,1024,0.852,black and white photograph,False,1,145373,1852,drawing (visual work),"Siebert, Heinrich (I)"
 182431,9186185,D:\thesis\images\9186185.jpg,241,500,0.12,digital image,True,1,102555,1914,painting,"Citroen, Paul"
 182432,9240944,D:\thesis\images\9240944.jpg,386,501,0.193,black and white photograph,False,1,145375,1850,drawing (visual work),"Siebert, Heinrich (I)"
+182433,9186200,D:\thesis\images\9186200.jpg,200,501,0.1,color reproduction,True,1,102555,1961,painting,"Citroen, Paul"
 182434,9240945,D:\thesis\images\9240945.jpg,398,500,0.199,black and white photograph,False,1,145374,1852,drawing (visual work),"Siebert, Heinrich (I)"
 182435,10204619,D:\thesis\images\10204619.jpg,399,500,0.2,black and white photograph,False,1,145376,1850,drawing (visual work),Anoniem
 182436,10747005,D:\thesis\images\10747005.jpg,415,500,0.207,digital image,True,1,145377,2003,painting,"Thomassen, Jean"
@@ -42999,6 +43128,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 182451,10765823,D:\thesis\images\10765823.jpg,335,501,0.168,photograph,False,1,145388,1675,print,Anoniem
 182452,10766401,D:\thesis\images\10766401.jpg,6954,8775,61.021,original photograph,False,1,145389,1843,print,"Schubert, Joseph"
 182453,9186204,D:\thesis\images\9186204.jpg,416,500,0.208,digital image,True,1,145390,1963,drawing (visual work),"Citroen, Paul"
+182454,10390394,D:\thesis\images\10390394.jpg,175,500,0.087,unknown,False,1,102397,1962,painting,"Citroen, Paul"
 182455,10764692,D:\thesis\images\10764692.jpg,1891,2876,5.439,original photograph,False,1,123933,1880,cabinet photograph,Macnabb
 182456,10764693,D:\thesis\images\10764693.jpg,1900,2894,5.499,original photograph,False,1,123934,1880,cabinet photograph,Macnabb
 182457,10764694,D:\thesis\images\10764694.jpg,1906,2544,4.849,original photograph,False,1,145392,1860,photograph,Anoniem
@@ -43301,6 +43431,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 182803,10746849,D:\thesis\images\10746849.jpg,338,500,0.169,reproduction (derivative object),False,1,118034,1910,drawing (visual work),"Welie, Antoon van"
 182804,10746850,D:\thesis\images\10746850.jpg,500,318,0.159,reproduction (derivative object),False,1,17018,1910,painting,"Hekker, Theo"
 182806,10768770,D:\thesis\images\10768770.jpg,292,332,0.097,reproduction (derivative object),False,1,93,1925,print,"Laat, Nico de"
+182807,10768771,D:\thesis\images\10768771.jpg,221,269,0.059,reproduction (derivative object),False,1,114416,1925,print,"Laat, Nico de"
 182808,10746852,D:\thesis\images\10746852.jpg,353,500,0.176,reproduction (derivative object),False,1,145631,1969,drawing (visual work),"Veer, Johan Laurent ter"
 182809,10724565,D:\thesis\images\10724565.jpg,1935,2595,5.021,BD/RKD/1802 - IB/XIXA,False,1,142076,1813,painting,"Jacquin, François Xavier Joseph"
 182811,9224644,D:\thesis\images\9224644.jpg,2557,3380,8.643,black and white photograph,False,1,113486,1817,painting,"Jacquin, François Xavier Joseph"
@@ -43392,6 +43523,8 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 182925,10764855,D:\thesis\images\10764855.jpg,2633,4017,10.577,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,122828,1866,cabinet photograph,"Clausing, P."
 182926,9223152,D:\thesis\images\9223152.jpg,2363,3260,7.703,digital image,True,1,145692,1641,painting,Anoniem
 182927,10764856,D:\thesis\images\10764856.jpg,1903,2713,5.163,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,122828,1879,photomechanical print,"Clausing, P."
+182929,10746684,D:\thesis\images\10746684.jpg,148,180,0.027,BD/RKD/IB,False,1,110371,1650,painting,Anoniem
+182930,10746685,D:\thesis\images\10746685.jpg,148,180,0.027,digital image,True,1,142541,1650,painting,Anoniem
 182931,9227470,D:\thesis\images\9227470.jpg,3137,4024,12.623,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,126750,1860,photograph,"Boussod, Valadon &amp; Cie"
 182932,10764859,D:\thesis\images\10764859.jpg,2669,4080,10.89,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,126748,1888,cabinet photograph,"Baer, Johannes"
 182933,10764860,D:\thesis\images\10764860.jpg,2584,3829,9.894,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,145697,1902,cabinet photograph,"Vermeulen, Cornelis Johannes Lodewicus"
@@ -43404,6 +43537,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 182941,10764865,D:\thesis\images\10764865.jpg,2791,3541,9.883,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,145705,1860,photograph,Anoniem
 182942,10764866,D:\thesis\images\10764866.jpg,2305,3469,7.996,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,145706,1900,cabinet photograph,"Oldenkamp, W."
 182943,10726142,D:\thesis\images\10726142.jpg,380,500,0.19,BD/RKD/1802 - IB/XIXA,False,1,145707,1809,painting,"Horstok, Johannes Petrus van"
+182944,10746867,D:\thesis\images\10746867.jpg,194,500,0.097,reproduction (derivative object),False,1,106327,2008,sculpture,"Letterie, Frank"
 182945,10723801,D:\thesis\images\10723801.jpg,2056,2624,5.395,black and white photograph,False,1,145708,1818,painting,"Hodges, Charles Howard"
 182946,9290306,D:\thesis\images\9290306.jpg,2617,3260,8.531,digital color photograph,True,1,145709,1775,silhouette,Anoniem
 182947,10768772,D:\thesis\images\10768772.jpg,2734,4299,11.753,black and white photograph,False,1,133769,1857,print,"Sluyter, Dirk Jurriaan"
@@ -44916,6 +45050,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 188076,9169393,D:\thesis\images\9169393.jpg,2580,3054,7.879,color photograph,True,1,200342,1639,painting,"Mierevelt, Michiel van"
 188084,10723535,D:\thesis\images\10723535.jpg,2540,2895,7.353,digital color photograph,True,1,118937,1790,painting,"Hodges, Charles Howard"
 188093,9190916,D:\thesis\images\9190916.jpg,3073,4140,12.722,black and white photograph,False,1,118937,1885,drawing (visual work),"Hodges, Charles Howard"
+188094,9169394,D:\thesis\images\9169394.jpg,213,500,0.106,digital image,True,1,200350,2005,painting,"Hartjesveld, Elsa"
 188107,9182125,D:\thesis\images\9182125.jpg,439,500,0.22,digital image,True,1,200351,1942,painting,"Fernhout, Edgar"
 188115,9182126,D:\thesis\images\9182126.jpg,3214,5042,16.205,print,False,1,105683,1800,print,"Delff, Willem Jacobsz."
 188117,9182127,D:\thesis\images\9182127.jpg,2517,3847,9.683,original photograph,False,1,200352,1900,cabinet photograph,"Jonker, Hendrik"
@@ -45067,6 +45202,10 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 189433,9178733,D:\thesis\images\9178733.jpg,500,354,0.177,BD/RKD/1600 - MHK/The Netherlands/Paintings and Drawings,False,1,17467,1946,drawing (visual work),"Fiedler, Herbert"
 189439,9186198,D:\thesis\images\9186198.jpg,383,500,0.192,digital image,True,1,102555,1961,drawing (visual work),"Citroen, Paul"
 189440,9186199,D:\thesis\images\9186199.jpg,255,309,0.079,digital image,True,1,116714,1947,painting,"Citroen, Paul"
+189444,9186201,D:\thesis\images\9186201.jpg,167,500,0.084,digital image,True,1,101754,1961,painting,"Citroen, Paul"
+189448,9186202,D:\thesis\images\9186202.jpg,180,501,0.09,digital image,True,1,200453,1961,painting,"Citroen, Paul"
+189450,9186203,D:\thesis\images\9186203.jpg,182,501,0.091,digital image,True,1,112366,1960,painting,"Citroen, Paul"
+189458,9186205,D:\thesis\images\9186205.jpg,189,500,0.095,digital image,True,1,116811,1962,painting,"Citroen, Paul"
 189460,9186206,D:\thesis\images\9186206.jpg,427,500,0.213,digital image,True,1,146347,1971,painting,"Citroen, Paul"
 189462,9186208,D:\thesis\images\9186208.jpg,368,500,0.184,digital image,True,1,200454,1921,drawing (visual work),"Citroen, Paul"
 189463,10727731,D:\thesis\images\10727731.jpg,3182,3852,12.257,digital color photograph,True,1,111054,1613,painting,"Mierevelt, Michiel van"
@@ -45280,6 +45419,8 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 190538,9186941,D:\thesis\images\9186941.jpg,3610,4415,15.938,digital color photograph,True,1,200536,1780,drawing (visual work),Anoniem
 190541,9190760,D:\thesis\images\9190760.jpg,1989,3018,6.003,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,107524,1881,photograph,"Oosterhuis, Gustaaf"
 190543,9190761,D:\thesis\images\9190761.jpg,1922,3032,5.828,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,114268,1860,carte-de-visite,"Severin, Robert"
+190545,9190768,D:\thesis\images\9190768.jpg,164,157,0.026,digital image,True,1,107491,1690,"plate (general, dish)",Anoniem
+190546,9190769,D:\thesis\images\9190769.jpg,160,158,0.025,digital image,True,1,107491,1690,"plate (general, dish)",Anoniem
 190549,9190782,D:\thesis\images\9190782.jpg,340,338,0.115,digital image,True,1,107491,1690,"plate (general, dish)",Anoniem
 190550,9190783,D:\thesis\images\9190783.jpg,905,864,0.782,digital image,True,1,107491,1690,"plate (general, dish)",Anoniem
 190551,10719102,D:\thesis\images\10719102.jpg,362,500,0.181,digital image,True,1,200536,1780,painting,"Puyl, Louis François Gerard van der"
@@ -45290,6 +45431,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 190594,9190771,D:\thesis\images\9190771.jpg,2027,3294,6.677,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,108777,1860,photograph,"Taurel, Benoit"
 190600,9190775,D:\thesis\images\9190775.jpg,1976,3201,6.325,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,113328,1860,photograph,"Van der Hulst, Jean-Baptiste"
 190603,9190774,D:\thesis\images\9190774.jpg,1985,3153,6.259,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,107459,1860,photograph,"Pieneman, Jan Willem"
+190647,9190791,D:\thesis\images\9190791.jpg,300,217,0.065,digital image,True,1,200537,1805,portrait miniature,Anoniem
 190654,9190794,D:\thesis\images\9190794.jpg,405,500,0.203,black and white photograph,False,1,200538,1700,portrait miniature,"Halen, Arnoud van"
 190659,9190793,D:\thesis\images\9190793.jpg,492,780,0.384,digital image,True,1,200538,1645,print,"Suyderhoef, Jonas"
 190672,9190795,D:\thesis\images\9190795.jpg,406,500,0.203,black and white photograph,False,1,100208,1671,painting,"Netscher, Caspar"
@@ -45304,6 +45446,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 190758,9186945,D:\thesis\images\9186945.jpg,4200,3462,14.54,digital color photograph,True,1,116765,1550,drawing (visual work),Anoniem
 190764,9190800,D:\thesis\images\9190800.jpg,313,501,0.157,black and white photograph,False,1,110,1943,painting,"Fernhout, Edgar"
 190768,9190806,D:\thesis\images\9190806.jpg,407,500,0.203,black and white photograph,False,1,200547,1947,painting,"Fernhout, Edgar"
+190769,9190807,D:\thesis\images\9190807.jpg,217,500,0.108,digital image,True,1,110,1950,painting,"Fernhout, Edgar"
 190772,9190810,D:\thesis\images\9190810.jpg,401,501,0.201,digital image,True,1,200548,1950,painting,"Fernhout, Edgar"
 190776,9190811,D:\thesis\images\9190811.jpg,501,496,0.248,digital image,True,1,200548,1950,painting,"Fernhout, Edgar"
 190786,9190812,D:\thesis\images\9190812.jpg,371,500,0.185,digital image,True,1,110,1951,painting,"Fernhout, Edgar"
@@ -45356,6 +45499,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 191137,9190870,D:\thesis\images\9190870.jpg,431,500,0.215,digital image,True,1,107423,1898,painting,"Bogaert, Jan van den (II)"
 191158,9190874,D:\thesis\images\9190874.jpg,2757,4144,11.425,color photograph,True,1,107344,1822,painting,Lorichon
 191167,9120281,D:\thesis\images\9120281.jpg,1876,2308,4.33,black and white photograph,False,1,205610,1629,painting,"Dyck, Anthony van"
+191169,9190875,D:\thesis\images\9190875.jpg,179,205,0.037,digital image,True,1,200600,1937,painting,"Fernhout, Edgar"
 191173,9190876,D:\thesis\images\9190876.jpg,2834,3517,9.967,brown photograph,False,1,118734,1839,painting,Anoniem
 191178,9190216,D:\thesis\images\9190216.jpg,2652,3240,8.592,black and white photograph,False,1,109296,1838,drawing (visual work),"Kayser, Joseph"
 191209,9190878,D:\thesis\images\9190878.jpg,1672,2270,3.795,digital image,True,1,142789,1658,print,"Suyderhoef, Jonas"
@@ -45366,6 +45510,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 191327,9190885,D:\thesis\images\9190885.jpg,754,768,0.579,digital image,True,1,200605,1831,portrait miniature,"Meijer, Gillis de"
 191330,9190884,D:\thesis\images\9190884.jpg,771,768,0.592,digital image,True,1,200606,1831,portrait miniature,"Meijer, Gillis de"
 191337,9187045,D:\thesis\images\9187045.jpg,3494,4554,15.912,digital image,True,1,134882,1825,drawing (visual work),"Waanders, Franciscus Bernardus"
+191340,9190893,D:\thesis\images\9190893.jpg,197,250,0.049,digital image,True,1,103948,1661,reproductive print,"Lubin, Jacques"
 191341,9187047,D:\thesis\images\9187047.jpg,3516,5015,17.633,digital image,True,1,125239,1815,drawing (visual work),Anoniem
 191342,9190894,D:\thesis\images\9190894.jpg,965,1474,1.422,digital image,True,1,138531,1641,print,"Soutman, Pieter"
 191346,9190895,D:\thesis\images\9190895.jpg,377,500,0.189,digital image,True,1,138554,1621,painting,"Grebber, Maria de"
@@ -45375,9 +45520,11 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 191407,9190899,D:\thesis\images\9190899.jpg,877,1066,0.935,digital image,True,1,142789,1658,painting,"Verspronck, Johannes Cornelisz."
 191415,9190903,D:\thesis\images\9190903.jpg,412,500,0.206,digital image,True,1,200610,1860,painting,"Wijngaerdt, Petrus Theodorus van"
 191416,9190904,D:\thesis\images\9190904.jpg,428,500,0.214,digital image,True,1,200611,1860,painting,"Wijngaerdt, Petrus Theodorus van"
+191417,9190905,D:\thesis\images\9190905.jpg,170,224,0.038,digital image,True,1,200613,1840,drawing (visual work),"Rossum, Jan Cornelis van"
 191429,9186610,D:\thesis\images\9186610.jpg,3064,3494,10.706,digital image,True,1,200314,1820,painting,"Hodges, Charles Howard"
 191434,9190463,D:\thesis\images\9190463.jpg,359,500,0.179,black and white photograph,False,1,200624,1950,print,"Edzard, Dietz"
 191452,9190921,D:\thesis\images\9190921.jpg,1296,1600,2.074,black and white photograph,False,1,200616,1855,photograph,Anoniem
+191466,9190923,D:\thesis\images\9190923.jpg,189,224,0.042,digital image,True,1,114960,1880,print,"Tilly, E.A."
 191467,9186563,D:\thesis\images\9186563.jpg,420,501,0.21,black-and-white reproduction,False,1,101379,1917-08-07,copy print,Anoniem
 191484,9190924,D:\thesis\images\9190924.jpg,2969,3868,11.484,print,False,1,114960,1877,print,"Tilly, E.A."
 191498,9190927,D:\thesis\images\9190927.jpg,360,500,0.18,black-and-white reproduction,False,1,114960,1897,drawing (visual work),"Braakensiek, Johan"
@@ -45467,8 +45614,10 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 192084,9191014,D:\thesis\images\9191014.jpg,2226,3763,8.376,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,200656,1900,carte-de-visite,"Sanders, Elkan Jr."
 192086,9191030,D:\thesis\images\9191030.jpg,2323,3820,8.874,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,200655,1900,carte-de-visite,"Sanders, Elkan Jr."
 192087,9191031,D:\thesis\images\9191031.jpg,2350,3739,8.787,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,200656,1900,carte-de-visite,"Sanders, Elkan Jr."
+192089,9190492,D:\thesis\images\9190492.jpg,167,501,0.084,black and white photograph,False,1,144805,1559,painting,Anoniem
 192091,9191033,D:\thesis\images\9191033.jpg,2341,3743,8.762,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,200655,1895,carte-de-visite,"Steenmeijer, Johannes Adrianus"
 192095,9191035,D:\thesis\images\9191035.jpg,2292,3649,8.364,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,200667,1890,carte-de-visite,"Sanders, Elkan Jr."
+192099,9190493,D:\thesis\images\9190493.jpg,162,500,0.081,black and white photograph,False,1,200668,1559,painting,Anoniem
 192117,9191041,D:\thesis\images\9191041.jpg,2319,3694,8.566,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,200680,1907,carte-de-visite,"Steenmeijer, Johannes Adrianus"
 192151,9191417,D:\thesis\images\9191417.jpg,2650,3302,8.75,black and white photograph,False,1,100268,1670,painting,"Baen, Jan de"
 192165,9195132,D:\thesis\images\9195132.jpg,2912,4215,12.274,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,200693,1927,photograph,"Helder, Kees"
@@ -45478,6 +45627,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 192247,9191058,D:\thesis\images\9191058.jpg,425,500,0.212,digital image,True,1,107335,1788,drawing (visual work),"Tischbein, Johann Friedrich August"
 192251,9187251,D:\thesis\images\9187251.jpg,2648,3512,9.3,black and white photograph,False,1,106468,1924,photograph,Anoniem
 192254,9191060,D:\thesis\images\9191060.jpg,403,500,0.202,digital image,True,1,107328,1788,drawing (visual work),"Tischbein, Johann Friedrich August"
+192289,9190106,D:\thesis\images\9190106.jpg,738,1000,0.738,digital image,True,1,142858,1945,painting,"Berg, Siep van den"
 192291,9195134,D:\thesis\images\9195134.jpg,2037,3207,6.533,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,200703,1870,photograph,"Matthijssen, Gerarda Henriëtte"
 192292,9186885,D:\thesis\images\9186885.jpg,2976,2959,8.806,digital color photograph,True,1,131699,1924,medal (coin type),Anoniem
 192296,9187084,D:\thesis\images\9187084.jpg,3527,4092,14.432,digital color photograph,True,1,124280,1884,drawing (visual work),"Aumérie, Oswald d'"
@@ -46286,6 +46436,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 197516,9202625,D:\thesis\images\9202625.jpg,2271,3636,8.257,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,146565,1901,carte-de-visite,"Lavieter &amp; Co, De"
 197525,9202657,D:\thesis\images\9202657.jpg,3660,4880,17.861,print,False,1,16974,1736,print,"Punt, Jan"
 197529,9202658,D:\thesis\images\9202658.jpg,3749,4940,18.52,print,False,1,201252,1688,print,"Verkolje, Nicolaas"
+197540,9202659,D:\thesis\images\9202659.jpg,215,300,0.065,digital image,True,1,201252,1725,drawing (visual work),"Schouman, Aert"
 197545,9202580,D:\thesis\images\9202580.jpg,2076,2616,5.431,black and white photograph,False,1,201253,1836,painting,"Kruseman, Jan Adam"
 197546,9202581,D:\thesis\images\9202581.jpg,382,489,0.187,black and white photograph,False,1,201254,1836,painting,"Kruseman, Jan Adam"
 197549,9202661,D:\thesis\images\9202661.jpg,2628,3996,10.501,print,False,1,116587,1740,print,"Houbraken, Jacob"
@@ -46665,6 +46816,8 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 200739,9201940,D:\thesis\images\9201940.jpg,336,500,0.168,digital image,True,1,201532,2003,print,"Pannekoek, Frans"
 200743,9201941,D:\thesis\images\9201941.jpg,392,500,0.196,digital image,True,1,132759,1974,print,"Pannekoek, Frans"
 200752,9201939,D:\thesis\images\9201939.jpg,373,500,0.186,digital image,True,1,201532,2005,drawing (visual work),"Pannekoek, Frans"
+200760,9201968,D:\thesis\images\9201968.jpg,369,500,0.184,digital image,True,1,201533,1899,print,"Dongen, Kees van"
+200772,9201969,D:\thesis\images\9201969.jpg,427,500,0.213,digital image,True,1,201534,1920,painting,"Dongen, Kees van"
 200791,10697347,D:\thesis\images\10697347.jpg,432,500,0.216,digital image,True,1,208223,1900,painting,"Lüps, Emma Maria Dorothea"
 200804,9222740,D:\thesis\images\9222740.jpg,2448,2921,7.151,color reproduction,True,1,14463,1725,painting,"Mijn, Herman van der"
 200812,9202048,D:\thesis\images\9202048.jpg,2717,2418,6.57,print,False,1,14463,1750,print,"Ficquet, Etienne"
@@ -46676,6 +46829,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 200931,9204814,D:\thesis\images\9204814.jpg,1320,1626,2.146,digital image,True,1,207589,1800,portrait miniature,Anoniem
 200937,9200870,D:\thesis\images\9200870.jpg,2471,4312,10.655,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,201538,1863,carte-de-visite,"Pronk, Henri"
 200940,9202052,D:\thesis\images\9202052.jpg,366,500,0.183,digital image,True,1,201539,1840,painting,Anoniem
+200952,10304699,D:\thesis\images\10304699.jpg,443,500,0.222,digital image,True,1,52,1843,painting,"Brüls, Ludwig"
 200955,9202106,D:\thesis\images\9202106.jpg,383,500,0.192,color photocopy,True,1,201540,1640,painting,"Kamper, Godaert"
 200964,9202105,D:\thesis\images\9202105.jpg,361,500,0.18,digital image,True,1,107446,1550,drawing (visual work),Anoniem
 200982,9202108,D:\thesis\images\9202108.jpg,4904,5918,29.022,color photograph,True,1,201543,1767,painting,"Velthoven, Hendrik van"
@@ -48341,6 +48495,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 220414,9197494,D:\thesis\images\9197494.jpg,428,501,0.214,digital image,True,1,202748,1894,painting,"De Beucker, Pascal"
 220415,9197528,D:\thesis\images\9197528.jpg,403,501,0.202,digital color photograph,True,1,202747,1928-07,drawing (visual work),"Sluiter, Willy"
 220417,9197495,D:\thesis\images\9197495.jpg,435,500,0.217,digital image,True,1,202749,1890,painting,"De Beucker, Pascal"
+220420,9197535,D:\thesis\images\9197535.jpg,214,500,0.107,digital color photograph,True,1,202750,1982,drawing (visual work),"Meerdink, Jacob Reyer"
 220423,9197536,D:\thesis\images\9197536.jpg,331,500,0.166,digital color photograph,True,1,202751,1982,drawing (visual work),"Meerdink, Jacob Reyer"
 220427,9197537,D:\thesis\images\9197537.jpg,293,500,0.146,digital color photograph,True,1,202752,1982,drawing (visual work),"Meerdink, Jacob Reyer"
 220429,9197539,D:\thesis\images\9197539.jpg,267,500,0.134,digital color photograph,True,1,202754,1982,drawing (visual work),"Meerdink, Jacob Reyer"
@@ -48504,6 +48659,8 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 224891,9291921,D:\thesis\images\9291921.jpg,2912,4368,12.72,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,202858,1890,cabinet photograph,"Westerborg, Carel Eduard"
 224895,9291918,D:\thesis\images\9291918.jpg,2784,4310,11.999,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,202858,1885,cabinet photograph,"Korfmacher, Gerard Karel Martin Hubert"
 224899,9273963,D:\thesis\images\9273963.jpg,335,501,0.168,black and white photograph,False,1,107972,1931,painting,"Israels, Isaac"
+224939,9197707,D:\thesis\images\9197707.jpg,416,499,0.208,digital color photograph,True,1,202861,1970,painting,"Knufman, Alice"
+224948,9197708,D:\thesis\images\9197708.jpg,398,499,0.199,digital color photograph,True,1,202860,1932,painting,"Rhijn, A. van"
 224987,9294351,D:\thesis\images\9294351.jpg,1756,2658,4.667,BD/RKD/IB/ORIGINALS (ON APPOINTMENT),False,1,202862,1875,carte-de-visite,Anoniem
 224988,9238036,D:\thesis\images\9238036.jpg,1411,1656,2.337,black and white photograph,False,1,138871,1858,photograph,Anoniem
 224996,9238038,D:\thesis\images\9238038.jpg,1038,1542,1.601,black and white photograph,False,1,202863,1850,photograph,Anoniem
@@ -48541,8 +48698,12 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 225359,9291133,D:\thesis\images\9291133.jpg,359,500,0.179,black-and-white reproduction,False,1,107446,1639,bust (sculpture),"Verhulst, Rombout"
 225360,9296194,D:\thesis\images\9296194.jpg,3780,2887,10.913,digital image,True,1,203006,1933,painting,"Israels, Isaac"
 225361,9289309,D:\thesis\images\9289309.jpg,501,384,0.192,black and white photograph,False,1,203006,1933,painting,"Israels, Isaac"
+225368,9291146,D:\thesis\images\9291146.jpg,351,499,0.175,color photograph,True,1,203005,1940,drawing (visual work),"Zwiers, Wim"
+225374,9291147,D:\thesis\images\9291147.jpg,354,499,0.177,color photograph,True,1,203004,1940,drawing (visual work),"Zwiers, Wim"
 225376,9291148,D:\thesis\images\9291148.jpg,389,500,0.195,color photograph,True,1,203003,1940,drawing (visual work),"Zwiers, Wim"
 225377,9291149,D:\thesis\images\9291149.jpg,399,501,0.2,color photograph,True,1,203002,1940,drawing (visual work),"Zwiers, Wim"
+225380,9291150,D:\thesis\images\9291150.jpg,373,500,0.186,color photograph,True,1,203001,1952,drawing (visual work),Anoniem
+225381,9291145,D:\thesis\images\9291145.jpg,412,499,0.206,color photograph,True,1,203005,1945,drawing (visual work),"Bobeldijk, Félicien"
 225383,9291135,D:\thesis\images\9291135.jpg,430,500,0.215,color photograph,True,1,203000,1651,drawing (visual work),"Thopas, Johannes"
 225391,9297141,D:\thesis\images\9297141.jpg,1849,2274,4.205,digital image,True,1,113813,1770,painting,"Coclers, Louis Bernard"
 225392,9297142,D:\thesis\images\9297142.jpg,1819,2277,4.142,digital image,True,1,203011,1770,painting,"Coclers, Louis Bernard"
@@ -48951,6 +49112,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 229207,9291879,D:\thesis\images\9291879.jpg,374,501,0.187,black and white photograph,False,1,105534,1630,painting,"Pot, Hendrick"
 229210,9291881,D:\thesis\images\9291881.jpg,393,500,0.197,black and white photograph,False,1,105534,1630,painting,"Pot, Hendrick"
 229211,9291882,D:\thesis\images\9291882.jpg,413,500,0.206,black and white photograph,False,1,105534,1625,painting,"Pot, Hendrick"
+229213,9274352,D:\thesis\images\9274352.jpg,500,500,0.25,digital image,True,1,107376,1950,sculpture,Anoniem
 229216,9275388,D:\thesis\images\9275388.jpg,4612,5768,26.602,digital image,True,1,203262,1822,print,"Davidson, Ezechiel"
 229219,9275389,D:\thesis\images\9275389.jpg,358,500,0.179,black and white photograph,False,1,203262,1822,painting,"Davidson, Ezechiel"
 229221,9291875,D:\thesis\images\9291875.jpg,369,500,0.184,black-and-white reproduction,False,1,142594,1909,painting,"Henstra, Sytze"
@@ -49426,6 +49588,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 232043,9310267,D:\thesis\images\9310267.jpg,1247,1888,2.354,black-and-white reproduction,False,1,8460,1739,drawing (visual work),"Stolker, Jan"
 232056,9220895,D:\thesis\images\9220895.jpg,500,499,0.249,digital color photograph,True,1,203507,1980,painting,"Sluis-Eybergen, Loekie"
 232062,9310268,D:\thesis\images\9310268.jpg,1996,3112,6.212,digital image,True,1,203508,1790,print,"Kobell, Jan (I)"
+232068,9241188,D:\thesis\images\9241188.jpg,381,499,0.19,digital color photograph,True,1,203509,1923,painting,"Schwitters, Kurt"
 232072,10717650,D:\thesis\images\10717650.jpg,2305,2835,6.535,digital image,True,1,203510,1804,drawing (visual work),"Goeje, Pieter de"
 232073,10717455,D:\thesis\images\10717455.jpg,982,1280,1.257,digital image,True,1,203510,1717,drawing (visual work),"Jelgersma, Tako Hajo"
 232074,9161752,D:\thesis\images\9161752.jpg,411,500,0.205,black and white photograph,False,1,200930,1700,drawing (visual work),"Bailly, David"
@@ -49478,7 +49641,9 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 232477,10695740,D:\thesis\images\10695740.jpg,1455,2255,3.281,digital image,True,1,107771,1900,relief,Anoniem
 232478,9274588,D:\thesis\images\9274588.jpg,1111,1220,1.355,digital image,True,1,203531,1807,portrait miniature,"Anspach, Johannes"
 232479,9274590,D:\thesis\images\9274590.jpg,1055,1200,1.266,digital image,True,1,203532,1805,portrait miniature,"Anspach, Johannes"
+232482,9310317,D:\thesis\images\9310317.jpg,219,501,0.11,black and white photograph,False,1,107423,1938,painting,"Leusden, Willem van"
 232483,9323328,D:\thesis\images\9323328.jpg,337,500,0.169,digital image,True,1,202815,1865,print,"Berghaus, Johann Peter"
+232484,10662314,D:\thesis\images\10662314.jpg,1000,667,0.667,digital image,True,1,203533,2012,painting,"Larsson, Urban"
 232485,9323330,D:\thesis\images\9323330.jpg,383,501,0.192,digital image,True,1,110373,1652,drawing (visual work),"Lievens, Jan"
 232490,9275544,D:\thesis\images\9275544.jpg,2446,3036,7.426,digital image,True,1,203534,1860,photograph,Anoniem
 232491,9275545,D:\thesis\images\9275545.jpg,2598,2829,7.35,digital image,True,1,203534,1860,photograph,Anoniem
@@ -50174,8 +50339,17 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 236379,10632109,D:\thesis\images\10632109.jpg,346,500,0.173,BD/Digital Collection,False,1,204115,1990,sculpture,"Hont, Pieter d'"
 236380,10632111,D:\thesis\images\10632111.jpg,379,500,0.19,BD/Digital Collection,False,1,204116,1999,painting,"Gordijn, Herman"
 236398,10636044,D:\thesis\images\10636044.jpg,875,1037,0.907,digital image,True,1,128706,1811,painting,"Bree, Mattheus Ignatius van"
+236433,10632154,D:\thesis\images\10632154.jpg,161,201,0.032,digital color photograph,True,1,204144,2012,photograph,"Breukel, Koos"
+236437,10632156,D:\thesis\images\10632156.jpg,158,200,0.032,digital black-and-white photograph,False,1,204145,2005,photograph,"Breukel, Koos"
+236439,10632162,D:\thesis\images\10632162.jpg,158,201,0.032,digital black-and-white photograph,False,1,204147,2009,photograph,"Breukel, Koos"
+236440,10632160,D:\thesis\images\10632160.jpg,160,201,0.032,digital black-and-white photograph,False,1,204148,2005,photograph,"Breukel, Koos"
 236450,10632177,D:\thesis\images\10632177.jpg,368,500,0.184,digital image,True,1,107376,1954,painting,"Geffen, Lambert van"
 236463,10632195,D:\thesis\images\10632195.jpg,360,500,0.18,digital image,True,1,133405,1761,painting,"Regters, Tibout"
+236468,10632165,D:\thesis\images\10632165.jpg,158,200,0.032,digital black-and-white photograph,False,1,204149,1998,photograph,"Breukel, Koos"
+236470,10632161,D:\thesis\images\10632161.jpg,158,200,0.032,digital black-and-white photograph,False,1,204152,2002,photograph,"Breukel, Koos"
+236476,10632157,D:\thesis\images\10632157.jpg,201,134,0.027,digital color photograph,True,1,114171,2012,photograph,"Breukel, Koos"
+236477,10632155,D:\thesis\images\10632155.jpg,161,201,0.032,digital color photograph,True,1,204150,2012,photograph,"Breukel, Koos"
+236480,10632166,D:\thesis\images\10632166.jpg,200,133,0.027,digital color photograph,True,1,114539,2008,photograph,"Breukel, Koos"
 236481,9331281,D:\thesis\images\9331281.jpg,342,500,0.171,black and white photograph,False,1,204121,1850,silhouette,"Barbiers, Wed."
 236482,9323850,D:\thesis\images\9323850.jpg,2150,3027,6.508,BD/Digital Collection,False,1,102306,1744,painting,"Quinkhard, Jan Maurits"
 236494,9323853,D:\thesis\images\9323853.jpg,406,501,0.203,BD/Digital Collection,False,1,203489,1693,drawing (visual work),"Verkolje, Jan (I)"
@@ -50230,6 +50404,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 236699,10633441,D:\thesis\images\10633441.jpg,875,1042,0.912,digital image,True,1,204177,1850,painting,Anoniem
 236700,9318689,D:\thesis\images\9318689.jpg,754,1058,0.798,black and white photograph,False,1,166,1763,portrait miniature,"Marinkel, Joseph"
 236703,10633442,D:\thesis\images\10633442.jpg,875,1048,0.917,digital image,True,1,204178,1850,painting,Anoniem
+236705,10632400,D:\thesis\images\10632400.jpg,161,201,0.032,black and white photograph,False,1,204449,1999,photograph,"Breukel, Koos"
 236706,9145472,D:\thesis\images\9145472.jpg,501,496,0.248,color photograph,True,1,204179,1983,painting,"Mutsaers, Charlotte"
 236707,10633444,D:\thesis\images\10633444.jpg,875,1058,0.926,digital image,True,1,204180,1839,painting,"Neufville, Margaretha Jacoba de"
 236708,9176430,D:\thesis\images\9176430.jpg,2080,3003,6.246,color photograph,True,1,204181,1661,print,"Collin, Richard"
@@ -50504,6 +50679,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 237893,9332791,D:\thesis\images\9332791.jpg,2538,3442,8.736,digital image,True,1,204321,1609,print,"Swanenburg, Willem van (I)"
 237894,9332792,D:\thesis\images\9332792.jpg,1506,2226,3.352,digital image,True,1,204321,1614,print,"Swanenburg, Willem van (I)"
 237896,9332793,D:\thesis\images\9332793.jpg,2034,2932,5.964,digital image,True,1,204321,1650,print,"Swanenburg, Willem van (I)"
+237912,10633522,D:\thesis\images\10633522.jpg,134,201,0.027,digital image,True,1,203533,2012,photograph,"Mentzel, Vincent"
 237935,9323585,D:\thesis\images\9323585.jpg,333,500,0.167,digital image,True,1,203533,2012,photograph,"Puttelaar, Carla van de"
 237943,9332796,D:\thesis\images\9332796.jpg,1854,2489,4.615,digital image,True,1,204327,1579,print,"Passe, Crispijn de (I)"
 237944,9332797,D:\thesis\images\9332797.jpg,2087,2615,5.458,black and white photograph,False,1,115456,1593,print,"Passe, Crispijn de (I)"
@@ -51503,6 +51679,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 244124,10640586,D:\thesis\images\10640586.jpg,428,500,0.214,BD/Digital Collection,False,1,204823,1768,painting,"Puyl, Louis François Gerard van der"
 244181,9335718,D:\thesis\images\9335718.jpg,418,501,0.209,black and white photograph,False,1,204821,1692,painting,"Schalcken, Godefridus"
 244184,9335719,D:\thesis\images\9335719.jpg,1421,1727,2.454,black and white photograph,False,1,204821,1686,painting,"Schalcken, Godefridus"
+244188,10640612,D:\thesis\images\10640612.jpg,822,1000,0.822,BD/Digital Collection,False,1,204822,1625,painting,Anoniem
 244189,10640617,D:\thesis\images\10640617.jpg,500,394,0.197,digital image,True,1,201699,1776,funerary sculpture,Anoniem
 244190,10640622,D:\thesis\images\10640622.jpg,409,500,0.204,digital image,True,1,204824,1885,drawing (visual work),"Donkersloot, Clara"
 244192,9329544,D:\thesis\images\9329544.jpg,2219,3610,8.011,digital color photograph,True,1,126848,1860,carte-de-visite,Anoniem
@@ -51553,6 +51730,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 244461,9333592,D:\thesis\images\9333592.jpg,401,500,0.201,black and white photograph,False,1,109789,1767,drawing (visual work),"Perronneau, Jean-Baptiste"
 244462,9329593,D:\thesis\images\9329593.jpg,2145,3818,8.19,digital color photograph,True,1,129130,1860,carte-de-visite,Ghémar Frères
 244465,9335738,D:\thesis\images\9335738.jpg,2102,3316,6.97,digital image,True,1,108395,1790,print,"Claessens, Lambertus Antonius"
+244466,9333591,D:\thesis\images\9333591.jpg,817,1000,0.817,black and white photograph,False,1,109791,1767,drawing (visual work),"Perronneau, Jean-Baptiste"
 244474,9333341,D:\thesis\images\9333341.jpg,297,501,0.149,color photograph,True,1,202893,1945-11-11,drawing (visual work),"Fiedler, Herbert"
 244477,9329600,D:\thesis\images\9329600.jpg,2266,3786,8.579,digital color photograph,True,1,133309,1858,carte-de-visite,"Pronk, Henri"
 244479,9333617,D:\thesis\images\9333617.jpg,2477,3261,8.077,black-and-white reproduction,False,1,112154,1656,painting,"Ovens, Jürgen"
@@ -52151,6 +52329,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 253901,10889400,D:\thesis\images\10889400.jpg,450,500,0.225,BD/Digital Collection,False,1,142379,1586,medal (coin type),"Goltzius, Hendrick"
 253987,10292015,D:\thesis\images\10292015.jpg,2665,3817,10.172,digital image,True,1,16750,1800,print,"Maurin, A."
 254008,10303509,D:\thesis\images\10303509.jpg,3409,4189,14.28,digital image,True,1,200959,1759,painting,"Palthe, Jan"
+254046,9334423,D:\thesis\images\9334423.jpg,408,499,0.204,color reproduction,True,1,205692,1995,painting,"Larsson, Urban"
 254058,10648945,D:\thesis\images\10648945.jpg,312,500,0.156,digital image,True,1,116093,1844,drawing (visual work),Anoniem
 254078,10648953,D:\thesis\images\10648953.jpg,407,500,0.203,black-and-white reproduction,False,1,205694,1845,painting,"Pieneman, Nicolaas (1809-1860)"
 254089,10648960,D:\thesis\images\10648960.jpg,408,500,0.204,digital image,True,1,205695,1925,drawing (visual work),"Troelstra, Jelle"
@@ -52957,6 +53136,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 263050,10656442,D:\thesis\images\10656442.jpg,238,501,0.119,digital image,True,1,117908,1560,painting,"Sánchez Coello, Alonso"
 263053,10348646,D:\thesis\images\10348646.jpg,3425,4046,13.858,digital image,True,1,206312,1895,painting,"Usteri, Albert"
 263062,10656453,D:\thesis\images\10656453.jpg,381,501,0.191,digital image,True,1,115102,1870,drawing (visual work),Anoniem
+263095,10348651,D:\thesis\images\10348651.jpg,405,500,0.203,digital image,True,1,206313,1965,painting,"Wong Lun Hing, René"
 263099,10348653,D:\thesis\images\10348653.jpg,3605,4231,15.253,digital image,True,1,206319,1873,painting,"Neuman, Johan Heinrich"
 263105,10348655,D:\thesis\images\10348655.jpg,3423,4079,13.962,digital image,True,1,134911,1812,painting,"Van der Hulst, Jean-Baptiste"
 263113,10348656,D:\thesis\images\10348656.jpg,3510,4031,14.149,digital image,True,1,206320,1718,painting,"Netscher, Constantijn"
@@ -52968,7 +53148,9 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 263137,10292212,D:\thesis\images\10292212.jpg,2270,3280,7.446,digital color photograph,True,1,206306,1905,photograph,"Clausing, P."
 263138,10348659,D:\thesis\images\10348659.jpg,3391,4183,14.185,digital image,True,1,206323,1903,drawing (visual work),"Limburg Stirum, Caro van"
 263139,10292214,D:\thesis\images\10292214.jpg,3474,2420,8.407,digital color photograph,True,1,206306,1890,photograph,"Mulder, B."
+263144,10348660,D:\thesis\images\10348660.jpg,406,499,0.203,digital image,True,1,206314,1953,drawing (visual work),"Dagnelie, Marie"
 263148,10292216,D:\thesis\images\10292216.jpg,2432,3481,8.466,digital color photograph,True,1,131699,1923,photograph,"Deutmann, Herman"
+263151,10348661,D:\thesis\images\10348661.jpg,418,500,0.209,digital image,True,1,206324,1918,drawing (visual work),Anoniem
 263155,10292218,D:\thesis\images\10292218.jpg,3253,2341,7.615,digital color photograph,True,1,131699,1929,photograph,"Frequin, Adam"
 263166,10348662,D:\thesis\images\10348662.jpg,3449,4308,14.858,digital image,True,1,109860,1680,painting,"Lely, Peter"
 263172,10292220,D:\thesis\images\10292220.jpg,3305,2692,8.897,digital color photograph,True,1,131699,1890,photograph,Anoniem
@@ -52985,6 +53167,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 263524,10349122,D:\thesis\images\10349122.jpg,1636,1772,2.899,digital image,True,1,118683,1665,painting,"Nason, Pieter"
 263584,10348663,D:\thesis\images\10348663.jpg,3612,4165,15.044,digital image,True,1,206324,1917,painting,"Discart, Jean"
 263591,10348670,D:\thesis\images\10348670.jpg,3635,4085,14.849,digital image,True,1,206332,1810,painting,"Kruseman, Cornelis"
+263594,10348671,D:\thesis\images\10348671.jpg,341,499,0.17,digital image,True,1,206324,1938-06-04,drawing (visual work),Anoniem
 263607,10656993,D:\thesis\images\10656993.jpg,2448,3264,7.99,digital color photograph,True,1,206334,1525,painting,Anoniem
 263610,10348672,D:\thesis\images\10348672.jpg,3331,4344,14.47,digital image,True,1,206333,1840,painting,Anoniem
 263628,10348673,D:\thesis\images\10348673.jpg,3461,4167,14.422,digital image,True,1,206324,1933,painting,Anoniem
@@ -53001,6 +53184,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 263787,10348695,D:\thesis\images\10348695.jpg,2841,3183,9.043,digital image,True,1,103789,1755,portrait miniature,Anoniem
 263801,10348693,D:\thesis\images\10348693.jpg,4856,2912,14.141,digital image,True,1,111359,1755,portrait miniature,Anoniem
 263808,10348698,D:\thesis\images\10348698.jpg,3383,4094,13.85,digital image,True,1,113053,1788,silhouette,"Miers, John"
+263939,10348701,D:\thesis\images\10348701.jpg,403,500,0.202,digital image,True,1,206323,1905,drawing (visual work),Anoniem
 264014,10205676,D:\thesis\images\10205676.jpg,402,501,0.201,black and white photograph,False,1,206342,1753,painting,"Quinkhard, Jan Maurits"
 264015,10205677,D:\thesis\images\10205677.jpg,402,501,0.201,black and white photograph,False,1,115332,1753,painting,"Quinkhard, Jan Maurits"
 264024,10657348,D:\thesis\images\10657348.jpg,314,501,0.157,digital image,True,1,106181,1794,print,"Caspari, Jan Willem"
@@ -53023,6 +53207,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 264398,10657743,D:\thesis\images\10657743.jpg,400,500,0.2,digital image,True,1,107459,1831,painting,"Van Belle, Pierre-François"
 264419,10657766,D:\thesis\images\10657766.jpg,416,500,0.208,color reproduction,True,1,138703,1495,medal (coin type),"Massijs, Quinten (I)"
 264429,10657781,D:\thesis\images\10657781.jpg,500,487,0.243,digital image,True,1,117082,1996,medal (coin type),"Sillevis, John"
+264430,10205683,D:\thesis\images\10205683.jpg,438,500,0.219,color photograph,True,1,110126,1980,painting,"Smeenk, Christiaan"
 264436,10205685,D:\thesis\images\10205685.jpg,2635,4069,10.722,digital color photograph,True,1,132523,1884,cabinet photograph,"Bosch, van"
 264437,10292238,D:\thesis\images\10292238.jpg,2627,4064,10.676,digital color photograph,True,1,132523,1884,cabinet photograph,"Bosch, van"
 264440,10205686,D:\thesis\images\10205686.jpg,2603,3991,10.389,digital color photograph,True,1,132526,1879,cabinet photograph,"Le Lieure, Henri"
@@ -53292,6 +53477,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 266682,10292355,D:\thesis\images\10292355.jpg,404,501,0.202,black and white photograph,False,1,206553,1775,painting,"Hien, J. van"
 266697,10659680,D:\thesis\images\10659680.jpg,367,500,0.183,black-and-white reproduction,False,1,112027,1555,painting,"Mor, Antonis"
 266726,10676316,D:\thesis\images\10676316.jpg,390,500,0.195,digital color photograph,True,1,206556,1906,sculpture,"Dupuis, Toon"
+266732,10673340,D:\thesis\images\10673340.jpg,158,200,0.032,digital black-and-white photograph,False,1,206558,2004,photograph,"Breukel, Koos"
 266737,10673750,D:\thesis\images\10673750.jpg,375,500,0.188,digital black-and-white photograph,False,1,117224,2004,photograph,"Corbijn, Maarten"
 266740,10674120,D:\thesis\images\10674120.jpg,477,500,0.238,digital color photograph,True,1,107654,2004,photograph,"Olaf, Erwin"
 266743,10673919,D:\thesis\images\10673919.jpg,397,501,0.199,digital color photograph,True,1,117942,2004,photograph,"Janssen, Cuny"
@@ -53303,8 +53489,10 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 266758,10676291,D:\thesis\images\10676291.jpg,403,500,0.202,digital color photograph,True,1,206564,2004,photograph,"Jolly, Willy"
 266760,10673346,D:\thesis\images\10673346.jpg,392,501,0.196,digital color photograph,True,1,206565,2004,photograph,"Goossens, Marnix"
 266762,10659710,D:\thesis\images\10659710.jpg,323,500,0.162,black-and-white reproduction,False,1,107459,1816,painting,"Bree, Mattheus Ignatius van"
+266775,10673339,D:\thesis\images\10673339.jpg,151,200,0.03,digital color photograph,True,1,206566,2011,photograph,"Breukel, Koos"
 266776,10675018,D:\thesis\images\10675018.jpg,335,500,0.168,digital color photograph,True,1,105976,2004,photograph,"Collette, Robert"
 266778,10675020,D:\thesis\images\10675020.jpg,334,500,0.167,digital color photograph,True,1,206567,2013,photograph,"Sok, Pan"
+266779,10673334,D:\thesis\images\10673334.jpg,167,200,0.033,digital color photograph,True,1,206568,2000,photograph,"Mentzel, Vincent"
 266783,10673342,D:\thesis\images\10673342.jpg,495,500,0.247,digital black-and-white photograph,False,1,206569,2004,photograph,"Middelberg, Susanne"
 266786,10673344,D:\thesis\images\10673344.jpg,501,501,0.251,digital color photograph,True,1,206570,2009,photograph,"Middelberg, Susanne"
 266827,10665513,D:\thesis\images\10665513.jpg,300,500,0.15,black and white photograph,False,1,127026,1914,painting,"Heuvel, Willem van den (1874-1925)"
@@ -53346,6 +53534,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 267088,10292382,D:\thesis\images\10292382.jpg,1362,1265,1.723,black and white photograph,False,1,143552,1785,portrait miniature,Anoniem
 267090,9318461,D:\thesis\images\9318461.jpg,417,500,0.208,reproduction (derivative object),False,1,116157,1965,drawing (visual work),"Rieser, Willy"
 267092,9318463,D:\thesis\images\9318463.jpg,390,500,0.195,reproduction (derivative object),False,1,116157,1965,drawing (visual work),"Rieser, Willy"
+267094,9318462,D:\thesis\images\9318462.jpg,204,500,0.102,reproduction (derivative object),False,1,206595,1965,drawing (visual work),"Rieser, Willy"
 267099,10352448,D:\thesis\images\10352448.jpg,449,500,0.225,slide (photo),False,1,144598,1940,drawing (visual work),"Herwijnen, Jan van"
 267104,10292383,D:\thesis\images\10292383.jpg,1424,1717,2.445,black and white photograph,False,1,206600,1730,painting,"Dijk, Philip van"
 267105,10292384,D:\thesis\images\10292384.jpg,1433,1734,2.485,black and white photograph,False,1,206617,1730,painting,"Dijk, Philip van"
@@ -53774,6 +53963,9 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 272728,10291765,D:\thesis\images\10291765.jpg,2138,2611,5.582,black and white photograph,False,1,206909,1800,drawing (visual work),"Hodges, Charles Howard"
 272730,10665562,D:\thesis\images\10665562.jpg,388,500,0.194,digital image,True,1,110323,1896,drawing (visual work),"Toorop, Jan"
 272731,10349800,D:\thesis\images\10349800.jpg,1635,2522,4.123,digital color photograph,True,1,143755,1890,carte-de-visite,"Staas, Thomas Martin"
+272732,10665564,D:\thesis\images\10665564.jpg,187,500,0.093,digital image,True,1,206910,1897,drawing (visual work),"Toorop, Jan"
+272737,10665568,D:\thesis\images\10665568.jpg,175,501,0.088,digital image,True,1,206911,1897,drawing (visual work),"Toorop, Jan"
+272740,10665570,D:\thesis\images\10665570.jpg,206,500,0.103,digital image,True,1,206912,1897,drawing (visual work),"Toorop, Jan"
 272741,10665571,D:\thesis\images\10665571.jpg,500,411,0.205,color reproduction,True,1,105807,1895,drawing (visual work),"Toorop, Jan"
 272742,10665572,D:\thesis\images\10665572.jpg,490,501,0.245,digital image,True,1,206913,1895,print,"Toorop, Jan"
 272748,10665575,D:\thesis\images\10665575.jpg,1996,2717,5.423,black and white photograph,False,1,206914,1897,drawing (visual work),"Toorop, Jan"
@@ -53841,7 +54033,9 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 273227,10666000,D:\thesis\images\10666000.jpg,433,500,0.216,digital image,True,1,111067,1650,painting,Anoniem
 273232,10291793,D:\thesis\images\10291793.jpg,413,500,0.206,black and white photograph,False,1,121051,1790,drawing (visual work),"Hamilton, Hugh Douglas"
 273245,10291794,D:\thesis\images\10291794.jpg,1976,2845,5.622,black and white photograph,False,1,121051,1794,painting,"Quadal, Martin Ferdinand"
+273254,10291795,D:\thesis\images\10291795.jpg,710,1000,0.71,black and white photograph,False,1,104460,1775,drawing (visual work),"Schmidt, Izaäk"
 273255,10291796,D:\thesis\images\10291796.jpg,381,500,0.191,black and white photograph,False,1,206978,1775,drawing (visual work),"Schmidt, Izaäk"
+273260,10666042,D:\thesis\images\10666042.jpg,175,501,0.088,digital image,True,1,206980,1915,painting,"List, Wilhelm"
 273263,10666047,D:\thesis\images\10666047.jpg,358,500,0.179,digital image,True,1,14126,1918,drawing (visual work),"Toorop, Jan"
 273272,10666068,D:\thesis\images\10666068.jpg,2838,4190,11.891,digital image,True,1,137039,1750,print,"Houbraken, Jacob"
 273279,10666071,D:\thesis\images\10666071.jpg,3254,4711,15.33,digital image,True,1,137039,1750,print,"Houbraken, Jacob"
@@ -53915,7 +54109,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 274038,10666938,D:\thesis\images\10666938.jpg,360,500,0.18,digital image,True,1,103632,1892,drawing (visual work),"Veth, Jan"
 274040,10666939,D:\thesis\images\10666939.jpg,387,501,0.194,digital image,True,1,103632,1892,drawing (visual work),"Veth, Jan"
 274049,10666944,D:\thesis\images\10666944.jpg,395,501,0.198,digital image,True,1,207017,1675,painting,"Alberts, Gerrit (1663-1757)"
-274170,10667429,D:\thesis\images\10667429.jpg,500,327,0.164,digital image,True,1,207026,1910,painting,"Zwart, Pieter de (1880-1967)"
+274170,10667082,D:\thesis\images\10667082.jpg,707,1000,0.707,digital image,True,1,207026,1910,painting,"Zwart, Pieter de (1880-1967)"
 274269,10667181,D:\thesis\images\10667181.jpg,412,500,0.206,color reproduction,True,1,137836,1915,drawing (visual work),"Schwartze, Thérèse"
 274271,10667179,D:\thesis\images\10667179.jpg,2664,2992,7.971,digital image,True,1,207027,1475,grafbord,Anoniem
 274278,10667178,D:\thesis\images\10667178.jpg,375,500,0.188,digital image,True,1,137618,1914,painting,"Laar, Arnold van de"
@@ -54292,6 +54486,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 277726,10671715,D:\thesis\images\10671715.jpg,399,501,0.2,black-and-white reproduction,False,1,207233,1752,drawing (visual work),"Oets, Pieter"
 277740,10671743,D:\thesis\images\10671743.jpg,397,500,0.199,digital image,True,1,108863,1652,drawing (visual work),"Schut, Cornelis (I)"
 277751,10671748,D:\thesis\images\10671748.jpg,400,500,0.2,color reproduction,True,1,136165,1947,drawing (visual work),"Huisman, Jopie"
+277759,10671752,D:\thesis\images\10671752.jpg,500,215,0.107,digital image,True,1,105963,1937,painting,"Ket, Dick"
 277775,10671791,D:\thesis\images\10671791.jpg,367,500,0.183,color reproduction,True,1,107420,1882,bust (sculpture),"Lürssen, Eduard August"
 277782,10671811,D:\thesis\images\10671811.jpg,403,500,0.202,digital image,True,1,207234,1937,sculpture,"Andriessen, Mari"
 277806,10671832,D:\thesis\images\10671832.jpg,410,500,0.205,color reproduction,True,1,201195,1815,portrait miniature,"Isabey, Jean-Baptiste"
@@ -54399,6 +54594,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 279459,10354046,D:\thesis\images\10354046.jpg,2198,3557,7.818,digital color photograph,True,1,207304,1881,carte-de-visite,"Mulder, George Lodewijk"
 279461,10355587,D:\thesis\images\10355587.jpg,5383,6585,35.447,digital image,True,1,207306,1875,painting,Anoniem
 279463,10354047,D:\thesis\images\10354047.jpg,2246,3598,8.081,digital color photograph,True,1,125524,1881,carte-de-visite,Wegner &amp; Mottu
+279466,10302108,D:\thesis\images\10302108.jpg,682,1000,0.682,color reproduction,True,1,207357,1938,painting,"Dongen, Kees van"
 279467,10355575,D:\thesis\images\10355575.jpg,5274,6330,33.384,digital image,True,1,207307,1804,painting,"Geelen, Christiaan van (I)"
 279470,10354143,D:\thesis\images\10354143.jpg,2382,3545,8.444,digital color photograph,True,1,207308,1881,cabinet photograph,"Mulder, George Lodewijk"
 279472,10355588,D:\thesis\images\10355588.jpg,5078,5958,30.255,digital image,True,1,207309,1866-07-20,painting,"Schick, Pieter (19de eeuw)"
@@ -54770,6 +54966,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 281434,10291997,D:\thesis\images\10291997.jpg,2250,3163,7.117,digital image,True,1,142783,1593,print,"Goltzius, Hendrick"
 281442,10676548,D:\thesis\images\10676548.jpg,379,500,0.19,black and white photograph,False,1,207531,1762,painting,"Croix, Pierre Frédéric de la"
 281446,10676561,D:\thesis\images\10676561.jpg,499,500,0.249,black and white photograph,False,1,107376,1973,painting,"Kroes, Nol"
+281448,10676565,D:\thesis\images\10676565.jpg,135,500,0.068,black and white photograph,False,1,107376,1973,installation (visual work),"Jansen, Peter (1938-)"
 281450,10676567,D:\thesis\images\10676567.jpg,368,501,0.184,black and white photograph,False,1,107376,1973,portrait miniature,"Leefsma, Pim"
 281451,10676569,D:\thesis\images\10676569.jpg,498,500,0.249,black and white photograph,False,1,107376,1973,painting,"Merkelbach van Enkhuizen, Clemens"
 281454,10676577,D:\thesis\images\10676577.jpg,385,500,0.193,black and white photograph,False,1,107376,1973,painting,"Merkelbach van Enkhuizen, Clemens"
@@ -54913,6 +55110,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 282525,10677684,D:\thesis\images\10677684.jpg,466,500,0.233,color reproduction,True,1,207625,1647,painting,"Backer, Jacob Adriaensz."
 282526,10677685,D:\thesis\images\10677685.jpg,437,500,0.218,digital image,True,1,117765,1705,painting,"Vlieger, T. de"
 282591,10677710,D:\thesis\images\10677710.jpg,1755,2399,4.21,color reproduction,True,1,117908,1554,painting,"Straeten, Joris van"
+282593,10677713,D:\thesis\images\10677713.jpg,795,1000,0.795,color reproduction,True,1,142835,1909,painting,"Dongen, Kees van"
 282594,10677714,D:\thesis\images\10677714.jpg,399,500,0.2,digital image,True,1,132810,1910,painting,"Hart Nibbrig, Ferdinand"
 282612,10292010,D:\thesis\images\10292010.jpg,1592,2602,4.142,digital image,True,1,117765,1743,print,"Fokke, Simon"
 282619,10714097,D:\thesis\images\10714097.jpg,1488,1815,2.701,BD/Digital Collection,False,1,207633,1660,painting,"Baen, Jan de"
@@ -55061,8 +55259,8 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 283924,10679833,D:\thesis\images\10679833.jpg,6141,6500,39.916,digital image,True,1,207744,1577,painting,"Borcht, Caspar van der (I)"
 283926,10679836,D:\thesis\images\10679836.jpg,5930,6500,38.545,color reproduction,True,1,207745,1577,painting,"Borcht, Caspar van der (I)"
 283940,10679852,D:\thesis\images\10679852.jpg,3942,5432,21.413,digital image,True,1,120034,1652,print,"Matham, Theodor"
-283942,10684822,D:\thesis\images\10684822.jpg,386,501,0.193,digital image,True,1,119097,1826,drawing (visual work),"Hodges, Charles Howard"
-283944,10684823,D:\thesis\images\10684823.jpg,334,500,0.167,digital image,True,1,207702,1826,drawing (visual work),"Hodges, Charles Howard"
+283942,10679853,D:\thesis\images\10679853.jpg,813,1000,0.813,black and white photograph,False,1,119097,1826,drawing (visual work),"Hodges, Charles Howard"
+283944,10679854,D:\thesis\images\10679854.jpg,812,1000,0.812,black and white photograph,False,1,207702,1826,drawing (visual work),"Hodges, Charles Howard"
 283958,10684824,D:\thesis\images\10684824.jpg,395,500,0.198,digital image,True,1,206661,1819,drawing (visual work),"Hodges, Charles Howard"
 283960,10679867,D:\thesis\images\10679867.jpg,1970,2601,5.124,black and white photograph,False,1,206661,1806,drawing (visual work),"Hodges, Charles Howard"
 283965,10684825,D:\thesis\images\10684825.jpg,427,500,0.213,digital image,True,1,207702,1815,drawing (visual work),"Hodges, Charles Howard"
@@ -55620,6 +55818,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 288915,10687690,D:\thesis\images\10687690.jpg,2552,3112,7.942,digital image,True,1,208127,1865,photograph,Anoniem
 288929,10687748,D:\thesis\images\10687748.jpg,367,501,0.184,digital image,True,1,117594,1691,print,"Schenk, Pieter (I)"
 288948,10687787,D:\thesis\images\10687787.jpg,337,500,0.169,digital image,True,1,208130,1928,painting,"Rueter, Georg"
+288952,10687792,D:\thesis\images\10687792.jpg,778,1000,0.778,digital image,True,1,114382,1950,painting,"Hofker, Willem Gerard"
 288995,10687847,D:\thesis\images\10687847.jpg,394,500,0.197,digital image,True,1,121752,1670,painting,"Grevenbroeck, Martinus van"
 288998,10687855,D:\thesis\images\10687855.jpg,354,501,0.177,digital image,True,1,208132,1659,print,"Küsel, Melchior (I)"
 289075,10688083,D:\thesis\images\10688083.jpg,401,500,0.201,digital image,True,1,208141,1640,painting,"Spilberg, Johann (II)"
@@ -56014,6 +56213,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 296775,10463778,D:\thesis\images\10463778.jpg,3422,4194,14.352,digital color photograph,True,1,116760,1849-03-24,print,"Berghaus, Johann Peter"
 296779,10463791,D:\thesis\images\10463791.jpg,3492,4251,14.844,digital color photograph,True,1,208480,1850-06-22,print,"Berghaus, Johann Peter"
 296781,10463780,D:\thesis\images\10463780.jpg,3225,3941,12.71,digital color photograph,True,1,208481,1850-07-01,print,"Berghaus, Johann Peter"
+296848,10703927,D:\thesis\images\10703927.jpg,850,1000,0.85,BD/Digital Collection,False,1,114449,1626,painting,"Mierevelt, Michiel van"
 296916,10464233,D:\thesis\images\10464233.jpg,2912,4616,13.442,digital color photograph,True,1,208483,1902,carte-de-visite,Brainich &amp; Leusink
 296932,10463782,D:\thesis\images\10463782.jpg,3372,4044,13.636,digital color photograph,True,1,145639,1850-08-30,print,"Berghaus, Johann Peter"
 296933,10463781,D:\thesis\images\10463781.jpg,3281,4008,13.15,digital color photograph,True,1,129221,1850-08-31,print,"Berghaus, Johann Peter"
@@ -56086,6 +56286,7 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 304752,10417280,D:\thesis\images\10417280.jpg,3498,4546,15.902,digital color photograph,True,1,208571,1890,photograph,Anoniem
 304753,10417284,D:\thesis\images\10417284.jpg,3429,4413,15.132,digital color photograph,True,1,208572,1890,photograph,Anoniem
 304807,10716448,D:\thesis\images\10716448.jpg,4947,6252,30.929,digital color photograph,True,1,208573,1886,painting,"Neuman, Johan Heinrich"
+304809,10716449,D:\thesis\images\10716449.jpg,801,1001,0.802,digital color photograph,True,1,208574,1886,painting,"Neuman, Johan Heinrich"
 304811,10716452,D:\thesis\images\10716452.jpg,5263,6664,35.073,digital color photograph,True,1,208577,1867,painting,"Neuman, Johan Heinrich"
 304945,10417292,D:\thesis\images\10417292.jpg,3580,4463,15.978,digital color photograph,True,1,126010,1890,photograph,Anoniem
 304946,10417293,D:\thesis\images\10417293.jpg,3450,4298,14.828,digital color photograph,True,1,208578,1869,photograph,Anoniem
@@ -56333,12 +56534,16 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 308574,10866742,D:\thesis\images\10866742.jpg,374,500,0.187,digital image,True,1,208736,1698,reproductive print,"Schenk, Pieter (I)"
 308575,10866743,D:\thesis\images\10866743.jpg,347,500,0.173,digital image,True,1,208736,1695,reproductive print,"Schenk, Pieter (I)"
 308586,10866805,D:\thesis\images\10866805.jpg,412,501,0.206,digital image,True,1,208736,1700,painting,"Boonen, Arnold"
+308612,10848988,D:\thesis\images\10848988.jpg,832,1000,0.832,digital color photograph,True,1,208737,2016,painting,"Larsson, Urban"
 308627,10848991,D:\thesis\images\10848991.jpg,3170,3728,11.818,digital color photograph,True,1,208738,1735,painting,"Verheyden, Mattheus"
 308632,10871006,D:\thesis\images\10871006.jpg,492,500,0.246,digital color photograph,True,1,208739,1906,photograph,Anoniem
 308649,10848996,D:\thesis\images\10848996.jpg,3012,3700,11.144,digital color photograph,True,1,111680,1826,painting,Anoniem
 308661,10849000,D:\thesis\images\10849000.jpg,3734,3164,11.814,digital color photograph,True,1,208742,1912-09-03,drawing (visual work),"Sluiter, Willy"
 308851,10869788,D:\thesis\images\10869788.jpg,3077,5188,15.963,digital image,True,1,208741,1863,carte-de-visite,"Brüggemann, Theodor"
 308940,10849033,D:\thesis\images\10849033.jpg,3082,3756,11.576,digital color photograph,True,1,111680,1950,painting,"Savornin Lohman, Axel Emil de"
+308942,10849007,D:\thesis\images\10849007.jpg,822,1000,0.822,digital color photograph,True,1,208743,1974,painting,"Veen, Karel van"
+308944,10849006,D:\thesis\images\10849006.jpg,827,1000,0.827,digital color photograph,True,1,208744,1971,painting,"Veen, Karel van"
+308947,10849012,D:\thesis\images\10849012.jpg,808,1000,0.808,digital color photograph,True,1,208743,1957,painting,"Rueter, Georg"
 309071,10849004,D:\thesis\images\10849004.jpg,2908,3612,10.504,digital color photograph,True,1,145399,1856,drawing (visual work),"Haak, Johannes Andries Martinus"
 309073,10849003,D:\thesis\images\10849003.jpg,2924,3616,10.573,digital color photograph,True,1,145400,1856,drawing (visual work),"Haak, Johannes Andries Martinus"
 309081,10849019,D:\thesis\images\10849019.jpg,2698,3728,10.058,digital color photograph,True,1,208746,1800,drawing (visual work),"Kooi, Willem Bartel van der"
@@ -56534,111 +56739,3 @@ priref,lref,path,width,height,megapixels,soort,is_color,sitter_count,sitter_ids,
 345891,11184840,D:\thesis\images\11184840.jpg,3024,3249,9.825,digital image,True,1,205193,1650,painting,"Mieris, Frans van (I)"
 345978,11188738,D:\thesis\images\11188738.jpg,1967,2750,5.409,digital image,True,1,117154,1720,drawing (visual work),"Pronk, Cornelis"
 346007,11190312,D:\thesis\images\11190312.jpg,411,500,0.205,digital image,True,1,133331,1674,painting,"Borch, Gerard ter (II)"
-55595,10013655,D:\thesis\images\10013655.jpg,215,500,0.107,digital color photograph,True,1,134554,1850,painting,Anoniem
-108066,9137315,D:\thesis\images\9137315.jpg,500,199,0.1,black and white photograph,False,1,108176,1934,painting,"Sluijters, Jan"
-119543,9168929,D:\thesis\images\9168929.jpg,215,500,0.107,BD/Digital Collection,False,1,200012,1496,painting,"Bosch, Jheronimus"
-119546,9168930,D:\thesis\images\9168930.jpg,213,500,0.106,BD/Digital Collection,False,1,200009,1496,painting,"Bosch, Jheronimus"
-124541,10390140,D:\thesis\images\10390140.jpg,219,500,0.11,unknown,False,1,102168,1925,drawing (visual work),"Spier, Jo"
-127438,10727013,D:\thesis\images\10727013.jpg,194,500,0.097,photograph,False,1,102646,1518,painting,Anoniem
-129106,10730765,D:\thesis\images\10730765.jpg,189,500,0.095,photograph,False,1,107423,1966,sculpture,"Andriessen, Mari"
-130218,10733109,D:\thesis\images\10733109.jpg,207,500,0.103,BD/RKD/1808 - IB/XIXD,False,1,112834,1875,painting,"Schwartze, Thérèse"
-131818,10735115,D:\thesis\images\10735115.jpg,203,500,0.102,photograph,False,1,103598,1550,painting,"Key, Willem"
-131991,10388802,D:\thesis\images\10388802.jpg,500,222,0.111,unknown,False,1,105372,1875,drawing (visual work),"Hingman, Jan"
-132550,10388925,D:\thesis\images\10388925.jpg,500,164,0.082,unknown,False,1,103291,1625,painting,Anoniem
-137352,10739577,D:\thesis\images\10739577.jpg,211,500,0.105,reproduction (derivative object),False,1,105472,1950,sculpture,"Andriessen, Mari"
-140927,10742336,D:\thesis\images\10742336.jpg,500,210,0.105,reproduction (derivative object),False,1,106827,1975,painting,"Markus, Ans"
-141287,10742575,D:\thesis\images\10742575.jpg,155,275,0.043,photograph,False,1,117108,1993,painting,"Stapel, Dick"
-141317,10388867,D:\thesis\images\10388867.jpg,210,500,0.105,unknown,False,1,116053,1875,drawing (visual work),"Stracké, Louis"
-142623,10390526,D:\thesis\images\10390526.jpg,210,500,0.105,unknown,False,1,16990,1996,painting,"Welbergen, Maarten"
-142907,10742707,D:\thesis\images\10742707.jpg,180,501,0.09,reproduction (derivative object),False,1,117818,1922,drawing (visual work),"Vlijmen, Bernard van"
-143204,10730981,D:\thesis\images\10730981.jpg,199,501,0.1,reproduction (derivative object),False,1,117954,1962,painting,"Vroom, Jean Paul"
-143241,10390231,D:\thesis\images\10390231.jpg,223,500,0.112,unknown,False,1,117685,1925,sculpture,"Krop, Hildo"
-143491,10737054,D:\thesis\images\10737054.jpg,500,172,0.086,photograph,False,1,107318,1900,painting,"Markus, Ans"
-144352,10389832,D:\thesis\images\10389832.jpg,212,501,0.106,unknown,False,1,101429,1900,sculpture,"Odé, Arend Willem Maurits"
-145217,10729325,D:\thesis\images\10729325.jpg,162,500,0.081,photograph,False,1,116108,1925,sculpture,"Andriessen, Mari"
-145611,10389970,D:\thesis\images\10389970.jpg,500,213,0.106,unknown,False,1,106655,1922,unknown,"Kamerlingh Onnes, Harm"
-145721,10733372,D:\thesis\images\10733372.jpg,152,500,0.076,black and white photograph,False,1,119600,1650,painting,Anoniem
-146073,10733361,D:\thesis\images\10733361.jpg,166,500,0.083,black and white photograph,False,1,115415,1625,painting,"Honthorst, Gerard van"
-147176,10389852,D:\thesis\images\10389852.jpg,190,500,0.095,unknown,False,1,102004,1900,drawing (visual work),"Hahn, Albert (I)"
-148067,10390257,D:\thesis\images\10390257.jpg,206,500,0.103,unknown,False,1,106655,1925,relief,"Franzen-Heslenfeld, Corinne"
-148134,10389984,D:\thesis\images\10389984.jpg,196,501,0.098,unknown,False,1,106887,1919,drawing (visual work),"Leusink, Annigje"
-148446,10743960,D:\thesis\images\10743960.jpg,214,500,0.107,reproduction (derivative object),False,1,115013,1925,sculpture,"Wezelaar, Han"
-148473,10743964,D:\thesis\images\10743964.jpg,137,275,0.038,photograph,False,1,114024,1988,painting,"Stapel, Dick"
-148474,10743965,D:\thesis\images\10743965.jpg,139,275,0.038,photograph,False,1,100146,1988,painting,"Stapel, Dick"
-148878,10743991,D:\thesis\images\10743991.jpg,223,501,0.112,reproduction (derivative object),False,1,117921,1900,silhouette,"Jordaan, Leendert Jurriaan"
-149183,10720037,D:\thesis\images\10720037.jpg,223,500,0.112,photograph,False,1,107821,1925,painting,"Schuhmacher, Wim"
-166053,9201698,D:\thesis\images\9201698.jpg,223,500,0.112,digital image,True,1,9419,1979,painting,"Hofker, Willem Gerard"
-168004,10746037,D:\thesis\images\10746037.jpg,184,500,0.092,reproduction (derivative object),False,1,136122,1925,drawing (visual work),"Rädecker, John"
-169809,10746158,D:\thesis\images\10746158.jpg,207,275,0.057,photograph,False,1,113941,1980,painting,"Stapel, Dick"
-169810,10746157,D:\thesis\images\10746157.jpg,154,275,0.042,photograph,False,1,137298,1996,painting,"Stapel, Dick"
-169812,10746156,D:\thesis\images\10746156.jpg,137,275,0.038,photograph,False,1,137299,1986,painting,"Stapel, Dick"
-169839,10746172,D:\thesis\images\10746172.jpg,124,155,0.019,photograph,False,1,137316,1959,painting,"Schröder, Sierk"
-170397,10746190,D:\thesis\images\10746190.jpg,100,116,0.012,photograph,False,1,137744,1955,painting,"Meys, Louis"
-170436,10746154,D:\thesis\images\10746154.jpg,149,275,0.041,photograph,False,1,137759,1998,painting,"Stapel, Dick"
-170437,10746155,D:\thesis\images\10746155.jpg,178,275,0.049,photograph,False,1,137760,1986,painting,"Stapel, Dick"
-170439,10746242,D:\thesis\images\10746242.jpg,158,300,0.047,photograph,False,1,137762,2004,painting,"Stapel, Dick"
-170440,10746241,D:\thesis\images\10746241.jpg,165,300,0.05,photograph,False,1,137763,2004,painting,"Stapel, Dick"
-170444,10746238,D:\thesis\images\10746238.jpg,165,300,0.05,photograph,False,1,137767,2004,painting,"Stapel, Dick"
-170445,10746237,D:\thesis\images\10746237.jpg,180,300,0.054,photograph,False,1,137768,2004,painting,"Stapel, Dick"
-170446,10746236,D:\thesis\images\10746236.jpg,161,300,0.048,photograph,False,1,137769,2004,painting,"Stapel, Dick"
-170452,10746166,D:\thesis\images\10746166.jpg,150,275,0.041,photograph,False,1,137774,1992,painting,"Stapel, Dick"
-170453,10746167,D:\thesis\images\10746167.jpg,141,275,0.039,photograph,False,1,137775,1986,painting,"Stapel, Dick"
-173172,10389760,D:\thesis\images\10389760.jpg,215,256,0.055,unknown,False,1,139717,1775,portrait miniature,Anoniem
-173173,10389761,D:\thesis\images\10389761.jpg,215,256,0.055,unknown,False,1,139718,1775,portrait miniature,Anoniem
-173320,10768925,D:\thesis\images\10768925.jpg,215,278,0.06,BD/RKD/1836 - IB/XXC,False,1,139836,1968,print,"Vlag, Sees"
-173532,10724596,D:\thesis\images\10724596.jpg,211,501,0.106,BD/RKD/1810 - IB/XVIAB,False,1,139969,1525,painting,Anoniem
-173969,10389921,D:\thesis\images\10389921.jpg,183,500,0.091,unknown,False,1,134696,1900,sculpture,Anoniem
-175052,10724599,D:\thesis\images\10724599.jpg,205,437,0.09,BD/RKD/1802 - IB/XIXA,False,1,110978,1800,silhouette,Anoniem
-176503,10684268,D:\thesis\images\10684268.jpg,179,500,0.089,color reproduction,True,1,107346,1625,tile tableau,Anoniem
-176505,10684259,D:\thesis\images\10684259.jpg,144,500,0.072,black-and-white reproduction,False,1,107346,1600,tile (object genre),"Mierevelt, Michiel van"
-176508,10684267,D:\thesis\images\10684267.jpg,146,500,0.073,black-and-white reproduction,False,1,100208,1600,tile (object genre),"Mierevelt, Michiel van"
-178691,10768524,D:\thesis\images\10768524.jpg,214,286,0.061,original photograph,False,1,143143,1600,print,Anoniem
-178891,10765936,D:\thesis\images\10765936.jpg,210,327,0.069,original photograph,False,1,141598,1600,print,Anoniem
-179693,10768609,D:\thesis\images\10768609.jpg,219,350,0.077,original photograph,False,1,143688,1650,print,Anoniem
-180708,10746433,D:\thesis\images\10746433.jpg,501,214,0.107,photograph,False,1,144313,2007,painting,"Doorn, Daan van"
-180993,10768686,D:\thesis\images\10768686.jpg,217,501,0.109,digital image,True,1,110323,1873,print,"Toorop, Jan"
-182433,9186200,D:\thesis\images\9186200.jpg,200,501,0.1,color reproduction,True,1,102555,1961,painting,"Citroen, Paul"
-182454,10390394,D:\thesis\images\10390394.jpg,175,500,0.087,unknown,False,1,102397,1962,painting,"Citroen, Paul"
-182807,10768771,D:\thesis\images\10768771.jpg,221,269,0.059,reproduction (derivative object),False,1,114416,1925,print,"Laat, Nico de"
-182929,10746684,D:\thesis\images\10746684.jpg,148,180,0.027,BD/RKD/IB,False,1,110371,1650,painting,Anoniem
-182930,10746685,D:\thesis\images\10746685.jpg,148,180,0.027,digital image,True,1,142541,1650,painting,Anoniem
-182944,10746867,D:\thesis\images\10746867.jpg,194,500,0.097,reproduction (derivative object),False,1,106327,2008,sculpture,"Letterie, Frank"
-188094,9169394,D:\thesis\images\9169394.jpg,213,500,0.106,digital image,True,1,200350,2005,painting,"Hartjesveld, Elsa"
-189444,9186201,D:\thesis\images\9186201.jpg,167,500,0.084,digital image,True,1,101754,1961,painting,"Citroen, Paul"
-189448,9186202,D:\thesis\images\9186202.jpg,180,501,0.09,digital image,True,1,200453,1961,painting,"Citroen, Paul"
-189450,9186203,D:\thesis\images\9186203.jpg,182,501,0.091,digital image,True,1,112366,1960,painting,"Citroen, Paul"
-189458,9186205,D:\thesis\images\9186205.jpg,189,500,0.095,digital image,True,1,116811,1962,painting,"Citroen, Paul"
-190545,9190768,D:\thesis\images\9190768.jpg,164,157,0.026,digital image,True,1,107491,1690,"plate (general, dish)",Anoniem
-190546,9190769,D:\thesis\images\9190769.jpg,160,158,0.025,digital image,True,1,107491,1690,"plate (general, dish)",Anoniem
-190647,9190791,D:\thesis\images\9190791.jpg,300,217,0.065,digital image,True,1,200537,1805,portrait miniature,Anoniem
-190769,9190807,D:\thesis\images\9190807.jpg,217,500,0.108,digital image,True,1,110,1950,painting,"Fernhout, Edgar"
-191169,9190875,D:\thesis\images\9190875.jpg,179,205,0.037,digital image,True,1,200600,1937,painting,"Fernhout, Edgar"
-191340,9190893,D:\thesis\images\9190893.jpg,197,250,0.049,digital image,True,1,103948,1661,reproductive print,"Lubin, Jacques"
-191417,9190905,D:\thesis\images\9190905.jpg,170,224,0.038,digital image,True,1,200613,1840,drawing (visual work),"Rossum, Jan Cornelis van"
-191466,9190923,D:\thesis\images\9190923.jpg,189,224,0.042,digital image,True,1,114960,1880,print,"Tilly, E.A."
-192089,9190492,D:\thesis\images\9190492.jpg,167,501,0.084,black and white photograph,False,1,144805,1559,painting,Anoniem
-192099,9190493,D:\thesis\images\9190493.jpg,162,500,0.081,black and white photograph,False,1,200668,1559,painting,Anoniem
-197540,9202659,D:\thesis\images\9202659.jpg,215,300,0.065,digital image,True,1,201252,1725,drawing (visual work),"Schouman, Aert"
-220420,9197535,D:\thesis\images\9197535.jpg,214,500,0.107,digital color photograph,True,1,202750,1982,drawing (visual work),"Meerdink, Jacob Reyer"
-232482,9310317,D:\thesis\images\9310317.jpg,219,501,0.11,black and white photograph,False,1,107423,1938,painting,"Leusden, Willem van"
-236433,10632154,D:\thesis\images\10632154.jpg,161,201,0.032,digital color photograph,True,1,204144,2012,photograph,"Breukel, Koos"
-236437,10632156,D:\thesis\images\10632156.jpg,158,200,0.032,digital black-and-white photograph,False,1,204145,2005,photograph,"Breukel, Koos"
-236439,10632162,D:\thesis\images\10632162.jpg,158,201,0.032,digital black-and-white photograph,False,1,204147,2009,photograph,"Breukel, Koos"
-236440,10632160,D:\thesis\images\10632160.jpg,160,201,0.032,digital black-and-white photograph,False,1,204148,2005,photograph,"Breukel, Koos"
-236468,10632165,D:\thesis\images\10632165.jpg,158,200,0.032,digital black-and-white photograph,False,1,204149,1998,photograph,"Breukel, Koos"
-236470,10632161,D:\thesis\images\10632161.jpg,158,200,0.032,digital black-and-white photograph,False,1,204152,2002,photograph,"Breukel, Koos"
-236476,10632157,D:\thesis\images\10632157.jpg,201,134,0.027,digital color photograph,True,1,114171,2012,photograph,"Breukel, Koos"
-236477,10632155,D:\thesis\images\10632155.jpg,161,201,0.032,digital color photograph,True,1,204150,2012,photograph,"Breukel, Koos"
-236480,10632166,D:\thesis\images\10632166.jpg,200,133,0.027,digital color photograph,True,1,114539,2008,photograph,"Breukel, Koos"
-236705,10632400,D:\thesis\images\10632400.jpg,161,201,0.032,black and white photograph,False,1,204449,1999,photograph,"Breukel, Koos"
-237912,10633522,D:\thesis\images\10633522.jpg,134,201,0.027,digital image,True,1,203533,2012,photograph,"Mentzel, Vincent"
-266732,10673340,D:\thesis\images\10673340.jpg,158,200,0.032,digital black-and-white photograph,False,1,206558,2004,photograph,"Breukel, Koos"
-266775,10673339,D:\thesis\images\10673339.jpg,151,200,0.03,digital color photograph,True,1,206566,2011,photograph,"Breukel, Koos"
-266779,10673334,D:\thesis\images\10673334.jpg,167,200,0.033,digital color photograph,True,1,206568,2000,photograph,"Mentzel, Vincent"
-267094,9318462,D:\thesis\images\9318462.jpg,204,500,0.102,reproduction (derivative object),False,1,206595,1965,drawing (visual work),"Rieser, Willy"
-272732,10665564,D:\thesis\images\10665564.jpg,187,500,0.093,digital image,True,1,206910,1897,drawing (visual work),"Toorop, Jan"
-272737,10665568,D:\thesis\images\10665568.jpg,175,501,0.088,digital image,True,1,206911,1897,drawing (visual work),"Toorop, Jan"
-272740,10665570,D:\thesis\images\10665570.jpg,206,500,0.103,digital image,True,1,206912,1897,drawing (visual work),"Toorop, Jan"
-273260,10666042,D:\thesis\images\10666042.jpg,175,501,0.088,digital image,True,1,206980,1915,painting,"List, Wilhelm"
-277759,10671752,D:\thesis\images\10671752.jpg,500,215,0.107,digital image,True,1,105963,1937,painting,"Ket, Dick"
-281448,10676565,D:\thesis\images\10676565.jpg,135,500,0.068,black and white photograph,False,1,107376,1973,installation (visual work),"Jansen, Peter (1938-)"
