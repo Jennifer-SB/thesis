@@ -147,7 +147,7 @@ def scan_images(images_dir: Path) -> dict:
             failed.append(path)
 
     if failed:
-        print(f"  ⚠️  Could not read {len(failed)} images (corrupt or truncated)")
+        print(f"Could not read {len(failed)} images (corrupt or truncated)")
 
     return lref_info
 
@@ -279,7 +279,7 @@ def write_manifest(selected: list, manifest_path: Path) -> None:
     color_count = sum(1 for r in selected if r["is_color"])
     bw_count    = sum(1 for r in selected if not r["is_color"])
 
-    print(f"\n  ✅ Manifest saved to {manifest_path}")
+    print(f"\n Manifest saved to {manifest_path}")
     print(f"     {len(selected):,} rows  ×  {len(fieldnames)} columns")
     print(f"     Color images:  {color_count:,}")
     print(f"     Other/B&W:     {bw_count:,}")
@@ -357,14 +357,14 @@ if __name__ == "__main__":
         writer = csv.DictWriter(f, fieldnames=["priref", "artist_name", "date", "objectcat", "lrefs_in_xml", "reason"])
         writer.writeheader()
         writer.writerows(no_image_rows)
-    print(f"  ✅ {no_image_csv}  ({len(no_image_rows):,} rows)")
+    print(f"   {no_image_csv}  ({len(no_image_rows):,} rows)")
 
     too_small_csv = Path("prirefs_too_small.csv")
     with open(too_small_csv, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=["priref", "lref", "width", "height", "megapixels", "soort", "artist_name", "date", "objectcat"])
         writer.writeheader()
         writer.writerows(too_small_rows)
-    print(f"  ✅ {too_small_csv}  ({len(too_small_rows):,} rows)")
+    print(f"   {too_small_csv}  ({len(too_small_rows):,} rows)")
 
     # Keep only rows with exactly one sitter who has a known ID.
     # sitter_count == 1: single-portrait artworks only — group portraits are excluded
@@ -383,7 +383,7 @@ if __name__ == "__main__":
     print("\nGenerating resolution chart...")
     chart_resolution_distribution(selected)
 
-    print(f"\n✅ Done. Load the manifest in training with:")
+    print(f"\n  Done. Load the manifest in training with:")
     print(f"   import pandas as pd")
     print(f"   df = pd.read_csv('{MANIFEST_CSV}')")
     print(f"   # sitter_ids column is pipe-separated: df['sitter_ids'].str.split('|')")
