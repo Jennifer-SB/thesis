@@ -14,7 +14,9 @@ DRIVE_PATH = Path("D:/")
 XML_FILE   = DRIVE_PATH / "thesis" / "data" / "RKDimages.xml"
 
 # --- Output: downloaded images ---
-IMAGES_DIR = DRIVE_PATH / "thesis" / "images"
+IMAGES_DIR    = DRIVE_PATH / "thesis" / "images"
+GEZICHTEN_DIR = DRIVE_PATH / "thesis" / "gezichten"
+PERSONEN_DIR  = DRIVE_PATH / "thesis" / "personen"
 IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
 # --- Output: charts ---

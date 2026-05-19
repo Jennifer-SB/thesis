@@ -3,7 +3,7 @@ scripts/build_training_table.py
 --------------------------------
 Builds the final training set metadata table by combining:
   1. dataset_manifest.csv  — base filtering (single known-sitter portraits)
-  2. D:/thesis/gezichten   — face detection results (keep only solo-face lrefs)
+  2. GEZICHTEN_DIR (config.py) — face detection results (keep only solo-face lrefs)
   3. RKDimages.xml         — extra metadata not in manifest
 
 Filtering steps (counts printed at each step):
@@ -26,10 +26,9 @@ from collections import Counter
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from tqdm import tqdm
-from config import MANIFEST_CSV, XML_FILE
+from config import MANIFEST_CSV, XML_FILE, GEZICHTEN_DIR
 
-GEZICHTEN_DIR = Path("D:/thesis/gezichten")
-TRAINING_CSV  = Path("training_set.csv")
+TRAINING_CSV = Path("training_set.csv")
 
 OUTPUT_FIELDS = [
     # Image / artwork identity
