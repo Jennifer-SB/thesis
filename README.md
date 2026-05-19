@@ -5,35 +5,40 @@ Face verification on the [RKD (Rijksbureau voor Kunsthistorische Documentatie)](
 
 ## Research Questions
 
-**RQ1**  Evaluate baseline ResNet100 + CosFace (pre-trained, no fine-tuning) on RKD dataset (Klink & Bunda, 2025)
-**RQ2**  SE-blocks (Squeeze-and-Excitation) in RetinaFace for face detection in paintings 
-**RQ3**  LoRA-CLIP + IResNet100 embeddings for face verification (fine-tuning) (Poh et al., 2025)
-**RQ4**  *(if time)* Hyperbolic vs Euclidean CLIP embeddings for face recognition performance 
+| | |
+|---|---|
+| **RQ1** | Evaluate baseline ResNet100 + CosFace (pre-trained, no fine-tuning) on RKD dataset (Klink & Bunda, 2025) |
+| **RQ2** | SE-blocks (Squeeze-and-Excitation) in RetinaFace for face detection in paintings |
+| **RQ3** | LoRA-CLIP + IResNet100 embeddings for face verification (fine-tuning) (Poh et al., 2025) |
+| **RQ4** | *(if time)* Hyperbolic vs Euclidean CLIP embeddings for face recognition performance |
 
 
 ## Dataset Pipeline
 
+```
 RKDimages.xml  (103,637 artwork records)
       │
       ▼  src/dataset/downloader.py
 D:/thesis/images/  (~144,763 .jpg files)
       │
-      ▼  scripts/select_images.py  → dataset_manifest.csv
+      ▼  scripts/select_images.py  →  dataset_manifest.csv
 Single known-sitter portraits  (56,740)
       │
-      ▼  [WSL — InsightFace, see below]  → D:/thesis/gezichten/
+      ▼  [WSL — InsightFace, see below]  →  D:/thesis/gezichten/
 Solo-face portraits  (50,986)
       │
-      ▼  scripts/build_training_table.py  → training_set.csv
+      ▼  scripts/build_training_table.py  →  training_set.csv
 27,337 training portraits  |  7,981 identities
       │
       ▼  scripts/build_personen.py
 D:/thesis/personen/{sitter_id}/{lref}.jpg  ← final training dataset
+```
 
 
 ### Filtering summary
 
 | Step | Remaining | Removed |
+|---|---|---|
 | XML artwork records | 103,637 | — |
 | Images on disk (after download) | ~144,763 unique files | 73 failed permanently |
 | Prirefs with usable image | ~97,941 | 5,696 (no image / placeholder only) |
