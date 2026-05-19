@@ -40,19 +40,23 @@ D:/thesis/personen/{sitter_id}/{lref}.jpg  ← final training dataset
 | Step | Remaining | Removed |
 |---|---|---|
 | XML artwork records | 103,637 | — |
-| Images on disk (after download) | ~144,763 unique files | 73 failed permanently |
+| Images on disk (after download) | ~144,763 unique files | 73+555 failed permanently |
 | Prirefs with usable image | ~97,941 | 5,696 (no image / placeholder only) |
 | Single known-sitter filter | 56,740 | ~41,201 (group portraits / unknown sitters) |
 | Solo-face filter (RetinaFace) | 50,986 | 3,755 no face · 1,999 multi-face |
 | Identity filter (≥2 portraits) | **27,337 portraits / 7,981 identities** | ~23,649 (sitter appears only once) |
 
-## Face Detection & Embedding (WSL — GPU required)
+## Face Detection & Embedding (WSL/GPU required)
 
 Face detection and embedding extraction were run in a **Linux WSL2 environment** using [InsightFace](https://github.com/deepinsight/insightface). This step requires a CUDA-capable GPU and is not part of the Windows pipeline.
 
+The code from Sebastian Bunda (https://github.com/stbunda/ArtFace) was used for Face Detection & Embedding, who has used the InsightFace repository. Some small adjustments were made to the original code in test_all.py to add the alignment step in the face detection, the adjusted test_all.py can be found in Sebastian Bunda's Repository.
+
+To analyse the embeddings and the model (for example ROC curve), the notebook examine_features.ipynb was used in Sebastian Bunda's Repository.
+
 **Models used:**
-- **RetinaFace** — face detection and cropping (`D:/thesis/gezichten/{lref}_0.jpg`, `_1.jpg`, ...)
-- **ArcFace ResNet100 trained on Glint360K** — face recognition embeddings → `features.pkl`
+- **RetinaFace** face detection and cropping (`D:/thesis/gezichten/{lref}_0.jpg`, `_1.jpg`, ...)
+- **ArcFace ResNet100 trained on Glint360K** face recognition embeddings → `features.pkl`
 
 **To reproduce:**
 ```bash
@@ -72,22 +76,22 @@ pip install insightface onnxruntime-gpu
 
 ```
 thesis/
-├── config.py                        # All paths — change DRIVE_PATH when switching machines
-├── dataset_manifest.csv             # 56,740 single known-sitter portraits
-├── training_set.csv                 # 27,337 final training portraits with full metadata
+├── config.py                        # All paths, change DRIVE_PATH when switching machines
+├── dataset_manifest.csv             # table of 56.740 single known-sitter portraits
+├── training_set.csv                 # table of 27.337 final training portraits with full metadata
 ├── features.pkl                     # ArcFace embeddings (from WSL step)
-├── prirefs_no_image.csv             # 5,696 prirefs with no usable image (+ reason)
-├── prirefs_too_small.csv            # 1,896 prirefs below 224×224px (included in manifest)
-├── lref_filename.csv                # Mapping for 631 privately-obtained images
+├── prirefs_no_image.csv             # 5.696 prirefs with no usable image (+ reason)
+├── prirefs_too_small.csv            # 1.896 prirefs below 224×224px (included in manifest)
+├── lref_filename.csv                # Mapping for 631 privately-obtained images (from RKD contact)
 ├── scripts/
-│   ├── select_images.py             # Builds dataset_manifest.csv from XML + images
-│   ├── build_training_table.py      # Filters to 27k + enriches with XML metadata
+│   ├── select_images.py             # Builds dataset_manifest.csv from XML file + downloaded images
+│   ├── build_training_table.py      # Filters to 27k (solo depictions of sitters with multiple depictions) + enriches with XML metadata
 │   ├── build_personen.py            # Copies crops to personen/ organised by sitter_id
 │   └── analysis.py                  # Generates dataset charts (plots/dataset_evaluation/)
 ├── src/dataset/
 │   ├── xml_parser.py                # RKDDataset: parses RKDimages.xml
 │   ├── downloader.py                # Downloads images from RKD IIIF server
-│   ├── audit.py                     # Checks disk vs XML for missing/corrupt files
+│   ├── audit.py                     # Checks disk vs. XML for missing/corrupt files
 │   └── retry_corrupt.py             # Re-downloads missing/corrupt images
 └── plots/dataset_evaluation/        # Generated charts
 ```
