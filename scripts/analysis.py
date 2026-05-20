@@ -461,7 +461,7 @@ if __name__ == "__main__":
     # ------------------------------------------------------------------
     print("\n--- Filter 3: 27k training set (from training_set.csv) ---")
     if not TRAINING_CSV.exists():
-        print(f"  ✗ {TRAINING_CSV} not found — run scripts/build_training_table.py first")
+        print(f"  ERROR: {TRAINING_CSV} not found — run scripts/build_training_table.py first")
     else:
         import pandas as pd
         df_training = pd.read_csv(TRAINING_CSV)
@@ -469,7 +469,7 @@ if __name__ == "__main__":
         run_charts_training(df_training, suffix="_training")
 
     if TRAINING_ONLY:
-        print(f"\n✅ Training charts saved to {PLOTS_DIR}")
+        print(f"\nTraining charts saved to {PLOTS_DIR}")
         sys.exit(0)
 
     # ------------------------------------------------------------------
@@ -488,4 +488,4 @@ if __name__ == "__main__":
     multi = dataset.filter_records(filter_identified=True, filter_multi_portrait=True)
     run_charts(multi, suffix="_multi")
 
-    print(f"\n✅ All charts saved to {PLOTS_DIR}")
+    print(f"\nAll charts saved to {PLOTS_DIR}")

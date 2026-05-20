@@ -69,7 +69,7 @@ for item in tqdm(candidates, desc="Retrying"):
 
         if consecutive_fails >= FAIL_THRESHOLD:
             tqdm.write(
-                f"\n⚠️  {consecutive_fails} failures in a row — "
+                f"\nWARNING: {consecutive_fails} failures in a row — "
                 f"pausing {LONG_PAUSE}s..."
             )
             time.sleep(LONG_PAUSE)

@@ -92,4 +92,4 @@ if portrait_counts:
           f"max={max(portrait_counts)}  "
           f"avg={sum(portrait_counts)/len(portrait_counts):.1f}")
 
-print(f"\n✅ Done. Personen folder: {PERSONEN_DIR}")
+print(f"\nDone. Personen folder: {PERSONEN_DIR}")

@@ -333,7 +333,7 @@ def chart_resolution_distribution(selected: list) -> None:
     fname = PLOTS_DIR / "chart_resolution_distribution.png"
     plt.savefig(fname, dpi=150)
     plt.close()
-    print(f"  ✅ {fname}")
+    print(f"  Saved: {fname}")
 
 
 # ------------------------------------------------------------------

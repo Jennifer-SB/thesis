@@ -380,5 +380,5 @@ for n in sorted(portrait_dist_sitters):
         print(f"    16+:            {tail_s:>5,} sitters  ({tail_p:>6,} portraits)")
         break
 print(f"{'='*55}")
-print(f"\n✅ Saved to {TRAINING_CSV}")
+print(f"\nSaved to {TRAINING_CSV}")
 print(f"   Load with: import pandas as pd; df = pd.read_csv('{TRAINING_CSV}')")
