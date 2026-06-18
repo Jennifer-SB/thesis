@@ -130,7 +130,7 @@ python -m src.dataset.downloader
 # 2. Select best image per artwork, filter to single known-sitter portraits
 python scripts/select_images.py
 
-# 3. [WSL] Detect and crop faces → gezichten/
+# 3. [WSL] Detect and crop faces --> gezichten/
 
 # 4. Build enriched training table (requires XML + gezichten/)
 python scripts/build_training_table.py
@@ -142,7 +142,7 @@ python scripts/build_personen.py
 python scripts/analysis.py --training-only
 
 # 7. Generate ResNet100 (Klink&Bunda algo) feature embeddings
-ArcFace ResNet100 trained on Glint360K** — face recognition embeddings → `features.pkl`
+ArcFace ResNet100 trained on Glint360K** — face recognition embeddings --> 'features.pkl'
 
 # 8. Analyse embeddings: Klink & Bunda python code
 

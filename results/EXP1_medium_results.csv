@@ -1,0 +1,8 @@
+experiment_id,description,n_portraits,n_sitters,n_genuine,n_impostor,AUC,EER,EER_threshold,TAR@FAR=0.01,TAR@FAR=0.001,macro_AUC,macro_AUC_n_sitters,stratum,runtime_s
+EXP1_medium_oil_paintings,Baseline: stratified by medium group — Oil paintings,9613,4416,35044,350440,0.9544,0.1144,0.2055,0.6551,0.4474,0.9579,2494,Oil paintings,151.2
+EXP1_medium_photographs,Baseline: stratified by medium group — Photographs,7557,2978,12190,121900,0.979,0.0613,0.1986,0.8916,0.8201,0.9724,2355,Photographs,151.2
+EXP1_medium_prints,Baseline: stratified by medium group — Prints,4698,1547,24670,246700,0.9121,0.1669,0.209,0.4916,0.2909,0.9615,906,Prints,151.2
+EXP1_medium_drawings,Baseline: stratified by medium group — Drawings,3644,2311,3061,30610,0.9273,0.1484,0.1788,0.5449,0.329,0.9254,818,Drawings,151.2
+EXP1_medium_portrait_miniatures,Baseline: stratified by medium group — Portrait miniatures,1036,769,513,5130,0.8981,0.189,0.2219,0.501,0.3372,0.9333,171,Portrait miniatures,151.2
+EXP1_medium_sculpture,Baseline: stratified by medium group — Sculpture,491,302,593,5930,0.8484,0.2322,0.168,0.3153,0.1703,0.9085,83,Sculpture,151.2
+EXP1_medium_other,Baseline: stratified by medium group — Other,298,260,43,430,0.8127,0.2581,0.2258,0.0,0.0,0.794,33,Other,151.2

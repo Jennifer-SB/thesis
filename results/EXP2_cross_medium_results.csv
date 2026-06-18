@@ -1,0 +1,7 @@
+experiment_id,combination,n_genuine,n_impostor,AUC,EER,EER_threshold,TAR@FAR=0.01,TAR@FAR=0.001,macro_AUC,macro_AUC_n_sitters,runtime_s
+EXP2_cross_medium_oil_paintings_x_prints,Oil paintings × Prints,43234,432340,0.9295,0.1465,0.1821,0.536,0.298,0.9397,937,85.1
+EXP2_cross_medium_oil_paintings_x_drawings,Oil paintings × Drawings,8894,88940,0.8941,0.1903,0.1574,0.453,0.2702,0.9181,1357,85.1
+EXP2_cross_medium_oil_paintings_x_photographs,Oil paintings × Photographs,5315,53150,0.9546,0.1136,0.1433,0.7029,0.5281,0.9529,614,85.1
+EXP2_cross_medium_drawings_x_prints,Drawings × Prints,4961,49610,0.8837,0.2026,0.1592,0.408,0.2373,0.9323,448,85.1
+EXP2_cross_medium_photographs_x_prints,Photographs × Prints,3496,34960,0.9546,0.1104,0.1431,0.71,0.5503,0.9599,152,85.1
+EXP2_cross_medium_drawings_x_photographs,Drawings × Photographs,2118,21180,0.9304,0.1501,0.131,0.577,0.3952,0.925,362,85.1
