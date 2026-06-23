@@ -2,3 +2,4 @@ venv/
 RKDimages.xml
 *.pyc
 __pycache__/
+face_detection/model/
