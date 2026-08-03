@@ -12,7 +12,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import normalize
 
 
-def load_embeddings(pkl_path: str | Path = "features.pkl") -> dict:
+def load_embeddings(pkl_path="features.pkl") -> dict:
     """
     Load face embeddings from features.pkl.
     Returns: dict mapping lref (str) --> L2-normalised embedding (numpy array, shape 512)

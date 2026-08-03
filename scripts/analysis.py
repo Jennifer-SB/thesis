@@ -195,6 +195,31 @@ def run_charts(records: dict, suffix: str = "") -> None:
 # Charts — training_set.csv DataFrame  (Filter 3)
 # ==================================================================
 
+# Warm autumn palette used for all training-set charts.
+AUTUMN_DARK_RED     = "#8B1A1A"
+AUTUMN_ORANGE       = "#D2691E"
+AUTUMN_DARK_ORANGE  = "#CC5500"
+AUTUMN_DARK_YELLOW  = "#B8860B"
+AUTUMN_BURNT_SIENNA = "#A0522D"
+AUTUMN_MAROON       = "#800000"
+AUTUMN_AMBER        = "#C68E17"
+AUTUMN_PALETTE      = [AUTUMN_DARK_RED, AUTUMN_ORANGE, AUTUMN_DARK_YELLOW,
+                        AUTUMN_BURNT_SIENNA, AUTUMN_MAROON, AUTUMN_AMBER,
+                        AUTUMN_DARK_ORANGE]
+
+AXIS_LABEL_FONTSIZE = 13
+TICK_LABEL_FONTSIZE = 11
+
+
+def _style_axes(ax, xlabel=None, ylabel=None):
+    """Apply consistent, larger axis-label / tick-label sizing."""
+    if xlabel is not None:
+        ax.set_xlabel(xlabel, fontsize=AXIS_LABEL_FONTSIZE)
+    if ylabel is not None:
+        ax.set_ylabel(ylabel, fontsize=AXIS_LABEL_FONTSIZE)
+    ax.tick_params(axis="both", labelsize=TICK_LABEL_FONTSIZE)
+
+
 def _bar(ax, labels, counts, color, fontsize=8):
     bars = ax.bar(labels, counts, color=color, edgecolor="white")
     for bar, count in zip(bars, counts):
@@ -227,8 +252,8 @@ def chart_centuries_training(df, suffix: str = "") -> None:
     c_mid = Counter(int((y - 1) // 100) + 1 for y in mid if 1000 <= y <= 2100)
 
     for counter, label, fname_label, color in [
-        (c_datering, "datering (free-text)",    "datering",  "#4C72B0"),
-        (c_mid,      "zoekmarge midpoint year", "zoekmarge", "#C44E52"),
+        (c_datering, "datering (free-text)",    "datering",  AUTUMN_DARK_RED),
+        (c_mid,      "zoekmarge midpoint year", "zoekmarge", AUTUMN_ORANGE),
     ]:
         if not counter:
             continue
@@ -237,10 +262,9 @@ def chart_centuries_training(df, suffix: str = "") -> None:
         labels    = [f"{c}th" for c in centuries]
         fig, ax = plt.subplots(figsize=(12, 5))
         _bar(ax, labels, counts, color, fontsize=7)
-        ax.set_title(f"Training set: artworks per century ({label}){suffix}",
+        ax.set_title(f"Training set: artworks per century ({label})",
                      fontsize=14, fontweight="bold")
-        ax.set_xlabel("Century")
-        ax.set_ylabel("Portraits")
+        _style_axes(ax, xlabel="Century", ylabel="Portraits")
         ax.tick_params(axis="x", rotation=45)
         plt.tight_layout()
         fname = PLOTS_DIR / f"chart_centuries_{fname_label}{suffix}.png"
@@ -255,11 +279,10 @@ def chart_centuries_training(df, suffix: str = "") -> None:
     counts    = [buckets[y] for y in years]
     labels    = [str(y) for y in years]
     fig, ax = plt.subplots(figsize=(16, 5))
-    _bar(ax, labels, counts, "#4C72B0", fontsize=6)
-    ax.set_title(f"Training set: portraits per 25-year period{suffix}",
+    _bar(ax, labels, counts, AUTUMN_DARK_YELLOW, fontsize=9)
+    ax.set_title("Training set: portraits per 25-year period",
                  fontsize=14, fontweight="bold")
-    ax.set_xlabel("Year (25-year bins)")
-    ax.set_ylabel("Portraits")
+    _style_axes(ax, xlabel="Year (25-year bins)", ylabel="Portraits")
     ax.tick_params(axis="x", rotation=90)
     plt.tight_layout()
     fname = PLOTS_DIR / f"chart_years_25yr{suffix}.png"
@@ -277,12 +300,12 @@ def chart_object_categories_training(df, suffix: str = "") -> None:
     labels = [t[0] for t in top]
     counts = [t[1] for t in top]
     fig, ax = plt.subplots(figsize=(12, 6))
-    ax.barh(labels[::-1], counts[::-1], color="#55A868", edgecolor="white")
-    ax.set_title(f"Training set: top 15 object categories{suffix}",
+    ax.barh(labels[::-1], counts[::-1], color=AUTUMN_DARK_RED, edgecolor="white")
+    ax.set_title("Training set: top 15 object categories",
                  fontsize=14, fontweight="bold")
-    ax.set_xlabel("Number of portraits")
+    _style_axes(ax, xlabel="Number of portraits")
     for i, count in enumerate(counts[::-1]):
-        ax.text(count + 20, i, str(count), va="center", fontsize=8)
+        ax.text(count + 20, i, str(count), va="center", fontsize=11)
     plt.tight_layout()
     fname = PLOTS_DIR / f"chart_objectcategories{suffix}.png"
     plt.savefig(fname, dpi=150)
@@ -298,11 +321,10 @@ def chart_certainty_training(df, suffix: str = "") -> None:
         print(f"    {z:<40} {count:>8}")
     labels = list(counts_map.keys())
     counts = list(counts_map.values())
-    colors = ["#4C72B0", "#55A868", "#C44E52", "#8172B2", "#CCB974"]
     fig, ax = plt.subplots(figsize=(8, 8))
     ax.pie(counts, labels=labels, autopct="%1.1f%%",
-           colors=colors[:len(labels)], startangle=140)
-    ax.set_title(f"Training set: identification certainty{suffix}",
+           colors=AUTUMN_PALETTE[:len(labels)], startangle=140)
+    ax.set_title("Training set: identification certainty",
                  fontsize=14, fontweight="bold")
     plt.tight_layout()
     fname = PLOTS_DIR / f"chart_certainty{suffix}.png"
@@ -330,11 +352,10 @@ def chart_portraits_per_sitter(df, suffix: str = "") -> None:
         counts.append(tail)
 
     fig, ax = plt.subplots(figsize=(10, 5))
-    _bar(ax, labels, counts, "#4C72B0", fontsize=9)
-    ax.set_title(f"Training set: sitters by portrait count{suffix}",
+    _bar(ax, labels, counts, AUTUMN_DARK_ORANGE, fontsize=9)
+    ax.set_title("Training set: sitters by portrait count",
                  fontsize=14, fontweight="bold")
-    ax.set_xlabel("Number of portraits per sitter")
-    ax.set_ylabel("Number of sitters")
+    _style_axes(ax, xlabel="Number of portraits per sitter", ylabel="Number of sitters")
     plt.tight_layout()
     fname = PLOTS_DIR / f"chart_portraits_per_sitter{suffix}.png"
     plt.savefig(fname, dpi=150)
@@ -356,9 +377,9 @@ def chart_genre_training(df, suffix: str = "") -> None:
     labels = [t[0] for t in top]
     counts = [t[1] for t in top]
     fig, ax = plt.subplots(figsize=(12, 5))
-    ax.barh(labels[::-1], counts[::-1], color="#8172B2", edgecolor="white")
-    ax.set_title(f"Training set: top genres{suffix}", fontsize=14, fontweight="bold")
-    ax.set_xlabel("Number of portraits")
+    ax.barh(labels[::-1], counts[::-1], color=AUTUMN_MAROON, edgecolor="white")
+    ax.set_title("Training set: top genres", fontsize=14, fontweight="bold")
+    _style_axes(ax, xlabel="Number of portraits")
     for i, count in enumerate(counts[::-1]):
         ax.text(count + 20, i, str(count), va="center", fontsize=8)
     plt.tight_layout()
@@ -383,11 +404,11 @@ def chart_materiaal_training(df, suffix: str = "") -> None:
     labels = [t[0] for t in top]
     counts = [t[1] for t in top]
     fig, ax = plt.subplots(figsize=(12, 6))
-    ax.barh(labels[::-1], counts[::-1], color="#CCB974", edgecolor="white")
-    ax.set_title(f"Training set: top 15 materials{suffix}", fontsize=14, fontweight="bold")
-    ax.set_xlabel("Number of portraits")
+    ax.barh(labels[::-1], counts[::-1], color=AUTUMN_ORANGE, edgecolor="white")
+    ax.set_title("Training set: top 15 materials", fontsize=14, fontweight="bold")
+    _style_axes(ax, xlabel="Number of portraits")
     for i, count in enumerate(counts[::-1]):
-        ax.text(count + 20, i, str(count), va="center", fontsize=8)
+        ax.text(count + 20, i, str(count), va="center", fontsize=11)
     plt.tight_layout()
     fname = PLOTS_DIR / f"chart_materiaal{suffix}.png"
     plt.savefig(fname, dpi=150)
@@ -404,11 +425,10 @@ def chart_drager_training(df, suffix: str = "") -> None:
     labels = [t[0] for t in top]
     counts = [t[1] for t in top]
     fig, ax = plt.subplots(figsize=(10, 5))
-    _bar(ax, labels, counts, "#64B5CD", fontsize=8)
-    ax.set_title(f"Training set: support material (drager){suffix}",
+    _bar(ax, labels, counts, AUTUMN_DARK_YELLOW, fontsize=8)
+    ax.set_title("Training set: support material (drager)",
                  fontsize=14, fontweight="bold")
-    ax.set_xlabel("Support")
-    ax.set_ylabel("Number of portraits")
+    _style_axes(ax, xlabel="Support", ylabel="Number of portraits")
     ax.tick_params(axis="x", rotation=30)
     plt.tight_layout()
     fname = PLOTS_DIR / f"chart_drager{suffix}.png"
@@ -423,11 +443,11 @@ def chart_color_training(df, suffix: str = "") -> None:
     ))
     labels = list(color_counts.keys())
     counts = list(color_counts.values())
-    colors = ["#4C72B0", "#C44E52"]
+    colors = [AUTUMN_DARK_RED, AUTUMN_DARK_YELLOW]
     fig, ax = plt.subplots(figsize=(6, 6))
     ax.pie(counts, labels=labels, autopct="%1.1f%%",
            colors=colors[:len(labels)], startangle=90)
-    ax.set_title(f"Training set: color vs B&W scan{suffix}",
+    ax.set_title("Training set: color vs B&W scan",
                  fontsize=14, fontweight="bold")
     plt.tight_layout()
     fname = PLOTS_DIR / f"chart_color{suffix}.png"
