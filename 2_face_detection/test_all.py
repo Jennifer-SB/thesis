@@ -5,9 +5,13 @@ import datetime
 import os
 import glob
 import argparse
-from retinaface import RetinaFace
+import sys
 from pathlib import Path
-from face_detection.face_align import norm_crop
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+from retinaface import RetinaFace
+from face_align import norm_crop
 
 
 def main(args):

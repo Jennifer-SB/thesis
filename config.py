@@ -20,12 +20,21 @@ PERSONEN_DIR  = DRIVE_PATH / "thesis" / "personen"
 IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
 # --- Output: charts ---
-PLOTS_DIR  = Path("plots/dataset_evaluation")
+PLOTS_DIR  = Path("1_dataset_construction/plots/dataset_evaluation")
 PLOTS_DIR.mkdir(parents=True, exist_ok=True)
 
 # --- Output: download logs ---
-FAILED_CSV  = Path("failed_downloads.csv")
+FAILED_CSV  = Path("1_dataset_construction/data/failed_downloads.csv")
+
+# --- Output: audit ---
+MISSING_LREFS_CSV = Path("1_dataset_construction/data/missing_lrefs.csv")
+CORRUPT_LREFS_CSV = Path("1_dataset_construction/data/corrupt_lrefs.csv")
 
 # --- Output: select images ---
-MANIFEST_CSV  = Path("dataset_manifest.csv")
+MANIFEST_CSV  = Path("1_dataset_construction/data/dataset_manifest.csv")
 MIN_RESOLUTION = (224, 224)   # minimum width x height to include
+PRIREFS_NO_IMAGE_CSV  = Path("1_dataset_construction/data/prirefs_no_image.csv")
+PRIREFS_TOO_SMALL_CSV = Path("1_dataset_construction/data/prirefs_too_small.csv")
+
+# --- Output: training table ---
+TRAINING_CSV = Path("1_dataset_construction/data/training_set.csv")

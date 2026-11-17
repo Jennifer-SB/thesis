@@ -12,9 +12,9 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
-from src.evaluation.pairs   import build_pairs, build_cross_medium_pairs
-from src.evaluation.embeddings import score_pairs
-from src.evaluation.metrics import (compute_metrics, plot_score_distribution,
+from src.pairs   import build_pairs, build_cross_medium_pairs
+from src.embeddings import score_pairs
+from src.metrics import (compute_metrics, plot_score_distribution,
                                     plot_roc_curve, plot_combined_roc_curves)
 
 # Add group-columns (strata) after loading the data:

@@ -1,13 +1,15 @@
 import argparse
+import sys
 
 import cv2
 import numpy as np
 import torch
 import pandas as pd
 
-from backbones import get_model
-
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+from backbones import get_model
 
 @torch.no_grad()
 def inference(weight, name, img, fp16):

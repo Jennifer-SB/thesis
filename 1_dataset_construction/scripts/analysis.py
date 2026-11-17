@@ -10,8 +10,8 @@ Filter 3:     read from training_set.csv (27k final training set).
 All plots saved to PLOTS_DIR (config.py).
 
 Run from the thesis/ root folder:
-    python scripts/analysis.py
-    python scripts/analysis.py --training-only
+    python 1_dataset_construction/scripts/analysis.py
+    python 1_dataset_construction/scripts/analysis.py --training-only
 """
 
 import sys
@@ -19,15 +19,15 @@ import re
 from pathlib import Path
 from collections import Counter
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # repo root -> config.py
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # 1_dataset_construction -> src package
 
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from config import PLOTS_DIR
+from config import PLOTS_DIR, TRAINING_CSV
 
-TRAINING_CSV   = Path("training_set.csv")
 TRAINING_ONLY  = "--training-only" in sys.argv
 
 
@@ -481,7 +481,7 @@ if __name__ == "__main__":
     # ------------------------------------------------------------------
     print("\n--- Filter 3: 27k training set (from training_set.csv) ---")
     if not TRAINING_CSV.exists():
-        print(f"  ERROR: {TRAINING_CSV} not found — run scripts/build_training_table.py first")
+        print(f"  ERROR: {TRAINING_CSV} not found - run 1_dataset_construction/scripts/build_training_table.py first")
     else:
         import pandas as pd
         df_training = pd.read_csv(TRAINING_CSV)
@@ -495,7 +495,7 @@ if __name__ == "__main__":
     # ------------------------------------------------------------------
     # Filter 1 & 2: full dataset — requires RKDimages.xml
     # ------------------------------------------------------------------
-    from src.dataset.xml_parser import RKDDataset
+    from src.xml_parser import RKDDataset
 
     dataset = RKDDataset()
     dataset.parse()

@@ -1,20 +1,26 @@
 """
-src/dataset/xml_parser.py
---------------------------
+src/xml_parser.py
+------------------
 RKDDataset: single XML parser for the entire project.
 Parses all fields needed by both downloader and analysis.
 
 Usage:
-    from src.dataset.xml_parser import RKDDataset
+    from src.xml_parser import RKDDataset
     dataset = RKDDataset()
     dataset.parse()
     dataset.overview()
 """
 
+import sys
 import os
 import random
 from collections import Counter
+from pathlib import Path
 from tqdm import tqdm
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # repo root -> config.py
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # 1_dataset_construction -> src package
+
 from config import XML_FILE
 
 
@@ -663,33 +669,33 @@ class RKDDataset:
         print(f"\n{'='*60}")
         print(f"  RECORD: priref {rec['priref']}")
         print(f"{'='*60}")
-        print(f"  Title (Dutch):        {rec['title_dutch']    or '—'}")
-        print(f"  Title (English):      {rec['title_english']  or '—'}")
-        print(f"  Artist:               {rec['artist_name']    or '—'} "
-              f"(ID: {rec['artist_id'] or '—'})")
-        print(f"  Genre:                {rec['genre']          or '—'}")
-        print(f"  Object category:      {rec['objectcat']      or '—'}")
+        print(f"  Title (Dutch):        {rec['title_dutch']    or '-'}")
+        print(f"  Title (English):      {rec['title_english']  or '-'}")
+        print(f"  Artist:               {rec['artist_name']    or '-'} "
+              f"(ID: {rec['artist_id'] or '-'})")
+        print(f"  Genre:                {rec['genre']          or '-'}")
+        print(f"  Object category:      {rec['objectcat']      or '-'}")
         print(f"  Material:             "
-              f"{', '.join(rec['materiaal']) if rec['materiaal'] else '—'}")
-        print(f"  Support (drager):     {rec['drager']         or '—'}")
-        print(f"  Date (Dutch):         {rec['date_datering']  or '—'}")
-        print(f"  Date range:           {rec['date_zoekmarge'] or '—'}")
+              f"{', '.join(rec['materiaal']) if rec['materiaal'] else '-'}")
+        print(f"  Support (drager):     {rec['drager']         or '-'}")
+        print(f"  Date (Dutch):         {rec['date_datering']  or '-'}")
+        print(f"  Date range:           {rec['date_zoekmarge'] or '-'}")
         print(f"  Identification basis: "
-              f"{', '.join(rec['identificatie_grond']) if rec['identificatie_grond'] else '—'}")
+              f"{', '.join(rec['identificatie_grond']) if rec['identificatie_grond'] else '-'}")
         print(f"\n  Keywords (EN): "
-              f"{', '.join(rec['trefwoorden_en']) if rec['trefwoorden_en'] else '—'}")
+              f"{', '.join(rec['trefwoorden_en']) if rec['trefwoorden_en'] else '-'}")
         print(f"  Keywords (NL): "
-              f"{', '.join(rec['trefwoorden_nl']) if rec['trefwoorden_nl'] else '—'}")
+              f"{', '.join(rec['trefwoorden_nl']) if rec['trefwoorden_nl'] else '-'}")
 
         # Print each sitter with all their fields.
         # Note: verworpen sitters are already excluded — these are only
         # huidig (accepted) or unknown (None status) sitters.
         print(f"\n  Sitters ({len(rec['personen'])}):")
         for p in rec["personen"]:
-            nummer       = p["nummer"]       or "— (unidentified)"
-            status       = p["status"]       or "—"   # huidig / None
-            zekerheid    = p["zekerheid"]    or "—"   # waarschijnlijk / mogelijk / genaamd / None
-            beschrijving = p["beschrijving"] or "—"   # position in painting
+            nummer       = p["nummer"]       or "- (unidentified)"
+            status       = p["status"]       or "-"   # huidig / None
+            zekerheid    = p["zekerheid"]    or "-"   # waarschijnlijk / mogelijk / genaamd / None
+            beschrijving = p["beschrijving"] or "-"   # position in painting
             print(f"    ID:           {nummer}")
             print(f"    Status:       {status}")
             print(f"    Certainty:    {zekerheid}")

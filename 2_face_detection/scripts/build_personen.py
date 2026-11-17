@@ -10,7 +10,7 @@ Only processes lrefs present in training_set.csv (27k training set).
 Safe to re-run — skips files that already exist.
 
 Run from the thesis/ root folder:
-    python scripts/build_personen.py
+    python 2_face_detection/scripts/build_personen.py
 """
 
 import sys
@@ -18,12 +18,10 @@ import csv
 import shutil
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # repo root -> config.py
 
 from tqdm import tqdm
-from config import GEZICHTEN_DIR, PERSONEN_DIR
-
-TRAINING_CSV = Path("training_set.csv")
+from config import GEZICHTEN_DIR, PERSONEN_DIR, TRAINING_CSV
 
 # ------------------------------------------------------------------
 # Load training set

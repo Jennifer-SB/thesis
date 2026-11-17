@@ -1,45 +1,33 @@
-# RetinaFace Face Detector
+# Face Detection (RetinaFace)
 
-## Introduction
-For the face detection we use RetinaFace from InsightFace: https://github.com/deepinsight/insightface
+Vendored from [InsightFace](https://github.com/deepinsight/insightface)'s RetinaFace, via [Sebastian Bunda's ArtFace fork](https://github.com/stbunda/ArtFace), with one addition: the 5-point-landmark alignment step (`face_align.py`'s `norm_crop`, added into `test_all.py`) that produces the aligned 112x112 crops the ResNet embedding stage expects.
 
-## Install
-I advise you to run this part of the script in a Linux environment. 
+See the root [`README.md`](../README.md) for how this stage fits into the full pipeline, including the `schilderijen` input-folder naming note.
 
-1. Install MXNet with GPU support.
-2. Type ``make`` to build cxx tools.
+## Setup
 
-## Testing
+Requires a Linux environment with MXNet + GPU support (not part of the Windows pipeline).
 
-Please check ``test_all.py`` for testing.
-
-## RetinaFace Pretrained Models
-
-Pretrained Model: RetinaFace-R50 ([baidu cloud](https://pan.baidu.com/s/1C6nKq122gJxRhb37vK0_LQ) or [googledrive](https://drive.google.com/file/d/1_DKgGxQWqlTqe78pw0KavId9BIMNUWfu/view?usp=sharing)) is a medium size model with ResNet50 backbone.
-It can output face bounding boxes and five facial landmarks in a single forward pass.
-
-WiderFace validation mAP: Easy 96.5, Medium 95.6, Hard 90.4. 
-
-To avoid the confliction with the WiderFace Challenge (ICCV 2019), we postpone the release time of our best model.
-
-## Third-party
-
-[yangfly](https://github.com/yangfly): RetinaFace-MobileNet0.25 ([baidu cloud](https://pan.baidu.com/s/1P1ypO7VYUbNAezdvLm2m9w):nzof).
-WiderFace validation mAP: Hard 82.5. (model size: 1.68Mb) 
-
-[clancylian](https://github.com/clancylian/retinaface): C++ version
-
-RetinaFace in [modelscope](https://modelscope.cn/models/damo/cv_resnet50_face-detection_retinaface/summary)
-
-## References
-
-```  
-@inproceedings{Deng2020CVPR,
-title = {RetinaFace: Single-Shot Multi-Level Face Localisation in the Wild},
-author = {Deng, Jiankang and Guo, Jia and Ververas, Evangelos and Kotsia, Irene and Zafeiriou, Stefanos},
-booktitle = {CVPR},
-year = {2020}
-}
+```bash
+pip install -r requirements.txt
+make        # builds the cython/C++ NMS and anchor-generation tools in rcnn/
 ```
 
+## Running
 
+```bash
+python test_all.py --folder <path with a schilderijen/ subfolder> --model ./model/R50/R50
+```
+
+`model/R50/` holds the pretrained RetinaFace-R50 weights (gitignored, not in this repo — see InsightFace's model zoo if you need to re-download them).
+
+## Reference
+
+```
+@inproceedings{Deng2020CVPR,
+  title = {RetinaFace: Single-Shot Multi-Level Face Localisation in the Wild},
+  author = {Deng, Jiankang and Guo, Jia and Ververas, Evangelos and Kotsia, Irene and Zafeiriou, Stefanos},
+  booktitle = {CVPR},
+  year = {2020}
+}
+```

@@ -6,22 +6,22 @@ Freezes layer1-3, trains layer4 + head with CosFace loss.
 Saves backbone only (no head): output drops straight into inference.py.
 
 EXP3: train on all media (from repo root in WSL2):
-    python face_recognition/train.py \
+    python 3_resnet_embeddings/train.py \
         --data    /mnt/d/thesis/personen \
-        --weight  face_recognition/glint360k_cosface_r100/backbone.pth \
-        --split   train_test_split.csv \
-        --output  face_recognition/checkpoints_exp3
+        --weight  3_resnet_embeddings/glint360k_cosface_r100/backbone.pth \
+        --split   5_evaluation/train_test_split.csv \
+        --output  3_resnet_embeddings/checkpoints_exp3
 
 EXP4: train on oil paintings only:
-    python face_recognition/train.py \
+    python 3_resnet_embeddings/train.py \
         --data    /mnt/d/thesis/personen \
-        --weight  face_recognition/glint360k_cosface_r100/backbone.pth \
-        --split   train_test_split.csv \
+        --weight  3_resnet_embeddings/glint360k_cosface_r100/backbone.pth \
+        --split   5_evaluation/train_test_split.csv \
         --medium  "Oil paintings" \
-        --output  face_recognition/checkpoints_exp4
+        --output  3_resnet_embeddings/checkpoints_exp4
 
 After training, re-extract features with the fine-tuned backbone:
-    cd face_recognition
+    cd 3_resnet_embeddings
     python inference.py \
         --weight checkpoints_exp3/best_backbone.pth \
         --folder /mnt/d/thesis/personen

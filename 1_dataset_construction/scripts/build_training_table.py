@@ -14,7 +14,7 @@ Filtering steps (counts printed at each step):
 Output: training_set.csv
 
 Run from the thesis/ root folder:
-    python scripts/build_training_table.py
+    python 1_dataset_construction/scripts/build_training_table.py
 """
 
 import sys
@@ -23,12 +23,11 @@ import os
 from pathlib import Path
 from collections import Counter
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # repo root -> config.py
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # 1_dataset_construction -> src package
 
 from tqdm import tqdm
-from config import MANIFEST_CSV, XML_FILE, GEZICHTEN_DIR
-
-TRAINING_CSV = Path("training_set.csv")
+from config import MANIFEST_CSV, XML_FILE, GEZICHTEN_DIR, TRAINING_CSV
 
 OUTPUT_FIELDS = [
     # Image / artwork identity
@@ -80,9 +79,9 @@ n_with_crop  = sum(1 for r in manifest if crop_counts.get(r["lref"], 0) > 0)
 n_no_crop    = len(manifest) - n_with_crop
 n_solo       = sum(1 for r in manifest if crop_counts.get(r["lref"], 0) == 1)
 n_multi_face = sum(1 for r in manifest if crop_counts.get(r["lref"], 0) >= 2)
-print(f"  lrefs with ≥1 crop:       {n_with_crop:,}")
+print(f"  lrefs with >=1 crop:      {n_with_crop:,}")
 print(f"  lrefs with 0 crops:       {n_no_crop:,}  (no face detected)")
-print(f"  lrefs with exactly 1:     {n_solo:,}  → solo-face portraits")
+print(f"  lrefs with exactly 1:     {n_solo:,}  -> solo-face portraits")
 print(f"  lrefs with 2+ crops:      {n_multi_face:,}  (multi-face, excluded)")
 
 
@@ -103,7 +102,7 @@ multi_sitters  = {sid for sid, cnt in sitter_counter.items() if cnt >= 2}
 training       = [r for r in solo if r["sitter_ids"] in multi_sitters]
 
 print(f"Unique sitters (solo set):  {len(sitter_counter):,}")
-print(f"  with 1 portrait:          {sum(1 for c in sitter_counter.values() if c == 1):,}  (excluded — can't form pairs)")
+print(f"  with 1 portrait:          {sum(1 for c in sitter_counter.values() if c == 1):,}  (excluded - can't form pairs)")
 print(f"  with 2+ portraits:        {len(multi_sitters):,}")
 print(f"After 2+ portrait filter:   {len(training):,}  (removed {len(solo) - len(training):,})")
 

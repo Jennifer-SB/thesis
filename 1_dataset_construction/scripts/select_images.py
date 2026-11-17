@@ -19,7 +19,7 @@ No files are copied — the manifest points to the existing images on disk.
 Downstream training code reads the manifest directly.
 
 Run from the thesis/ root folder:
-    python scripts/select_images.py
+    python 1_dataset_construction/scripts/select_images.py
 """
 
 import sys
@@ -27,14 +27,16 @@ import csv
 from pathlib import Path
 from collections import defaultdict
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # repo root -> config.py
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # 1_dataset_construction -> src package
 
 from PIL import Image
 Image.MAX_IMAGE_PIXELS = None   # disable decompression bomb check for trusted data
 from tqdm import tqdm
 
-from config import IMAGES_DIR, MANIFEST_CSV, MIN_RESOLUTION, PLOTS_DIR
-from src.dataset.xml_parser import RKDDataset, QUALITY_RANK
+from config import (IMAGES_DIR, MANIFEST_CSV, MIN_RESOLUTION, PLOTS_DIR,
+                     PRIREFS_NO_IMAGE_CSV, PRIREFS_TOO_SMALL_CSV)
+from src.xml_parser import RKDDataset, QUALITY_RANK
 
 
 # ------------------------------------------------------------------
@@ -280,7 +282,7 @@ def write_manifest(selected: list, manifest_path: Path) -> None:
     bw_count    = sum(1 for r in selected if not r["is_color"])
 
     print(f"\n Manifest saved to {manifest_path}")
-    print(f"     {len(selected):,} rows  ×  {len(fieldnames)} columns")
+    print(f"     {len(selected):,} rows  x  {len(fieldnames)} columns")
     print(f"     Color images:  {color_count:,}")
     print(f"     Other/B&W:     {bw_count:,}")
 
@@ -352,19 +354,17 @@ if __name__ == "__main__":
 
     write_manifest(selected, MANIFEST_CSV)
 
-    no_image_csv = Path("prirefs_no_image.csv")
-    with open(no_image_csv, "w", newline="", encoding="utf-8") as f:
+    with open(PRIREFS_NO_IMAGE_CSV, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=["priref", "artist_name", "date", "objectcat", "lrefs_in_xml", "reason"])
         writer.writeheader()
         writer.writerows(no_image_rows)
-    print(f"   {no_image_csv}  ({len(no_image_rows):,} rows)")
+    print(f"   {PRIREFS_NO_IMAGE_CSV}  ({len(no_image_rows):,} rows)")
 
-    too_small_csv = Path("prirefs_too_small.csv")
-    with open(too_small_csv, "w", newline="", encoding="utf-8") as f:
+    with open(PRIREFS_TOO_SMALL_CSV, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=["priref", "lref", "width", "height", "megapixels", "soort", "artist_name", "date", "objectcat"])
         writer.writeheader()
         writer.writerows(too_small_rows)
-    print(f"   {too_small_csv}  ({len(too_small_rows):,} rows)")
+    print(f"   {PRIREFS_TOO_SMALL_CSV}  ({len(too_small_rows):,} rows)")
 
     # Keep only rows with exactly one sitter who has a known ID.
     # sitter_count == 1: single-portrait artworks only — group portraits are excluded
